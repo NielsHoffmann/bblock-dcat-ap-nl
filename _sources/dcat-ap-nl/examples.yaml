@@ -1,0 +1,8 @@
+- title: DCAT-AP-NL example
+  content: |-
+    An example from the DCAT-AP-NL profile
+
+  snippets:
+    - language: ttl
+      ref: ./examples/dataset.ttl
+

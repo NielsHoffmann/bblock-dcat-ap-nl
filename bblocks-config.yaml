@@ -1,22 +1,22 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: OGC Building Blocks for DCAT-AP-NL 3.0
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  These building blocks are an experimental implementation of DCAT-AP-NL.
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  The purpose of this collection is to experiment with the building block approach and to showcase how
+  this potentially can add value.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: geonovum.bbr.dcat.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version
