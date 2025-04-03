@@ -1,0 +1,23 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix exampleMS: <https://data.exampleMS.gov/id/data/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+exampleMS:Datacatalog a dcat:Catalogue ;
+    dct:description "beschrijving van de catalog"@nl ;
+    dct:publisher [ a foaf:Agent ;
+            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;
+            foaf:name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dct:title "De naam van de catalog"@nl ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "My Organization"@en,
+                "Mijn Organisatie"@nl ;
+            vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;
+            vcard:hasURL "http://mijnorganisatie.org/" ;
+            vcard:organization-name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dcat:dataset exampleMS:1T2p3o4B ;
+    dcat:service exampleMS:1T2p3o4B-dataservice-WMS .
+

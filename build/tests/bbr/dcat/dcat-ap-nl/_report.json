@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile",
   "bblockName": "DCAT-AP-NL profile",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl",
-  "generated": "2025-04-02T11:56:15.521196+00:00",
+  "generated": "2025-04-03T12:24:54.435405+00:00",
   "result": true,
   "items": [
     {
@@ -36,12 +36,172 @@
           ]
         }
       ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
+        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 8,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
+        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_3_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_3_1.ttl",
+              "size": 38,
+              "isError": false,
+              "message": "Output Turtle example_3_1.ttl created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
+        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_4_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_4_1.ttl",
+              "size": 18,
+              "isError": false,
+              "message": "Output Turtle example_4_1.ttl created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
+        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_5_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_5_1.ttl",
+              "size": 6,
+              "isError": false,
+              "message": "Output Turtle example_5_1.ttl created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl",
+        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_6_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_6_1.ttl",
+              "size": 7,
+              "isError": false,
+              "message": "Output Turtle example_6_1.ttl created"
+            }
+          ]
+        }
+      ]
     }
   ],
   "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 1,
+    "total": 6,
+    "passed": 6,
     "failed": 0
   }
 }
