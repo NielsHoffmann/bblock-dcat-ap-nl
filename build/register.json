@@ -1,0 +1,75 @@
+{
+  "name": "OGC Building Blocks for DCAT-AP-NL 3.0",
+  "abstract": "These building blocks are an experimental implementation of DCAT-AP-NL.\n",
+  "description": "The purpose of this collection is to experiment with the building block approach and to showcase how\nthis potentially can add value.\n",
+  "modified": "2025-04-02T11:56:14.911789",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"e8df6b22cb38da4f600f3a0292c58fdef7734f97",
+      "shortCommitId": "\"e8df6b",
+      "date": "2025-03-17T08:34:25+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+  "gitHubRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/",
+  "baseURL": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/",
+  "viewerURL": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/",
+  "validationReport": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl",
+      "name": "DCAT-AP-NL profile",
+      "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)",
+      "status": "under-development",
+      "dateTimeAddition": "2025-04-02T00:00:00Z",
+      "itemClass": "model",
+      "register": "geonovum-building-blocks",
+      "version": "0.1",
+      "dateOfLastChange": "2025-04-02",
+      "link": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+      "dependsOn": [
+        "ogc.geo.geodcat.dcat-ap"
+      ],
+      "sources": [
+        {
+          "title": "DCAT-AP-NL 3.0 Specification",
+          "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
+        }
+      ],
+      "shaclShapes": [
+        "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
+        "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+      ],
+      "scope": "dev",
+      "tags": [
+        "DCAT",
+        "DCAT-AP-NL",
+        "profile"
+      ],
+      "highlighted": true,
+      "shaclRules": {},
+      "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl"
+        }
+      }
+    }
+  ]
+}
