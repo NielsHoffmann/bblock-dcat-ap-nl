@@ -42,7 +42,8 @@
   content: |-
     An example from the DCAT-AP-NL profile for a DatasetSeries
 
-    Note: The shacl Validation fails on this example for a number of missing properties...
+
+    Note: The shacl Validation fails on this example. a number of properties is missing...
     
   snippets:
     - language: ttl
