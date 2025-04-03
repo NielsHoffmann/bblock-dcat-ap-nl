@@ -1,8 +1,8 @@
 {
-  "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile",
-  "bblockName": "DCAT-AP-NL profile",
+  "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0",
+  "bblockName": "DCAT-AP-NL profile 3.0",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl",
-  "generated": "2025-04-03T13:12:03.425756+00:00",
+  "generated": "2025-04-03T14:06:57.105792+00:00",
   "result": false,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -49,44 +49,44 @@
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DistributionShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetSeriesShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:DatasetShape": {
                   "nodes": [
                     "exampleMS:1T2p3o4B"
                   ]
                 },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 },
-                "dcatapnl-sh:CatalogRecordShape": {
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:CatalogShape": {
                   "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n"
             }
           ]
         }
@@ -97,7 +97,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -136,7 +136,28 @@
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:DistributionShape": {
@@ -144,36 +165,15 @@
                     "exampleMS:1T2p3o4B-dist-SHP"
                   ]
                 },
-                "dcatapnl-sh:DatasetSeriesShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:CatalogRecordShape": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n"
             }
           ]
         }
@@ -184,7 +184,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -223,44 +223,44 @@
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": [
-                    "exampleMS:1T2p3o4B-dataservice-WMS"
-                  ]
-                },
-                "dcatapnl-sh:DistributionShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetSeriesShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 },
                 "dcatapnl-sh:CatalogRecordShape": {
                   "nodes": []
                 },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:CatalogShape": {
                   "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B-dataservice-WMS"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS\n"
             }
           ]
         }
@@ -271,7 +271,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
         "exampleIndex": 4,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -310,42 +310,42 @@
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DistributionShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetSeriesShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 },
                 "dcatapnl-sh:CatalogRecordShape": {
                   "nodes": []
                 },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n"
             }
           ]
         }
@@ -356,7 +356,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
         "exampleIndex": 5,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -395,31 +395,7 @@
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DistributionShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetSeriesShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 },
                 "dcatapnl-sh:CatalogRecordShape": {
@@ -427,12 +403,36 @@
                     "exampleMS:1T2p3o4B-rec"
                   ]
                 },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n"
             }
           ]
         }
@@ -443,7 +443,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl",
-        "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl",
         "exampleIndex": 6,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -475,17 +475,35 @@
             {
               "op": "shacl-report",
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
-              "graph": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcatapnl-sh: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_theme_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:creator\" ;\n            sh:resultPath dct:creator ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_creator_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_contactPoint_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_contactPoint_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:creator\" ;\n            sh:resultPath dct:creator ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_creator_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_theme_minCount ] .\n\n",
+              "graph": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcatapnl-sh: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:creator\" ;\n            sh:resultPath dct:creator ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_creator_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:creator\" ;\n            sh:resultPath dct:creator ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_creator_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_contactPoint_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_theme_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_theme_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2023> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2023->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <https://data.gov.gr/id/dataset/BeePopulation2022> ;\n            sh:resultMessage \"Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DatasetShape_contactPoint_minCount ] .\n\n",
               "isError": true,
-              "message": "Validation result for _sources/dcat-ap-nl/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_accessRights_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:accessRights\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:accessRights\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_accessRights_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:accessRights\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:accessRights\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dcat:contactPoint\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dcat:contactPoint\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dcat:contactPoint\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_creator_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:creator\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:creator\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_creator_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:creator\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:creator\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_identifier_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:identifier\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:identifier\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_identifier_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:identifier\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:identifier\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_publisher_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:publisher\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:publisher\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_publisher_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:publisher\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:publisher\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_theme_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dcat:theme\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dcat:theme\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_theme_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dcat:theme\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dcat:theme\n  "
+              "message": "Validation result for _sources/dcat-ap-nl/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_accessRights_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:accessRights\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:accessRights\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_accessRights_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:accessRights\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:accessRights\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dcat:contactPoint\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dcat:contactPoint\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dcat:contactPoint\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_creator_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:creator\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:creator\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_creator_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:creator\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:creator\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_identifier_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:identifier\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:identifier\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_identifier_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:identifier\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:identifier\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_publisher_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dct:publisher\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dct:publisher\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_publisher_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dct:publisher\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dct:publisher\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_theme_minCount\n  \tFocus Node: example-ds:BeePopulation2023\n  \tResult Path: dcat:theme\n  \tMessage: Less than 1 values on example-ds:BeePopulation2023->dcat:theme\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DatasetShape_theme_minCount\n  \tFocus Node: example-ds:BeePopulation2022\n  \tResult Path: dcat:theme\n  \tMessage: Less than 1 values on example-ds:BeePopulation2022->dcat:theme\n  "
             },
             {
               "shaclFile": "_sources/dcat-ap-nl/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DataServiceShape": {
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": [
+                    "example-ds:BeePopulation2023",
+                    "example-ds:BeePopulation2022"
+                  ]
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
                   "nodes": []
                 },
-                "dcatapnl-sh:DistributionShape": {
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:nb7c06ed3c3a148d486f74070795cd6bdb3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:DatasetSeriesShape": {
@@ -493,36 +511,18 @@
                     "example-ser:BeePopulation"
                   ]
                 },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b3": {
-                  "nodes": []
-                },
-                "_:nb3efda5d75524584a7388c7417953b38b4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": [
-                    "example-ds:BeePopulation2022",
-                    "example-ds:BeePopulation2023"
-                  ]
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:CatalogRecordShape": {
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:CatalogShape": {
                   "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*\n - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*\n - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2022,example-ds:BeePopulation2023\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2023,example-ds:BeePopulation2022\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n"
             }
           ]
         }

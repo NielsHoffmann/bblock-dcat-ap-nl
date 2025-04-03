@@ -1,5 +1,5 @@
 
-# DCAT-AP-NL profile (Model)
+# DCAT-AP-NL profile 3.0 (Model)
 
 `geonovum.bbr.dcat.dcat-ap-nl` *v0.1*
 
@@ -9,10 +9,12 @@ DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)
 
 ## Description
 
-## DCAT-AP-NL 
+## DCAT-AP-NL 3.0
 
-This building block provides a framework to test compatibility of the DCAT-AP-NL with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.
+These building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.
 
+
+Implementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.
 ## Examples
 
 ### DCAT-AP-NL example - Dataset
@@ -1053,8 +1055,8 @@ properties:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json)
-* JSON version: [schema.json](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json)
+* JSON version: [schema.json](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml)
 
 ## Sources
 
@@ -1064,6 +1066,6 @@ Links to the schema:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
+* URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
 * Path: `_sources/dcat-ap-nl`
 

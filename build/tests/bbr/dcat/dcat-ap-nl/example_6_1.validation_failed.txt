@@ -1,5 +1,5 @@
-Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile
-Generated 2025-04-03T13:12:03.425696+00:00
+Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0
+Generated 2025-04-03T14:06:57.105734+00:00
 === Files ===
 Using example_6_1.ttl from examples
 Output Turtle example_6_1.ttl created
@@ -15,21 +15,15 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:accessRights
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:accessRights
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
   	Focus Node: example-ds:BeePopulation2023
   	Result Path: dct:accessRights
   	Message: Less than 1 values on example-ds:BeePopulation2023->dct:accessRights
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
+  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
   	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dcat:contactPoint
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint
+  	Result Path: dct:accessRights
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:accessRights
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
@@ -38,10 +32,10 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   	Message: Less than 1 values on example-ds:BeePopulation2023->dcat:contactPoint
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
+  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
   	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:creator
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:creator
+  	Result Path: dcat:contactPoint
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dcat:contactPoint
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
@@ -50,10 +44,10 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   	Message: Less than 1 values on example-ds:BeePopulation2023->dct:creator
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
+  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
   	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:identifier
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:identifier
+  	Result Path: dct:creator
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:creator
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
@@ -62,10 +56,10 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   	Message: Less than 1 values on example-ds:BeePopulation2023->dct:identifier
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
+  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
   	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:publisher
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:publisher
+  	Result Path: dct:identifier
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:identifier
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
@@ -74,29 +68,35 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   	Message: Less than 1 values on example-ds:BeePopulation2023->dct:publisher
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
+  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
   	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dcat:theme
-  	Message: Less than 1 values on example-ds:BeePopulation2022->dcat:theme
+  	Result Path: dct:publisher
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dct:publisher
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
   	Focus Node: example-ds:BeePopulation2023
   	Result Path: dcat:theme
   	Message: Less than 1 values on example-ds:BeePopulation2023->dcat:theme
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dcat:theme
+  	Message: Less than 1 values on example-ds:BeePopulation2022->dcat:theme
   
 Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:DataServiceShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
- - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
- - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2022,example-ds:BeePopulation2023
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2023,example-ds:BeePopulation2022
  - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation
+ - Shape dcatapnl-sh:DistributionShape: *none*
  - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:DataServiceShape: *none*
 
 === End SHACL ===
 

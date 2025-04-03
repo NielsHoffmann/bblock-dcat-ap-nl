@@ -7,35 +7,35 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://nielshoffmann.github.io/geonovum.bbr.dcat.dcat-ap-nl> a skos:Concept,
+<https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl> a skos:Concept,
         dcat:Dataset,
         bblocks:Model ;
-    rdfs:label "DCAT-AP-NL profile" ;
+    rdfs:label "DCAT-AP-NL profile 3.0" ;
     dct:abstract "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)" ;
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-04-03"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
-    skos:inScheme <https://nielshoffmann.github.io/bblock-dcat-ap-nl/> ;
+    skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
         "DCAT-AP-NL",
         "profile" ;
-    bblocks:dependsOn <https://nielshoffmann.github.io/ogc.geo.geodcat.dcat-ap> ;
-    bblocks:hasSchema <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json>,
-        <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml> ;
-    bblocks:hasShaclRule <https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/rules.shacl> ;
+    bblocks:dependsOn <https://geonovum.github.io/ogc.geo.geodcat.dcat-ap> ;
+    bblocks:hasSchema <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json>,
+        <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml> ;
+    bblocks:hasShaclRule <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/rules.shacl> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> rdfs:label "DCAT-AP-NL 3.0 Specification" .
 
-<https://nielshoffmann.github.io/bblock-dcat-ap-nl/> a skos:ConceptScheme,
+<https://geonovum.github.io/bblock-dcat-ap-nl/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0" ;
     dct:abstract """These building blocks are an experimental implementation of DCAT-AP-NL.
@@ -44,20 +44,20 @@
 this potentially can add value.
 """ ;
     skos:prefLabel "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0" ;
-    bblocks:hasValidationReport <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-03T13:12:03.506172"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-03T13:12:03.441056"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-03T14:06:57.188837"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-03T14:06:57.121015"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:4598885c490ebc4cb59a9b650b90ab0631c14b5c" ;
-            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ] ;
+            dct:hasVersion "git:8d4925f84a6ad843ac272251ca0834985d92bf89" ;
+            rdfs:seeAlso <https://geonovum.github.io/bblock-dcat-ap-nl/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
