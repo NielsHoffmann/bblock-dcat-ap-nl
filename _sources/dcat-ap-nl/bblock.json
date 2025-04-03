@@ -1,13 +1,13 @@
 {
-  "name": "DCAT-AP-NL profile",
+  "name": "DCAT-AP-NL profile 3.0",
   "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)",
   "status": "under-development",
   "dateTimeAddition": "2025-04-02T00:00:00Z",
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-04-02",
-  "link": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+  "dateOfLastChange": "2025-04-03",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
         "ogc.geo.geodcat.dcat-ap"
       ],
