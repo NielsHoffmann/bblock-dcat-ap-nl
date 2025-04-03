@@ -70,8 +70,8 @@ exampleMS:1T2p3o4B a dcat:Dataset;
    dcat:distribution exampleMS:1T2p3o4B-dist-WMS
    .
 
-exampleMS:1T2p3o4B-dist-SHP a dcat:Distribution;
-.
+#exampleMS:1T2p3o4B-dist-SHP a dcat:Distribution;
+#.
 # wordt verder uitgewerkt in voorbeeld Distributie
 
 # Aanvullingen voor EU waardelijsten, die nog niet volledig zijn ontsloten 
