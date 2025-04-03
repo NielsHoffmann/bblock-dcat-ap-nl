@@ -13,14 +13,14 @@
     rdfs:label "DCAT-AP-NL profile" ;
     dct:abstract "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)" ;
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-02"^^xsd:date ;
+    dct:modified "2025-04-03"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://nielshoffmann.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -46,15 +46,15 @@ this potentially can add value.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-02T11:56:15.599478"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-02T11:56:15.534652"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-03T12:24:54.516813"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-03T12:24:54.450526"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:d82c83f14d0618aafe40dcef0320e6c4b0f0a5ca" ;
-            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ] ;
+            dct:hasVersion "git:386fb20bd765a61e3c6207fbbb9ac90d7e2e2eb5" ;
+            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

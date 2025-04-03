@@ -106,7 +106,7 @@
   "name": "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0",
   "abstract": "These building blocks are an experimental implementation of DCAT-AP-NL.\n",
   "description": "The purpose of this collection is to experiment with the building block approach and to showcase how\nthis potentially can add value.\n",
-  "modified": "2025-04-02T11:56:14.911789",
+  "modified": "2025-04-03T12:24:53.776159",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"e8df6b22cb38da4f600f3a0292c58fdef7734f97",
@@ -138,7 +138,7 @@
       "itemClass": "model",
       "register": "geonovum-building-blocks",
       "version": "0.1",
-      "dateOfLastChange": "2025-04-02",
+      "dateOfLastChange": "2025-04-03",
       "link": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
       "dependsOn": [
         "ogc.geo.geodcat.dcat-ap"

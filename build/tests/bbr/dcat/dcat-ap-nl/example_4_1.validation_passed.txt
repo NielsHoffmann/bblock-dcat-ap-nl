@@ -1,0 +1,7 @@
+Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile
+Generated 2025-04-03T12:24:54.431859+00:00
+=== Files ===
+Using example_4_1.ttl from examples
+Output Turtle example_4_1.ttl created
+=== End Files ===
+

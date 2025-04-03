@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-04-02",
+  "dateOfLastChange": "2025-04-03",
   "link": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.geo.geodcat.dcat-ap"
@@ -39,14 +39,74 @@
   "description": "## DCAT-AP-NL \n\nThis building block provides a framework to test compatibility of the DCAT-AP-NL with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n",
   "examples": [
     {
-      "title": "DCAT-AP-NL example",
-      "content": "An example from the DCAT-AP-NL profile",
+      "title": "DCAT-AP-NL example - Dataset",
+      "content": "An example from the DCAT-AP-NL profile for a Dataset",
       "snippets": [
         {
           "language": "ttl",
           "ref": "./examples/dataset.ttl",
           "code": "## Imports om relevante waardes uit waardelijsten of gegevens uit externe bronnen op te nemen.\n##  Dit is in principe alleen nodig voor validatie en als er gebruik gemaakt kan worden van owl:imports bij validatie.\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n[] owl:imports \n  <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ,\n  <http://data.europa.eu/eli/reg_impl/2023/138/oj> ,\n  <http://data.europa.eu/eli/reg/2010/1089> ,\n  <http://publications.europa.eu/resource/authority/language/NLD> ,\n  <http://www.geonames.org/2750405/about.rdf> ,\n  <http://publications.europa.eu/resource/authority/data-theme/EDUC> .\n## End Import\n\n@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix eli: <http://data.europa.eu/eli/ontology#> .\n\nexampleMS:1T2p3o4B a dcat:Dataset;\n   dct:title \"Naam van de dataset\"@nl;\n   dct:title \"Title of the dataset\"@en;\n   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dct:conformsTo <http://data.europa.eu/eli/reg/2010/1089>;\n   dcat:contactPoint [\n     a <https://json-ld.org/playground/Organization> ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n   dct:creator [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:description \"beschrijving van de dataset\"@nl;\n   dct:description \"description of the dataset in english\"@en;\n   dct:identifier \"https://data.exampleMS.gov/id/dataset/1T2p3o4B\";\n   dcat:keyword \"trefwoord 1\"@nl;\n   dcat:keyword \"trefwoord 2\"@nl;\n   dcat:keyword \"keyword 1\"@en;\n   dcat:keyword \"keyword 2\"@en;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:spatial <https://www.geonames.org/2750405>;\n   dct:spatial [a dct:Location ;\n                  dcat:bbox \"POLYGON ((3.053 47.975,7.24 47.975,7.24 53.504,3.053 53.504,3.053 47.975))\"^^rdf:wktLiteral;\n  ] ;\n   dct:temporal [ a dct:PeriodOfTime ;\n     dcat:startDate \"2016-03-28\"^^xsd:date ;\n     dcat:endDate   \"2018-08-25\"^^xsd:date ;\n     ] ;\n   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC>;\n   dcat:distribution exampleMS:1T2p3o4B-dist-SHP;\n   dcat:distribution exampleMS:1T2p3o4B-dist-WMS\n   .\n\nexampleMS:1T2p3o4B-dist-SHP a dcat:Distribution;\n.\n# wordt verder uitgewerkt in voorbeeld Distributie\n\n# Aanvullingen voor EU waardelijsten, die nog niet volledig zijn ontsloten \n# De dct:RightsStatement zit niet in de waardelijst. Dat lijkt een fout in de waardelijst.\n<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a dct:RightsStatement .\n\n# De typering dct:LinguisticSystem zit niet in de waardelijst. Dat lijkt een fout in de waardelijst.\n<http://publications.europa.eu/resource/authority/language/NLD> a dct:LinguisticSystem .\n\n# Geen RDF van beschikbaar\n<http://data.europa.eu/eli/reg_impl/2023/138/oj> a eli:LegalResource .\n\n# Geen RDF van beschikbaar\n<http://data.europa.eu/eli/reg/2010/1089> a dct:Standard .\n\n# Geonames is niet gedefinieert als een dct:Location. \n<https://www.geonames.org/2750405> a dct:Location .\n\n# Deze zou je kunnen importeren, maar dan krijg je validatiefouten op ConceptScheme shapes, omdat de adms ConceptSchemes niet voldoen aan de ConceptScheme shape van DCAT-AP.\n<http://purl.org/adms/publishertype/LocalAuthority> a skos:Concept ;\n skos:prefLabel\"Local Authority\"@en .",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - Distribution",
+      "content": "An example from the DCAT-AP-NL profile for a Distribution",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/distribution.ttl",
+          "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n\nexampleMS:1T2p3o4B-dist-SHP a dcat:Distribution;\n   dcat:accessURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dcat:downloadURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;\n   dct:conformsTo <http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd> ;\n   dcat:mediaType <https://www.iana.org/assignments/media-types/application/vnd.shp>\n   .",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - Dataservice",
+      "content": "An example from the DCAT-AP-NL profile for a Dataservice",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/dataservice.ttl",
+          "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n\nexampleMS:1T2p3o4B-dataservice-WMS a dcat:DataService;\n   dct:title \"Naam van de dataservice\"@nl;\n   dct:title \"Title of the dataservice\"@en;\n   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dct:conformsTo <http://www.opengis.net/def/serviceType/ogc/wms>;\n   dcat:contactPoint [\n     a vcard:Kind;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n   dct:creator [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:description \"beschrijving van de dataservice\"@nl;\n   dct:description \"description of the dataservice in english\"@en;\n   foaf:page <https://orgea.exampleMS.gov/QoS.html> ;\n   dcat:endpointDescription <https://orgea.exampleMS.gov/services/wms?&request=GetCapabilities&service=WMS>;\n   dcat:endpointURL <https://orgea.exampleMS.gov/services/wms?> ;\n   dct:identifier \"https://data.exampleMS.gov/id/data/1T2p3o4B-dataservice-WMS\";\n   dcat:keyword \"trefwoord 1\"@nl;\n   dcat:keyword \"trefwoord 2\"@nl;\n   dcat:keyword \"keyword 1\"@en;\n   dcat:keyword \"keyword 2\"@en;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC>;\n   dcat:servesDataset exampleMS:1T2p3o4B\n.",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - Catalog",
+      "content": "An example from the DCAT-AP-NL profile for a Catalog",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/catalog.ttl",
+          "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n\nexampleMS:Datacatalog  a dcat:Catalogue;\n  dct:title \"De naam van de catalog\"@nl;\n   dcat:contactPoint [\n     a vcard:Kind ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n  dct:description \"beschrijving van de catalog\"@nl;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n  dcat:dataset exampleMS:1T2p3o4B ;\n  dcat:service exampleMS:1T2p3o4B-dataservice-WMS\n  .",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - CatalogRecord",
+      "content": "An example from the DCAT-AP-NL profile for a CatalogRecord",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/catalogrecord.ttl",
+          "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n\nexampleMS:1T2p3o4B-rec a dcat:CatalogRecord;\n   dct:conformsTo <https://semiceu.github.io/DCAT-AP/releases/3.0.0>;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:modified \"2019-02-27T15:15:08Z\" ; \n   foaf:primaryTopic exampleMS:1T2p3o4B ;\n   dct:source <https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ba83c30f-12f7-4582-a590-852b6d1706de?tab=general>\n  .",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - DatasetSeries",
+      "content": "An example from the DCAT-AP-NL profile for a DatasetSeries",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/datasetseries.ttl",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix example-ds: <https://data.gov.gr/id/dataset/> .\n@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\nexample-ds:BeePopulation2022 a dcat:Dataset;\n  dcat:inSeries example-ser:BeePopulation .\n\nexample-ds:BeePopulation2023 a dcat:Dataset;\n  dcat:inSeries example-ser:BeePopulation .\n\nexample-ser:BeePopulation a dcat:DatasetSeries;\n  dct:title \"Bee population\"@en;\n  dct:description \"Bee population annual serie\"@en;\n  .",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl"
         }
       ]
     }
