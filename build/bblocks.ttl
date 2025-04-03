@@ -15,10 +15,10 @@
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
+            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-04-03"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
@@ -37,27 +37,24 @@
 
 <https://nielshoffmann.github.io/bblock-dcat-ap-nl/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0" ;
-    dct:abstract """These building blocks are an experimental implementation of DCAT-AP-NL.
+    rdfs:label "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0 (Obsolete)" ;
+    dct:abstract """__Note__ This repository has moved to: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
 """ ;
-    dct:description """The purpose of this collection is to experiment with the building block approach and to showcase how
-this potentially can add value.
-""" ;
-    skos:prefLabel "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0" ;
+    skos:prefLabel "Building Blocks - OGC Building Blocks for DCAT-AP-NL 3.0 (Obsolete)" ;
     bblocks:hasValidationReport <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-03T13:12:03.506172"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-03T13:12:03.441056"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-03T14:22:08.183053"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-03T14:22:08.117259"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:4598885c490ebc4cb59a9b650b90ab0631c14b5c" ;
-            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ] ;
+            dct:hasVersion "git:6f48dc838a6dbfb5892c0e3be919a70bbbcc8033" ;
+            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

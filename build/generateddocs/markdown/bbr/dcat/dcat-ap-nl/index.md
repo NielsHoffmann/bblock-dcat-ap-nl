@@ -254,7 +254,8 @@ exampleMS:1T2p3o4B-rec a dcat:CatalogRecord;
 ### DCAT-AP-NL example - DatasetSeries
 An example from the DCAT-AP-NL profile for a DatasetSeries
 
-Note: The shacl Validation fails on this example for a number of missing properties...
+
+Note: The shacl Validation fails on this example. a number of properties is missing...
 #### ttl
 ```ttl
 @prefix dcat: <http://www.w3.org/ns/dcat#> .

@@ -109,7 +109,7 @@
     },
     {
       "title": "DCAT-AP-NL example - DatasetSeries",
-      "content": "An example from the DCAT-AP-NL profile for a DatasetSeries\n\nNote: The shacl Validation fails on this example for a number of missing properties...",
+      "content": "An example from the DCAT-AP-NL profile for a DatasetSeries\n\n\nNote: The shacl Validation fails on this example. a number of properties is missing...",
       "snippets": [
         {
           "language": "ttl",
