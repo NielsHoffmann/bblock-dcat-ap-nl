@@ -13,12 +13,12 @@
     rdfs:label "DCAT-AP-NL profile" ;
     dct:abstract "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)" ;
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-04-03"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
@@ -27,6 +27,9 @@
         "DCAT-AP-NL",
         "profile" ;
     bblocks:dependsOn <https://nielshoffmann.github.io/ogc.geo.geodcat.dcat-ap> ;
+    bblocks:hasSchema <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json>,
+        <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml> ;
+    bblocks:hasShaclRule <https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/rules.shacl> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -46,15 +49,15 @@ this potentially can add value.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-03T12:24:54.516813"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-03T12:24:54.450526"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-03T13:12:03.506172"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-03T13:12:03.441056"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:386fb20bd765a61e3c6207fbbb9ac90d7e2e2eb5" ;
-            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:4598885c490ebc4cb59a9b650b90ab0631c14b5c" ;
+            rdfs:seeAlso <https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

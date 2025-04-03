@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-04-03T12:24:54.449519+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 1 / 1 (100%)
+            <small class="datetime">Generated at 2025-04-03T13:12:03.440037+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 0 / 1 (0%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -62,7 +62,7 @@
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl" id="bblock-geonovum.bbr.dcat.dcat-ap-nl">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl">
                                     <div class="flex-fill">
@@ -70,16 +70,16 @@
                                         <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl</small>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (83.33% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 6 / 6
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 5 / 6
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -102,6 +102,24 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,6 +145,24 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_2_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -152,6 +188,24 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_3_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,6 +231,24 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_4_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_4_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -202,6 +274,24 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_5_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_5_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -219,7 +309,7 @@
                                                     <a href="bbr/dcat/dcat-ap-nl/example_6_1.ttl" target="_blank">example_6_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
@@ -227,6 +317,97 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_6_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_6_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/dcat-ap-nl/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (12):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dct:accessRights
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:accessRights
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dct:accessRights
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:accessRights
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dcat:contactPoint
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dcat:contactPoint
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dcat:contactPoint
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dcat:contactPoint
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dct:creator
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:creator
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dct:creator
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:creator
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dct:identifier
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:identifier
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dct:identifier
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:identifier
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dct:publisher
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:publisher
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dct:publisher
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:publisher
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
+  	Focus Node: example-ds:BeePopulation2022
+  	Result Path: dcat:theme
+  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dcat:theme
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
+  	Focus Node: example-ds:BeePopulation2023
+  	Result Path: dcat:theme
+  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dcat:theme
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b3: *none*
+ - Shape _:nb3efda5d75524584a7388c7417953b38b4: *none*
+ - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2022,example-ds:BeePopulation2023
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
