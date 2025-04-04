@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0
-Generated 2025-04-03T14:06:57.075575+00:00
+Generated 2025-04-04T12:05:05.592618+00:00
 === Files ===
 Using example_3_1.ttl from examples
 Output Turtle example_3_1.ttl created
@@ -11,16 +11,16 @@ Validation result for _sources/dcat-ap-nl/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:DatasetShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb4: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nb7c06ed3c3a148d486f74070795cd6bdb3: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
  - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
  - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
  - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS
 
 === End SHACL ===

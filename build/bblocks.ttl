@@ -13,14 +13,14 @@
     rdfs:label "DCAT-AP-NL profile 3.0" ;
     dct:abstract "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)" ;
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-03"^^xsd:date ;
+    dct:modified "2025-04-04"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -49,11 +49,11 @@ this potentially can add value.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-03T14:06:57.188837"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-03T14:06:57.121015"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-04T12:05:05.703090"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-04T12:05:05.639178"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:8d4925f84a6ad843ac272251ca0834985d92bf89" ;
+            dct:hasVersion "git:34d3f89012029ef09baeca9ad226dde6ac1ba9c8" ;
             rdfs:seeAlso <https://geonovum.github.io/bblock-dcat-ap-nl/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
