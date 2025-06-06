@@ -255,31 +255,6 @@ exampleMS:1T2p3o4B-rec a dcat:CatalogRecord;
   .
 ```
 
-
-### DCAT-AP-NL example - DatasetSeries
-An example from the DCAT-AP-NL profile for a DatasetSeries
-
-Note: The shacl Validation fails on this example for a number of missing properties...
-#### ttl
-```ttl
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix example-ds: <https://data.gov.gr/id/dataset/> .
-@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-example-ds:BeePopulation2022 a dcat:Dataset;
-  dcat:inSeries example-ser:BeePopulation .
-
-example-ds:BeePopulation2023 a dcat:Dataset;
-  dcat:inSeries example-ser:BeePopulation .
-
-example-ser:BeePopulation a dcat:DatasetSeries;
-  dct:title "Bee population"@en;
-  dct:description "Bee population annual serie"@en;
-  .
-```
-
 ## Schema
 
 ```yaml

@@ -9,10 +9,15 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-04-04",
+  "dateOfLastChange": "2025-06-06",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "ogc.geo.geodcat.dcat-ap"
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+    "geonovum.bbr.dcat.dcat-ap-nl-datasetseries",
+    "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog"
   ],
   "sources": [
     {
@@ -32,8 +37,26 @@
   ],
   "highlighted": true,
   "shaclRules": {
-    "geonovum.bbr.dcat.dcat-ap-nl": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/rules.shacl"
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl"
     ]
   },
   "schema": {
@@ -43,7 +66,7 @@
   "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/schema.json",
   "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl/",
   "description": "## DCAT-AP-NL 3.0\n\nThese building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n\n\nImplementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.\n\n\n",
   "examples": [
@@ -104,18 +127,6 @@
           "ref": "./examples/catalogrecord.ttl",
           "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n\nexampleMS:1T2p3o4B-rec a dcat:CatalogRecord;\n   dct:conformsTo <https://semiceu.github.io/DCAT-AP/releases/3.0.0>;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:modified \"2019-02-27T15:15:08Z\" ; \n   foaf:primaryTopic exampleMS:1T2p3o4B ;\n   dct:source <https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ba83c30f-12f7-4582-a590-852b6d1706de?tab=general>\n  .",
           "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl"
-        }
-      ]
-    },
-    {
-      "title": "DCAT-AP-NL example - DatasetSeries",
-      "content": "An example from the DCAT-AP-NL profile for a DatasetSeries\n\nNote: The shacl Validation fails on this example for a number of missing properties...",
-      "snippets": [
-        {
-          "language": "ttl",
-          "ref": "./examples/datasetseries.ttl",
-          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix example-ds: <https://data.gov.gr/id/dataset/> .\n@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\nexample-ds:BeePopulation2022 a dcat:Dataset;\n  dcat:inSeries example-ser:BeePopulation .\n\nexample-ds:BeePopulation2023 a dcat:Dataset;\n  dcat:inSeries example-ser:BeePopulation .\n\nexample-ser:BeePopulation a dcat:DatasetSeries;\n  dct:title \"Bee population\"@en;\n  dct:description \"Bee population annual serie\"@en;\n  .",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_6_1.ttl"
         }
       ]
     }

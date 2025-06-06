@@ -1,0 +1,157 @@
+{
+  "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl-dataservice - DCAT-AP-NL profile 3.0 - Dataservice",
+  "bblockName": "DCAT-AP-NL profile 3.0 - Dataservice",
+  "bblockId": "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+  "generated": "2025-06-06T12:56:02.755787+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_1_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 16,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "focusNodes": {
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": []
+                },
+                "_:n249ed5242a4e40f1bedf26c9bd12cf48b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:n249ed5242a4e40f1bedf26c9bd12cf48b4": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b4: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_2_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_2_1.ttl",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 67,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "focusNodes": {
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": [
+                    "exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068"
+                  ]
+                },
+                "_:n249ed5242a4e40f1bedf26c9bd12cf48b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
+                "_:n249ed5242a4e40f1bedf26c9bd12cf48b4": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068\n - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b4: *none*\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}

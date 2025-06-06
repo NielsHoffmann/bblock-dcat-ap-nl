@@ -1,0 +1,55 @@
+
+
+{
+  "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+  "name": "DCAT-AP-NL profile 3.0 - Distribution",
+  "abstract": "DCAT-AP-NL 3.0 Distribution",
+  "status": "under-development",
+  "dateTimeAddition": "2025-06-06T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-06-06",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+  ],
+  "sources": [
+    {
+      "title": "DCAT-AP-NL 3.0 Specification",
+      "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
+    }
+  ],
+  "shaclShapes": [
+    "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+  ],
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "DCAT-AP-NL",
+    "Distribution",
+    "profile"
+  ],
+  "highlighted": true,
+  "shaclRules": {
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ]
+  },
+  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## DCAT-AP-NL 3.0 - Distribution\n\nThese building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n\n\nImplementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.\n\n\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitPath": "_sources/dcat-ap-nl-distribution"
+}

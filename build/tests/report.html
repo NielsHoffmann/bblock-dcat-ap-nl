@@ -51,35 +51,79 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-04-04T12:05:05.638152+00:00</small>
-                <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 0 / 1 (0%)
+            <small class="datetime">Generated at 2025-06-06T12:56:03.303733+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 7 / 7 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl" id="bblock-geonovum.bbr.dcat.dcat-ap-nl">
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-catalog" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-catalog">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl">
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-catalog">
                                     <div class="flex-fill">
-                                        DCAT-AP-NL profile 3.0
-                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl</small>
+                                        DCAT-AP-NL profile 3.0 - Catalog
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-catalog</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (83.33% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-catalog">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 5 / 6
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-catalogrecord" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-catalogrecord">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-catalogrecord">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0 - Catalogrecord
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-catalogrecord</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-catalogrecord">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-dataservice" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-dataservice">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-dataservice">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0 - Dataservice
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-dataservice</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-dataservice">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 2 / 2
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -91,7 +135,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl-dataservice/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -103,22 +147,17 @@
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
  - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b3: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b4: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -134,7 +173,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_2_1.ttl" target="_blank">example_2_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl-dataservice/example_2_1.ttl" target="_blank">example_2_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -146,27 +185,112 @@
                                                                     <div class="font-monospace entry-message section-files ">Using example_2_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:DatasetShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068
+ - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b3: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
- - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape _:n249ed5242a4e40f1bedf26c9bd12cf48b4: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-dataset" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-dataset">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-dataset">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0 - Dataset
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-dataset</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-dataset">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-datasetseries" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-datasetseries">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-datasetseries">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0 - DatasetSeries
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-datasetseries</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-datasetseries">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl-distribution" id="bblock-geonovum.bbr.dcat.dcat-ap-nl-distribution">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl-distribution">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0 - Distribution
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl-distribution</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl-distribution">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.bbr.dcat.dcat-ap-nl" id="bblock-geonovum.bbr.dcat.dcat-ap-nl">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-geonovum\.bbr\.dcat\.dcat-ap-nl">
+                                    <div class="flex-fill">
+                                        DCAT-AP-NL profile 3.0
+                                        <small class="ms-2 bblock-id">geonovum.bbr.dcat.dcat-ap-nl</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.bbr.dcat.dcat-ap-nl">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 5 / 5
+                                        </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -177,7 +301,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_3_1.ttl" target="_blank">example_3_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -186,25 +310,20 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_3_1.ttl from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:DatasetShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb3: *none*
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb4: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
- - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -220,7 +339,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_4_1.ttl" target="_blank">example_4_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl/example_2_1.ttl" target="_blank">example_2_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -229,25 +348,20 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_4_1.ttl from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_4_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:DatasetShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb3: *none*
  - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -263,7 +377,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_5_1.ttl" target="_blank">example_5_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl/example_3_1.ttl" target="_blank">example_3_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -272,25 +386,20 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_5_1.ttl from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_5_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_3_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec
- - Shape dcatapnl-sh:DatasetShape: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb3: *none*
+ - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb4: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
- - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -306,107 +415,67 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/dcat/dcat-ap-nl/example_6_1.ttl" target="_blank">example_6_1.ttl</a>
+                                                    <a href="bbr/dcat/dcat-ap-nl/example_4_1.ttl" target="_blank">example_4_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_6_1.ttl from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_6_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_4_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_4_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/dcat-ap-nl/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Validation Report
-  Conforms: False
-  Results (12):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dct:accessRights
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:accessRights
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_accessRights_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:accessRights
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:accessRights
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dcat:contactPoint
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dcat:contactPoint
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_contactPoint_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dcat:contactPoint
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dcat:contactPoint
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dct:creator
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:creator
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_creator_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:creator
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:creator
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dct:identifier
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:identifier
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_identifier_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:identifier
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:identifier
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dct:publisher
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dct:publisher
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_publisher_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dct:publisher
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dct:publisher
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
-  	Focus Node: example-ds:BeePopulation2023
-  	Result Path: dcat:theme
-  	Message: Less than 1 values on example-ds:BeePopulation2023-&gt;dcat:theme
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: dcatapnl-sh:DatasetShape_theme_minCount
-  	Focus Node: example-ds:BeePopulation2022
-  	Result Path: dcat:theme
-  	Message: Less than 1 values on example-ds:BeePopulation2022-&gt;dcat:theme
+  Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb3: *none*
- - Shape dcatapnl-sh:DatasetSeriesShape: example-ser:BeePopulation
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
- - Shape dcatapnl-sh:DatasetShape: example-ds:BeePopulation2023,example-ds:BeePopulation2022
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
- - Shape _:nc562613b4fbc465abe15c3e575fa61afb4: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb3: *none*
  - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/dcat/dcat-ap-nl/example_5_1.ttl" target="_blank">example_5_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_5_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_5_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb3: *none*
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape _:ne042f1b4308c45dbb229c6712569888bb4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>

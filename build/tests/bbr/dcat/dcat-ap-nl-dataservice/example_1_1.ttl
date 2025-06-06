@@ -1,0 +1,21 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix exBB: <http://example/buildingblock> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+exBB:Catalog a dcat:Catalog ;
+    dct:description "voorbeeld van een catalogus"@nl ;
+    dct:publisher [ a foaf:Agent ;
+            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;
+            foaf:name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dct:title "Example NGR Catalog"@en,
+        "Voorbeeld NGR Catalog"@nl ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "Kadaster"@nl ;
+            vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;
+            vcard:hasURL "https://www.kadaster.nl" ;
+            vcard:organization-name "Kadaster"@nl ] ;
+    dcat:service exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068 .
+
