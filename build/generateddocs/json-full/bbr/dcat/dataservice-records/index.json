@@ -1,0 +1,82 @@
+
+
+{
+  "itemIdentifier": "geonovum.bbr.dcat.dataservice-records",
+  "name": "DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
+  "abstract": "DCAT-AP-NL 3.0 Dataservice profile bound to OGC API Records",
+  "status": "under-development",
+  "dateTimeAddition": "2025-06-06T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-06-06",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+    "ogc.geo.geodcat.records-ontology",
+    "ogc.api.records.v1.schemas.recordGeoJSON"
+  ],
+  "sources": [
+    {
+      "title": "DCAT-AP-NL 3.0 Specification",
+      "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
+    },
+    {
+      "title": "API Records Specification Repository",
+      "link": "https://github.com/opengeospatial/ogcapi-records"
+    }
+  ],
+  "shaclShapes": [
+    "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+  ],
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "DCAT-AP-NL",
+    "Dataservice",
+    "Records",
+    "profile"
+  ],
+  "highlighted": true,
+  "shaclRules": {
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ],
+    "ogc.geo.geodcat.records-ontology": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+    ]
+  },
+  "schema": {
+    "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.yaml",
+    "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.json"
+  },
+  "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/schema.yaml",
+  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
+  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dataservice-records/",
+  "examples": [
+    {
+      "title": "DCAT-AP-NL 3.0 Dataservice example showing binding to OGC API record schema.",
+      "content": "This example is to test records examples.\n\nThis snippet was retrieved from [https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json](https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json).",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "examples/dataservice-record.ttl",
+          "code": "@prefix exBB: <http://example/buildingblock> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n\nexBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068 a dcat:DataService ;\n    dct:title \"BRT TOP10NL OGC API Features\"@nl ;\n    dcat:endpointDescription <https://api.pdok.nl/brt/top10nl/ogc/v1> ;\n    dcat:endpointURL <https://api.pdok.nl/brt/top10nl/ogc/v1/api> ;\n    dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,\n        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;\n    dcat:contactPoint [ a vcard:Individual ;\n            vcard:fn \"Klantcontactcenter\"@nl ;\n            vcard:hasAddress [ a vcard:Address ;\n                    vcard:country-name \"Nederland\" ;\n                    vcard:locality \"Apeldoorn\" ;\n                    vcard:postal-code \"7300 GH\" ;\n                    vcard:region \"Gelderland\" ;\n                    vcard:street-address \"Postbus 9046\" ] ;\n            vcard:hasEmail <mailto:kcc@kadaster.nl> ;\n            vcard:hasTelephone <tel:+31088-1832200> ;\n            vcard:hasURL <https://www.kadaster.nl> ;\n            vcard:organization-name \"Kadaster\"@nl ] ;\n    dct:description \"TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .\"@nl ;\n    dct:identifier \"\"^^xsd:string ;\n    dct:license  <http://creativecommons.org/licenses/by/4.0/deed.nl> ;\n    dct:publisher [\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n            a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl;\n        ] ;    \n    dcat:theme [ a skos:Concept ;\n            dct:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationaal\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/sr> ;\n            skos:prefLabel \"Zeegebieden\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/gn> ;\n            skos:prefLabel \"Geografische namen\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_b79e35eb> ;\n            skos:prefLabel \"Mobiliteit\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;\n            skos:prefLabel \"HVD\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/lc> ;\n            skos:prefLabel \"Bodemgebruik\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/tn> ;\n            skos:prefLabel \"Vervoersnetwerken\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_ac64a52d> ;\n            skos:prefLabel \"Geospatiale data\"@nl ] ;        \n\n    rec:format <http://example.com/records/OAPIF> ;\n    rec:hasLinkTemplate [ a <http://example.com/records/image/png> ;\n            rdfs:label \"BRT TOP10NL OGC API Features\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n            oa:hasTarget \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\"^^xsd:string ;\n            ] ;\n                .\n\n",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataservice-records/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for GeoDCAT - defines all extra elements\n  defined by GeoDCAT so that the JSON-LD context can map to GeoDCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml\n",
+  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitPath": "_sources/dataservice-records"
+}
