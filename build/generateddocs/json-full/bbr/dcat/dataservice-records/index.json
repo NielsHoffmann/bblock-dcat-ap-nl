@@ -13,8 +13,7 @@
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
-    "ogc.geo.geodcat.records-ontology",
-    "ogc.api.records.v1.schemas.recordGeoJSON"
+    "ogc.geo.geodcat.dcat-records"
   ],
   "sources": [
     {
@@ -52,12 +51,13 @@
       "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
     ]
   },
+  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
   "schema": {
     "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.yaml",
     "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.json"
   },
   "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/schema.yaml",
-  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
+  "sourceLdContext": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/context.jsonld",
   "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/",
   "rdfData": [],
   "validationPassed": true,
@@ -76,7 +76,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for GeoDCAT - defines all extra elements\n  defined by GeoDCAT so that the JSON-LD context can map to GeoDCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for DCAT Dataservoce - defines all\n  extra elements defined by CAT so that the JSON-LD context can map to DCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/dcat-records/schema.yaml\n",
   "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "gitPath": "_sources/dataservice-records"
 }

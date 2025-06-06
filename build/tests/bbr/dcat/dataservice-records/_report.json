@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
   "bblockName": "DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
   "bblockId": "geonovum.bbr.dcat.dataservice-records",
-  "generated": "2025-06-06T13:18:10.677460+00:00",
+  "generated": "2025-06-06T17:27:48.832488+00:00",
   "result": true,
   "items": [
     {
@@ -49,10 +49,13 @@
             {
               "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                "_:n226ef962ac434a2290411bc69212a912b4": {
                   "nodes": []
                 },
-                "_:nc96a55d01de3428ba32063f410508982b4": {
+                "_:n226ef962ac434a2290411bc69212a912b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:DataServiceShape": {
@@ -60,18 +63,15 @@
                     "exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068"
                   ]
                 },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 },
-                "_:nc96a55d01de3428ba32063f410508982b3": {
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:nc96a55d01de3428ba32063f410508982b4: *none*\n - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape _:nc96a55d01de3428ba32063f410508982b3: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape _:n226ef962ac434a2290411bc69212a912b4: *none*\n - Shape _:n226ef962ac434a2290411bc69212a912b3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n"
             }
           ]
         }

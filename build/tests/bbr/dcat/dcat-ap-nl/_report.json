@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0",
   "bblockName": "DCAT-AP-NL profile 3.0",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl",
-  "generated": "2025-06-06T13:18:11.142700+00:00",
+  "generated": "2025-06-06T17:27:49.272784+00:00",
   "result": true,
   "items": [
     {
@@ -41,35 +41,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab3": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: *none*\n"
             }
           ]
         }
@@ -111,35 +96,22 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab3": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
-                  "nodes": []
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B-dist-SHP"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP\n"
             }
           ]
         }
@@ -181,37 +153,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab3": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": [
-                    "exampleMS:1T2p3o4B-dataservice-WMS"
-                  ]
-                },
-                "_:ndf6a71fe0267495192023221703134eab4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS\n - Shape _:ndf6a71fe0267495192023221703134eab4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: *none*\n"
             }
           ]
         }
@@ -253,35 +208,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab3": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: *none*\n"
             }
           ]
         }
@@ -323,35 +263,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataservice/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab3": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DataServiceShape": {
-                  "nodes": []
-                },
-                "_:ndf6a71fe0267495192023221703134eab4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape": {
+                "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape _:ndf6a71fe0267495192023221703134eab4: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: *none*\n"
             }
           ]
         }
