@@ -1,0 +1,10 @@
+- title: DCAT-AP-NL 3.0 Dataservice example showing binding to OGC API record schema.
+  content: |-
+    This example is to test records examples.
+
+    This snippet was retrieved from [https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json](https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json).
+    
+  snippets:
+    - language: ttl
+      ref: examples/dataservice-record.ttl
+      
