@@ -1,0 +1,79 @@
+
+
+{
+  "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+  "name": "DCAT-AP-NL profile 3.0 - Dataservice",
+  "abstract": "DCAT-AP-NL 3.0 Dataservice",
+  "status": "under-development",
+  "dateTimeAddition": "2025-06-06T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-06-06",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+  ],
+  "sources": [
+    {
+      "title": "DCAT-AP-NL 3.0 Specification",
+      "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
+    }
+  ],
+  "shaclShapes": [
+    "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+  ],
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "DCAT-AP-NL",
+    "Dataservice",
+    "profile"
+  ],
+  "highlighted": true,
+  "shaclRules": {
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ]
+  },
+  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl-dataservice/",
+  "description": "## DCAT-AP-NL 3.0 - Dataservice\n\nThese building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n\n\nImplementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.\n\n\n",
+  "examples": [
+    {
+      "title": "DCAT-AP-NL example - Catalog",
+      "content": "An example from the DCAT-AP-NL profile for a Catalog",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/catalog.ttl",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix exBB: <http://example/buildingblock> .\n\nexBB:Catalog a dcat:Catalog ;\n    dct:title \"Voorbeeld NGR Catalog\"@nl;\n    dct:title \"Example NGR Catalog\"@en;\n   dcat:contactPoint [\n     a vcard:Kind ;\n     vcard:fn \"Kadaster\"@nl ;\n     vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;\n     vcard:hasURL \"https://www.kadaster.nl\" ;\n     vcard:organization-name \"Kadaster\"@nl ;\n     ] ; \n  dct:description \"voorbeeld van een catalogus\"@nl;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n  dcat:service exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068\n  .",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "DCAT-AP-NL example - Dataservice",
+      "content": "An example from the DCAT-AP-NL profile for a Dataservice",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/dataservice.ttl",
+          "code": "@prefix exBB: <http://example/buildingblock> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n\nexBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068 a dcat:DataService ;\n    dct:title \"BRT TOP10NL OGC API Features\"@nl ;\n    dcat:endpointDescription <https://api.pdok.nl/brt/top10nl/ogc/v1> ;\n    dcat:endpointURL <https://api.pdok.nl/brt/top10nl/ogc/v1/api> ;\n    dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,\n        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;\n    dcat:contactPoint [ a vcard:Individual ;\n            vcard:fn \"Klantcontactcenter\"@nl ;\n            vcard:hasAddress [ a vcard:Address ;\n                    vcard:country-name \"Nederland\" ;\n                    vcard:locality \"Apeldoorn\" ;\n                    vcard:postal-code \"7300 GH\" ;\n                    vcard:region \"Gelderland\" ;\n                    vcard:street-address \"Postbus 9046\" ] ;\n            vcard:hasEmail <mailto:kcc@kadaster.nl> ;\n            vcard:hasTelephone <tel:+31088-1832200> ;\n            vcard:hasURL <https://www.kadaster.nl> ;\n            vcard:organization-name \"Kadaster\"@nl ] ;\n    dct:description \"TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .\"@nl ;\n    dct:identifier \"\"^^xsd:string ;\n    dct:license  <http://creativecommons.org/licenses/by/4.0/deed.nl> ;\n    dct:publisher [\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n            a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl;\n        ] ;    \n    dcat:theme [ a skos:Concept ;\n            dct:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationaal\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/sr> ;\n            skos:prefLabel \"Zeegebieden\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/gn> ;\n            skos:prefLabel \"Geografische namen\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_b79e35eb> ;\n            skos:prefLabel \"Mobiliteit\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;\n            skos:prefLabel \"HVD\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/lc> ;\n            skos:prefLabel \"Bodemgebruik\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/tn> ;\n            skos:prefLabel \"Vervoersnetwerken\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_ac64a52d> ;\n            skos:prefLabel \"Geospatiale data\"@nl ] ;        \n                .",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataservice/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitPath": "_sources/dcat-ap-nl-dataservice"
+}
