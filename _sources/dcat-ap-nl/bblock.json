@@ -9,7 +9,13 @@
   "dateOfLastChange": "2025-04-03",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "ogc.geo.geodcat.dcat-ap"
+        "geonovum.bbr.dcat.dcat-ap-nl-catalog",
+        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
+        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+        "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+        "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries"
+
       ],
   "sources": [
     {

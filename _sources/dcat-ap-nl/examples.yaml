@@ -38,12 +38,12 @@
     - language: ttl
       ref: ./examples/catalogrecord.ttl
 
-- title: DCAT-AP-NL example - DatasetSeries
-  content: |-
-    An example from the DCAT-AP-NL profile for a DatasetSeries
+# - title: DCAT-AP-NL example - DatasetSeries
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a DatasetSeries
 
-    Note: The shacl Validation fails on this example for a number of missing properties...
+#     Note: The shacl Validation fails on this example for a number of missing properties...
     
-  snippets:
-    - language: ttl
-      ref: ./examples/datasetseries.ttl
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/datasetseries.ttl

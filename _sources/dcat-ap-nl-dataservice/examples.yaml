@@ -1,0 +1,16 @@
+
+- title: DCAT-AP-NL example - Catalog
+  content: |-
+    An example from the DCAT-AP-NL profile for a Catalog
+
+  snippets:
+    - language: ttl
+      ref: ./examples/catalog.ttl
+
+- title: DCAT-AP-NL example - Dataservice
+  content: |-
+    An example from the DCAT-AP-NL profile for a Dataservice
+
+  snippets:
+    - language: ttl
+      ref: ./examples/dataservice.ttl

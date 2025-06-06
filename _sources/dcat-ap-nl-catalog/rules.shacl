@@ -1,0 +1,67 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix eush: <https://purl.eu/ns/shacl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dcatapnl-sh: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/> .
+
+###########################################
+#  dcat:Catalog
+###########################################
+
+dcatapnl-sh:CatalogShape a sh:NodeShape;
+  sh:name "Catalog"@en;
+  sh:targetClass dcat:Catalog;
+  sh:property
+    dcatapnl-sh:CatalogShape_applicableLegislation_nodeKind,
+    dcatapnl-sh:CatalogShape_contactPoint_nodeKind,
+    dcatapnl-sh:CatalogShape_contactPoint_minCount,
+    dcatapnl-sh:CatalogShape_contactPoint_maxCount,
+    dcatapnl-sh:CatalogShape_dataset_minCount
+.
+
+dcatapnl-sh:CatalogShape_applicableLegislation_nodeKind
+  sh:name "applicable legislation"@en;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:path dcatap:applicableLegislation;
+  eush:message "The expected value for applicable legislation is a rdfs:Resource (URI or blank node)"@en 
+.
+
+dcatapnl-sh:CatalogShape_contactPoint_nodeKind
+  sh:description "Contact information that can be used for sending comments about the Catalogue."@en;
+  sh:name "contact point"@en;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:path dcat:contactPoint;
+  eush:message "The expected value for theme is a rdfs:Resource (URI or blank node)"@en 
+.
+
+dcatapnl-sh:CatalogShape_contactPoint_minCount
+  sh:minCount 1;
+  sh:name "contact point"@en;
+  sh:path dcat:contactPoint;
+  eush:message "Minimally 1 values are expected for contact point"@en 
+.
+
+dcatapnl-sh:CatalogShape_contactPoint_maxCount
+  sh:maxCount 1;
+  sh:name "contact point"@en;
+  sh:path dcat:contactPoint;
+  eush:message "Maximally 1 values are allowed for contact point"@en 
+.
+
+# dcatapnl-sh:CatalogShape_dataset_minCount
+#   sh:minCount 1;
+#   sh:name "dataset"@en;
+#   sh:path dcat:dataset;
+#   eush:message "Minimally 1 values are expected for dataset"@en 
+# .
