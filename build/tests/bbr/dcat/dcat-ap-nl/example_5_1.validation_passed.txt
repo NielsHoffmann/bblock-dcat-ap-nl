@@ -1,17 +1,17 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0
-Generated 2025-06-06T17:27:49.272732+00:00
+Generated 2025-06-10T09:15:21.996067+00:00
 === Files ===
 Using example_5_1.ttl from examples
 Output Turtle example_5_1.ttl created
 === End Files ===
 
 === SHACL ===
-Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:
+Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:
   Validation Report
   Conforms: True
   
-Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:
- - Shape dcatapnl-sh:DistributionShape: *none*
+Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:
+ - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec
 
 === End SHACL ===
 
