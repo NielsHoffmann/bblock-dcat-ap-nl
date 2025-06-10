@@ -7,4 +7,12 @@
   snippets:
     - language: ttl
       ref: examples/dataservice-record.ttl
-      
+
+- title: DCAT-AP-NL 3.0 Dataservice example showing binding to OGC API record schema.
+  content: |-
+    This example is to test records examples.
+   
+  snippets:
+    - language: json
+      ref: examples/dataservice.json
+      base-uri: "http://example.com/records/"
