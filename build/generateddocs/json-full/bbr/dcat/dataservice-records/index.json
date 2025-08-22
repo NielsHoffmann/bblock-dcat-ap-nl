@@ -9,11 +9,11 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-06-10",
+  "dateOfLastChange": "2025-08-22",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
-    "ogc.geo.geodcat.dcat-records"
+    "ogc.geo.geodcat.dcat-records",
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice"
   ],
   "sources": [
     {
@@ -36,8 +36,11 @@
     "Records",
     "profile"
   ],
-  "highlighted": true,
+  "highlighted": false,
   "shaclRules": {
+    "ogc.geo.geodcat.records-ontology": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+    ],
     "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
       "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl"
     ],
@@ -46,21 +49,17 @@
     ],
     "ogc.geo.geodcat.dcat-ap": [
       "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
-    ],
-    "ogc.geo.geodcat.records-ontology": [
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
     ]
   },
-  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
   "schema": {
     "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.yaml",
     "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/schema.json"
   },
   "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/schema.yaml",
-  "sourceLdContext": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/context.jsonld",
+  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
   "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dataservice-records/",
   "examples": [
     {
@@ -83,8 +82,18 @@
           "language": "json",
           "ref": "examples/dataservice.json",
           "base-uri": "http://example.com/records/",
-          "code": "{\n  \"@context\": [\n    \"https://schema.org/\",\n    \"http://purl.org/dc/terms/\",\n    \"http://www.w3.org/ns/dcat#\",\n    \"http://xmlns.com/foaf/0.1/\",\n    \"http://www.opengis.net/def/dcat-ap/sjp/\" \n     ],\n  \"id\": \"https://data.overheid.nl/catalogus/record/pdok-top10nl-ogc-api-features-service-record\",\n  \"conformsTo\": [\n      \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core\",\n      \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30\",\n      \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson\"\n    ],\n  \"type\": \"dcat:CatalogRecord\",\n    \"properties\": {\n\n  \"dct:identifier\": \"pdok-top10nl-ogc-api-features-service-record\",\n  \"dct:issued\": \"2024-01-15T10:00:00Z\", \n  \"dct:modified\": \"2025-06-06T17:36:43Z\", \n  \"dct:language\": \"nl\",\n  \"dct:creator\": { \n    \"@type\": \"schema:Organization\",\n    \"schema:name\": \"Nationaal Georegister (PDOK)\",\n    \"schema:url\": \"https://www.pdok.nl/\"\n  },\n  \"dcat:theme\": [ \n    \"http://publications.europa.eu/resource/authority/data-theme/GEOS\" \n  ],\n  \"dcat:keyword\": [ \n    \"OGC API\", \"Features\", \"Geospatial API\", \"Data Service\", \"Catalog\"\n  ],\n  \"dcat:primaryTopic\": {\n    \"@id\": \"https://api.pdok.nl/brt/top10nl/ogc/v1\",\n    \"@type\": [\n      \"dcat:DataService\",\n      \"schema:Service\"\n    ],\n    \"dct:title\": \"OGC API Features - TOP10NL Service\",\n    \"dct:description\": \"This OGC API Features service provides programmatic access to the TOP10NL dataset, offering detailed topographic information of the Netherlands (buildings, roads, water bodies, land use). It allows for querying, filtering, and retrieving geographic features following OGC API standards.\",\n    \"dct:publisher\": {\n      \"@type\": \"schema:Organization\",\n      \"@id\": \"https://www.kadaster.nl/\",\n      \"schema:name\": \"Kadaster\",\n      \"schema:url\": \"https://www.kadaster.nl/\"\n    },\n    \n    \"dcat:endpointURL\": \"https://api.pdok.nl/brt/top10nl/ogc/v1\",\n    \"dcat:endpointDescription\": {\n      \"@id\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n      \"@type\": \"dcat:Distribution\",\n      \"dct:title\": \"OpenAPI documentation for TOP10NL OGC API Features\",\n      \"dct:format\": \"http://publications.europa.eu/resource/authority/file-type/JSON\",\n      \"dcat:mediaType\": \"application/vnd.oai.openapi+json;version=3.0\"\n    },\n    \"schema:serviceType\": \"OGC API Features\",\n    \"schema:url\": \"https://api.pdok.nl/brt/top10nl/ogc/v1\",\n    \"foaf:page\": \"https://www.pdok.nl/downloads/-/top10nl-ogc-api-features\", \n    \"dcat:theme\": [ \n      \"http://publications.europa.eu/resource/authority/data-theme/GEOS\", \n      \"http://inspire.ec.europa.eu/theme/tn\" \n    ],\n    \"dcat:keyword\": [ \n      \"OGC API Features\", \"TOP10NL\", \"BGT\", \"Basisregistratie Topografie\", \"PDOK\", \"Kadaster\", \"Geodata\", \"API\", \"Features API\", \"Web Service\"\n    ],\n    \"dct:license\": \"https://creativecommons.org/publicdomain/zero/1.0/\", \n    \"dct:accessRights\": \"http://publications.europa.eu/resource/authority/access-right/PUBLIC\", \n    \"dcat:servesDataset\": {\n      \"@id\": \"https://data.overheid.nl/dataset/top10nl\", \n      \"type\": \"dcat:Dataset\",\n      \"dct:identifier\": \"top10nl-dataset-identifier\",\n      \"dct:title\": \"TOP10NL Dataset\",\n      \"dct:description\": \"The authoritative topographic dataset of the Netherlands at scale 1:10,000, as maintained by Kadaster. It provides detailed base maps for various applications.\",\n      \"dct:language\": \"nl\",\n      \"dcat:spatialResolutionInMeters\": 10,\n      \"dcat:spatial\": {\n        \"@type\": \"dct:Location\",\n        \"dcat:bbox\": \"3.3768,50.7504,7.2272,53.5885\", \n        \"rdfs:label\": \"Netherlands\"\n      },\n      \"dcat:keyword\": [\n        \"topografie\", \"basisregistratie\", \"kaart\", \"Nederland\", \"gebouwen\", \"wegen\", \"water\", \"terreindekking\", \"topographic map\"\n      ],\n      \"dct:temporal\": { \n        \"@type\": \"dct:PeriodOfTime\",\n        \"dcat:startDate\": \"2009-01-01\",\n        \"dcat:endDate\": \"2025-12-31\" \n      },\n      \"dct:accrualPeriodicity\": \"http://publications.europa.eu/resource/authority/frequency/CONT\", \n      \"dct:license\": \"https://creativecommons.org/publicdomain/zero/1.0/\", \n      \"dct:accessRights\": \"http://publications.europa.eu/resource/authority/access-right/PUBLIC\",\n      \"dct:publisher\": { \n        \"@type\": \"schema:Organization\",\n        \"@id\": \"https://www.kadaster.nl/\",\n        \"schema:name\": \"Kadaster\",\n        \"schema:url\": \"https://www.kadaster.nl/\"\n      },\n      \"dcat:theme\": [ \n        \"http://publications.europa.eu/resource/authority/data-theme/GEOS\",\n        \"http://inspire.ec.europa.eu/theme/tn\"\n      ]\n    }\n  }\n}\n}",
+          "code": "{\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.30,53.60\n        ],\n        [\n          7.24,53.60\n        ],\n        [\n          7.24,50.73\n        ],\n        [\n          3.30,50.73\n        ],\n        [\n          3.30,53.60\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n       \"type\": \"Dataservice\"\n  },\n   \"linkTemplates\": [\n    \n  ],\n  \"links\": [\n   \n  ]\n}",
           "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataservice-records/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld\",\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.3,\n          53.6\n        ],\n        [\n          7.24,\n          53.6\n        ],\n        [\n          7.24,\n          50.73\n        ],\n        [\n          3.3,\n          50.73\n        ],\n        [\n          3.3,\n          53.6\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n    \"type\": \"Dataservice\"\n  },\n  \"linkTemplates\": [],\n  \"links\": []\n}",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataservice-records/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataservice>,\n        geojson:Feature ;\n    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataservice-records/example_2_1.ttl"
         }
       ]
     }

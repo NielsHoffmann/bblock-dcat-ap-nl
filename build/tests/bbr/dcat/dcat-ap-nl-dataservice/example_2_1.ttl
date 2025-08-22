@@ -30,6 +30,7 @@ exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068 a dcat:DataService ;
             vcard:organization-name "Kadaster"@nl ] ;
     dcat:endpointDescription <https://api.pdok.nl/brt/top10nl/ogc/v1> ;
     dcat:endpointURL <https://api.pdok.nl/brt/top10nl/ogc/v1/api> ;
+    dcat:servesDataset exBB:2482250f-3b00-4439-9f93-f3118229b201 ;
     dcat:theme [ a skos:Concept ;
             dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
             skos:prefLabel "HVD"@nl ],

@@ -1,22 +1,17 @@
 Validation report for geonovum.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding
-Generated 2025-06-10T09:15:19.203384+00:00
+Generated 2025-08-22T15:12:05.275834+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
 === End Files ===
 
 === SHACL ===
-Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
+Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
   Validation Report
   Conforms: True
   
-Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
- - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape _:nce468064b33a4406b585523f8d16f255b3: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
- - Shape _:nce468064b33a4406b585523f8d16f255b4: *none*
- - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068
+Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
+ - Shape <https://www.ogc.org/rules/rec/#testVarExists>: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068/rec:hasLinkTemplate
 
 === End SHACL ===
 

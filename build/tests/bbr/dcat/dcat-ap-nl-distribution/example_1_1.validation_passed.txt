@@ -1,0 +1,17 @@
+Validation report for geonovum.bbr.dcat.dcat-ap-nl-distribution - DCAT-AP-NL profile 3.0 - Distribution
+Generated 2025-08-22T15:12:05.979949+00:00
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== SHACL ===
+Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:
+ - Shape dcatapnl-sh:DistributionShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102
+
+=== End SHACL ===
+

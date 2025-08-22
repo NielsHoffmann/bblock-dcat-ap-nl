@@ -1,0 +1,47 @@
+{
+  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
+  "id": "2482250f-3b00-4439-9f93-f3118229b201",
+  "type": "Feature",
+  "time": {
+    "interval": [
+      "1924-08-17T00:00:00Z",
+      ".."
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.3,
+          53.6
+        ],
+        [
+          7.24,
+          53.6
+        ],
+        [
+          7.24,
+          50.73
+        ],
+        [
+          3.3,
+          50.73
+        ],
+        [
+          3.3,
+          53.6
+        ]
+      ]
+    ]
+  },
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+    "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+  ],
+  "properties": {
+    "type": "Dataservice"
+  },
+  "linkTemplates": [],
+  "links": []
+}

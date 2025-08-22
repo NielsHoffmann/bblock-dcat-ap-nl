@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-06-10",
+  "dateOfLastChange": "2025-08-22",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "geonovum.bbr.dcat.dcat-ap-nl-dataset"
@@ -30,7 +30,7 @@
     "DatasetSeries",
     "profile"
   ],
-  "highlighted": true,
+  "highlighted": false,
   "shaclRules": {
     "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
       "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl"

@@ -1,0 +1,29 @@
+{
+  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
+  "type": "Feature",
+  "properties": {
+    "type": "dcat:Dataset",
+    "title": "BRT TOP10NL",
+    "accessRights": [
+      "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+      "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+    ],
+    "identifier": "2482250f-3b00-4439-9f93-f3118229b201",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "geometry": null,
+  "id": "https://data.overheid.nl/dataset/top10nl",
+  "linkTemplates": [],
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://data.overheid.nl/dataset/top10nl",
+      "type": "application/ld+json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://data.overheid.nl/dataset/top10nl.html",
+      "type": "text/html"
+    }
+  ]
+}

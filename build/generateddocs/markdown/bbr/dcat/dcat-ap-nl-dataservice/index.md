@@ -70,6 +70,7 @@ An example from the DCAT-AP-NL profile for a Dataservice
 
 exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068 a dcat:DataService ;
     dct:title "BRT TOP10NL OGC API Features"@nl ;
+    dcat:servesDataset exBB:2482250f-3b00-4439-9f93-f3118229b201 ;
     dcat:endpointDescription <https://api.pdok.nl/brt/top10nl/ogc/v1> ;
     dcat:endpointURL <https://api.pdok.nl/brt/top10nl/ogc/v1/api> ;
     dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,

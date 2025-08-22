@@ -2,13 +2,71 @@
   "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl-distribution - DCAT-AP-NL profile 3.0 - Distribution",
   "bblockName": "DCAT-AP-NL profile 3.0 - Distribution",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl-distribution",
-  "generated": "2025-06-10T09:15:21.839823+00:00",
+  "generated": "2025-08-22T15:12:05.980005+00:00",
   "result": true,
-  "items": [],
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/dcat/dcat-ap-nl-distribution/example_1_1.ttl",
+        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-distribution/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 8,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/dcat-ap-nl-distribution/rules.shacl",
+              "focusNodes": {
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": [
+                    "exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:\n - Shape dcatapnl-sh:DistributionShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
-    "passed": 0,
+    "total": 1,
+    "passed": 1,
     "failed": 0
   }
 }

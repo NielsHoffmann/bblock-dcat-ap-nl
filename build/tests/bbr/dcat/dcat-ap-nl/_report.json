@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0",
   "bblockName": "DCAT-AP-NL profile 3.0",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl",
-  "generated": "2025-06-10T09:15:21.996115+00:00",
+  "generated": "2025-08-22T15:12:06.139487+00:00",
   "result": true,
   "items": [
     {
@@ -41,20 +41,22 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
-                  "nodes": []
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B\n"
             }
           ]
         }
@@ -96,20 +98,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
+                "dcatapnl-sh:DatasetShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
             }
           ]
         }
@@ -151,20 +153,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
+                "dcatapnl-sh:DatasetShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
             }
           ]
         }
@@ -206,20 +208,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
+                "dcatapnl-sh:DatasetShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
             }
           ]
         }
@@ -261,22 +263,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
-                  "nodes": [
-                    "exampleMS:1T2p3o4B-rec"
-                  ]
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:\n - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec\n"
+              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
             }
           ]
         }

@@ -1,0 +1,13 @@
+Validation report for geonovum.bbr.dcat.uplift-example - Semantic uplift example
+Generated 2025-08-22T15:12:04.405755+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

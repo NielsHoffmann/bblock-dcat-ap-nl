@@ -1,0 +1,16 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix exBB: <http://example/buildingblock> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102 a dcat:Distribution ;
+    dct:description "accessPoint"@nl ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/deed.nl> ;
+    dct:title "WMS view service TOP10NL"@nl ;
+    cnt:characterEncoding "UTF-8"^^xsd:string ;
+    adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
+    dcat:accessService <http://kadaster/2482250f-3b00-4439-9f93-f3118229b201/DS/d0e1068> ;
+    dcat:accessURL <https://service.pdok.nl/brt/top10nl/wms/v1_0?request=GetCapabilities&service=wms> .
+

@@ -13,14 +13,14 @@
     rdfs:label "DCAT-AP-NL profile 3.0 - Dataservice/Records binding" ;
     dct:abstract "DCAT-AP-NL 3.0 Dataservice profile bound to OGC API Records"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dataservice-records/index.md" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dataservice-records" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dataservice-records/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dataservice-records/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/>,
         <https://github.com/opengeospatial/ogcapi-records> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
@@ -38,7 +38,41 @@
         <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl>,
         <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl>,
         <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataservice-records/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geonovum.github.io/geonovum.bbr.dcat.dataset-records> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "DCAT-AP-NL profile 3.0 - Dataset/Records binding" ;
+    dct:abstract "DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-08-22T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dataset-records/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dataset-records" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dataset-records/index.md" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-08-22"^^xsd:date ;
+    dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/>,
+        <https://github.com/opengeospatial/ogcapi-records> ;
+    skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
+    dcat:keyword "DCAT",
+        "DCAT-AP-NL",
+        "Dataset",
+        "Records",
+        "profile" ;
+    bblocks:dependsOn <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-dataset>,
+        <https://geonovum.github.io/ogc.geo.geodcat.dcat-records> ;
+    bblocks:hasJsonLdContext <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld> ;
+    bblocks:hasSchema <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json>,
+        <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml> ;
+    bblocks:hasShaclRule <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl>,
+        <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl>,
+        <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl>,
+        <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl> ;
+    bblocks:hasSourceJsonLdContext <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataset-records/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -48,14 +82,14 @@
     rdfs:label "DCAT-AP-NL profile 3.0" ;
     dct:abstract "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ] ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -79,20 +113,45 @@
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
+<https://geonovum.github.io/geonovum.bbr.dcat.uplift-example> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "Semantic uplift example" ;
+    dct:abstract "A building block to show how semantic uplift works."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-08-22T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.uplift-example" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/uplift-example/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/uplift-example/index.json" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-08-22"^^xsd:date ;
+    skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
+    dcat:keyword "Building blocks",
+        "Semantic uplift" ;
+    bblocks:dependsOn <https://geonovum.github.io/ogc.api.records.v1.schemas.recordGeoJSON> ;
+    bblocks:hasJsonLdContext <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld> ;
+    bblocks:hasSchema <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.json>,
+        <https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/uplift-example/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
 <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-catalogrecord> a skos:Concept,
         dcat:Dataset,
         bblocks:Model ;
     rdfs:label "DCAT-AP-NL profile 3.0 - Catalogrecord" ;
     dct:abstract "DCAT-AP-NL 3.0 Catalogrecord"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-catalogrecord/index.json" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-catalogrecord" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-catalogrecord/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-catalogrecord/index.json" ] ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-catalogrecord/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "Catalogrecord",
@@ -112,14 +171,14 @@
     rdfs:label "DCAT-AP-NL profile 3.0 - DatasetSeries" ;
     dct:abstract "DCAT-AP-NL 3.0 DatasetSeries"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-datasetseries/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-datasetseries" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-datasetseries/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-datasetseries" ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-datasetseries/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -140,14 +199,14 @@
     rdfs:label "DCAT-AP-NL profile 3.0 - Distribution" ;
     dct:abstract "DCAT-AP-NL 3.0 Distribution"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-distribution/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-distribution" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-distribution/index.md" ] ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-distribution/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-distribution/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -162,8 +221,6 @@
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://github.com/opengeospatial/ogcapi-records> rdfs:label "API Records Specification Repository" .
-
 <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-dataservice> a skos:Concept,
         dcat:Dataset,
         bblocks:Model ;
@@ -177,7 +234,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-dataservice/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "DCAT",
@@ -191,32 +248,7 @@
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-dataset> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Model ;
-    rdfs:label "DCAT-AP-NL profile 3.0 - Dataset" ;
-    dct:abstract "DCAT-AP-NL 3.0 Dataset"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-dataset/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-dataset" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-dataset/index.json" ] ;
-    dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
-    dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
-    skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
-    dcat:keyword "DCAT",
-        "DCAT-AP-NL",
-        "Dataset",
-        "profile" ;
-    bblocks:dependsOn <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-catalog> ;
-    bblocks:hasShaclRule <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl>,
-        <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl>,
-        <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
+<https://github.com/opengeospatial/ogcapi-records> rdfs:label "API Records Specification Repository" .
 
 <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-catalog> a skos:Concept,
         dcat:Dataset,
@@ -231,7 +263,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-catalog/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-06-10"^^xsd:date ;
+    dct:modified "2025-08-22"^^xsd:date ;
     dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
     skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
     dcat:keyword "Catalog",
@@ -240,6 +272,33 @@
         "profile" ;
     bblocks:dependsOn <https://geonovum.github.io/ogc.geo.geodcat.dcat-ap> ;
     bblocks:hasShaclRule <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl>,
+        <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-dataset> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "DCAT-AP-NL profile 3.0 - Dataset" ;
+    dct:abstract "DCAT-AP-NL 3.0 Dataset"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-04-02T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-dataset" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/markdown/bbr/dcat/dcat-ap-nl-dataset/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geonovum.github.io/bblock-dcat-ap-nl/build/generateddocs/json-full/bbr/dcat/dcat-ap-nl-dataset/index.json" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-08-22"^^xsd:date ;
+    dct:source <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> ;
+    skos:inScheme <https://geonovum.github.io/bblock-dcat-ap-nl/> ;
+    dcat:keyword "DCAT",
+        "DCAT-AP-NL",
+        "Dataset",
+        "profile" ;
+    bblocks:dependsOn <https://geonovum.github.io/geonovum.bbr.dcat.dcat-ap-nl-catalog> ;
+    bblocks:hasShaclRule <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl>,
+        <https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl>,
         <https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
@@ -260,11 +319,11 @@ this potentially can add value.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-06-10T09:15:22.089239"^^xsd:dateTime ;
-    prov:startedAtTime "2025-06-10T09:15:22.012587"^^xsd:dateTime ;
+    prov:endedAtTime "2025-08-22T15:12:06.237146"^^xsd:dateTime ;
+    prov:startedAtTime "2025-08-22T15:12:06.155158"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:eccf68056c7777ba8e8653a99172b67c5c82face" ;
+            dct:hasVersion "git:0e97121f5604421f0577d6a6b8a10d784720b47a" ;
             rdfs:seeAlso <https://geonovum.github.io/bblock-dcat-ap-nl/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
@@ -272,6 +331,6 @@ this potentially can add value.
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.4" ;
+            dct:hasVersion "0.5.dev3+g1871e64" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 
