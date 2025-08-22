@@ -1,0 +1,4 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Schema for OGCAPI records profile for DCAT Dataset - defines all extra elements defined by DCAT so that the JSON-LD context can map to DCAT RDF'
+allOf:
+  - $ref: bblocks://ogc.geo.geodcat.dcat-records

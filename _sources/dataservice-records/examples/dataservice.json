@@ -1,105 +1,45 @@
 {
-  "@context": [
-    "https://schema.org/",
-    "http://purl.org/dc/terms/",
-    "http://www.w3.org/ns/dcat#",
-    "http://xmlns.com/foaf/0.1/",
-    "http://www.opengis.net/def/dcat-ap/sjp/" 
-     ],
-  "id": "https://data.overheid.nl/catalogus/record/pdok-top10nl-ogc-api-features-service-record",
-  "conformsTo": [
-      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
-      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
-      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson"
-    ],
-  "type": "dcat:CatalogRecord",
-    "properties": {
-
-  "dct:identifier": "pdok-top10nl-ogc-api-features-service-record",
-  "dct:issued": "2024-01-15T10:00:00Z", 
-  "dct:modified": "2025-06-06T17:36:43Z", 
-  "dct:language": "nl",
-  "dct:creator": { 
-    "@type": "schema:Organization",
-    "schema:name": "Nationaal Georegister (PDOK)",
-    "schema:url": "https://www.pdok.nl/"
+  "id": "2482250f-3b00-4439-9f93-f3118229b201",
+  "type": "Feature",
+  "time": {
+    "interval": [
+      "1924-08-17T00:00:00Z",
+      ".."
+    ]
   },
-  "dcat:theme": [ 
-    "http://publications.europa.eu/resource/authority/data-theme/GEOS" 
-  ],
-  "dcat:keyword": [ 
-    "OGC API", "Features", "Geospatial API", "Data Service", "Catalog"
-  ],
-  "dcat:primaryTopic": {
-    "@id": "https://api.pdok.nl/brt/top10nl/ogc/v1",
-    "@type": [
-      "dcat:DataService",
-      "schema:Service"
-    ],
-    "dct:title": "OGC API Features - TOP10NL Service",
-    "dct:description": "This OGC API Features service provides programmatic access to the TOP10NL dataset, offering detailed topographic information of the Netherlands (buildings, roads, water bodies, land use). It allows for querying, filtering, and retrieving geographic features following OGC API standards.",
-    "dct:publisher": {
-      "@type": "schema:Organization",
-      "@id": "https://www.kadaster.nl/",
-      "schema:name": "Kadaster",
-      "schema:url": "https://www.kadaster.nl/"
-    },
-    
-    "dcat:endpointURL": "https://api.pdok.nl/brt/top10nl/ogc/v1",
-    "dcat:endpointDescription": {
-      "@id": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
-      "@type": "dcat:Distribution",
-      "dct:title": "OpenAPI documentation for TOP10NL OGC API Features",
-      "dct:format": "http://publications.europa.eu/resource/authority/file-type/JSON",
-      "dcat:mediaType": "application/vnd.oai.openapi+json;version=3.0"
-    },
-    "schema:serviceType": "OGC API Features",
-    "schema:url": "https://api.pdok.nl/brt/top10nl/ogc/v1",
-    "foaf:page": "https://www.pdok.nl/downloads/-/top10nl-ogc-api-features", 
-    "dcat:theme": [ 
-      "http://publications.europa.eu/resource/authority/data-theme/GEOS", 
-      "http://inspire.ec.europa.eu/theme/tn" 
-    ],
-    "dcat:keyword": [ 
-      "OGC API Features", "TOP10NL", "BGT", "Basisregistratie Topografie", "PDOK", "Kadaster", "Geodata", "API", "Features API", "Web Service"
-    ],
-    "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/", 
-    "dct:accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC", 
-    "dcat:servesDataset": {
-      "@id": "https://data.overheid.nl/dataset/top10nl", 
-      "type": "dcat:Dataset",
-      "dct:identifier": "top10nl-dataset-identifier",
-      "dct:title": "TOP10NL Dataset",
-      "dct:description": "The authoritative topographic dataset of the Netherlands at scale 1:10,000, as maintained by Kadaster. It provides detailed base maps for various applications.",
-      "dct:language": "nl",
-      "dcat:spatialResolutionInMeters": 10,
-      "dcat:spatial": {
-        "@type": "dct:Location",
-        "dcat:bbox": "3.3768,50.7504,7.2272,53.5885", 
-        "rdfs:label": "Netherlands"
-      },
-      "dcat:keyword": [
-        "topografie", "basisregistratie", "kaart", "Nederland", "gebouwen", "wegen", "water", "terreindekking", "topographic map"
-      ],
-      "dct:temporal": { 
-        "@type": "dct:PeriodOfTime",
-        "dcat:startDate": "2009-01-01",
-        "dcat:endDate": "2025-12-31" 
-      },
-      "dct:accrualPeriodicity": "http://publications.europa.eu/resource/authority/frequency/CONT", 
-      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/", 
-      "dct:accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
-      "dct:publisher": { 
-        "@type": "schema:Organization",
-        "@id": "https://www.kadaster.nl/",
-        "schema:name": "Kadaster",
-        "schema:url": "https://www.kadaster.nl/"
-      },
-      "dcat:theme": [ 
-        "http://publications.europa.eu/resource/authority/data-theme/GEOS",
-        "http://inspire.ec.europa.eu/theme/tn"
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.30,53.60
+        ],
+        [
+          7.24,53.60
+        ],
+        [
+          7.24,50.73
+        ],
+        [
+          3.30,50.73
+        ],
+        [
+          3.30,53.60
+        ]
       ]
-    }
-  }
-}
+    ]
+  },
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+    "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+  ],
+  "properties": {
+       "type": "Dataservice"
+  },
+   "linkTemplates": [
+    
+  ],
+  "links": [
+   
+  ]
 }

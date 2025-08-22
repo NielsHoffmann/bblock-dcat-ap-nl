@@ -1,15 +1,15 @@
 {
-  "name": "DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
-  "abstract": "DCAT-AP-NL 3.0 Dataservice profile bound to OGC API Records",
+  "name": "DCAT-AP-NL profile 3.0 - Dataset/Records binding",
+  "abstract": "DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records",
   "status": "under-development",
-  "dateTimeAddition": "2025-06-06T00:00:00Z",
+  "dateTimeAddition": "2025-08-22T00:00:00Z",
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-06-06",
+  "dateOfLastChange": "2025-08-22",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
         "ogc.geo.geodcat.dcat-records"
       ],
   "sources": [
@@ -22,8 +22,7 @@
       "link": "https://github.com/opengeospatial/ogcapi-records"
     }
   ],
-  "shaclShapes": [  "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl" ],
   "scope": "dev",
-  "tags": ["DCAT","DCAT-AP-NL", "Dataservice", "Records","profile"],
-  "highlighted": false
+  "tags": ["DCAT","DCAT-AP-NL", "Dataset", "Records","profile"],
+  "highlighted": true
 }

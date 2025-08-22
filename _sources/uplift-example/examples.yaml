@@ -1,0 +1,7 @@
+- title: semantic uplift example
+  content: |-
+    An example to show how semantic uplift works.
+
+  snippets:
+    - language: json
+      ref: ./examples/ex.json

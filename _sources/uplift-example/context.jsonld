@@ -1,0 +1,22 @@
+{
+  "@context": [
+    {
+        "dct": "http://purl.org/dc/terms/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    {
+    "type": "@type",
+    "license": "dcat:license",
+    "title": {
+        "@container": "@set",
+        "@id": "dct:title"
+      },
+    "accessRights" : {
+        "@container": "@set",
+        "@id": "dct:accessRights"
+      }
+  }
+]
+}

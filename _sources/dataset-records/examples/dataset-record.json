@@ -1,0 +1,87 @@
+{
+  "id": "2482250f-3b00-4439-9f93-f3118229b201",
+  "type": "Feature",
+  "time": {
+    "interval": [
+      "1924-08-17T00:00:00Z",
+      ".."
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.30,53.60
+        ],
+        [
+          7.24,53.60
+        ],
+        [
+          7.24,50.73
+        ],
+        [
+          3.30,50.73
+        ],
+        [
+          3.30,53.60
+        ]
+      ]
+    ]
+  },
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+    "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+  ],
+  "properties": {
+      "type": "Dataset",
+      "title" : "BRT TOP10NL",
+      "accessRights" : [
+      "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+      "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+      ],
+      "identifier" : "2482250f-3b00-4439-9f93-f3118229b201",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "accrualPeriodicity" : "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+      "keywords": [
+        "BRT",
+        "Basisregistratie Topografie",
+        "Kadaster",
+        "TOP10",
+        "TOP10NL",
+        "Topografie",
+        "Topografische kaart",
+        "basisset NOVEX" 
+      ],
+      "theme": [
+         {
+          "a": "skos:Concept", 
+          "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+          "prefLabel": {
+              "nl": "Nationale datasets"
+          }
+        },
+        {
+          "a": "skos:Concept", 
+          "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy",
+          "prefLabel": {
+              "nl": "Hydrografie"
+          }
+        },
+        {
+          "a": "skos:Concept", 
+          "source": "http://data.europa.eu/bna/c_dd313021",
+          "prefLabel": {
+              "nl": "Aardobservatie en milieu"
+          }
+        }
+        
+      ]
+  },
+  "linkTemplates": [
+    
+  ],
+  "links": [
+   
+  ]
+}

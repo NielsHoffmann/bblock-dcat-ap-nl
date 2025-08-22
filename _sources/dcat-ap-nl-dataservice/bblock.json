@@ -20,5 +20,5 @@
   "shaclShapes": [  "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl" ],
   "scope": "dev",
   "tags": ["DCAT","DCAT-AP-NL", "Dataservice","profile"],
-  "highlighted": true
+  "highlighted": false
 }

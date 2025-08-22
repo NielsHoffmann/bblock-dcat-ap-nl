@@ -1,0 +1,7 @@
+- title: DCAT-AP-NL example - Distribution
+  content: |-
+    An example from the DCAT-AP-NL profile for a Distribution
+
+  snippets:
+    - language: ttl
+      ref: ./examples/distribution.ttl

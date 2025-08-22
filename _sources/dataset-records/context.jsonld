@@ -1,0 +1,33 @@
+{
+  "@context": [
+    {
+      "dct": "http://purl.org/dc/terms/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "a": "@type" 
+    },
+    {
+      "theme": {
+        "@id": "dcat:theme",
+        "@container": "@set" 
+      },
+      "concept": {
+        "@id": "skos:Concept", 
+        "@type": "@id"       
+      },
+      "source": {
+        "@id": "dct:source",
+        "@type": "@id"        
+      },
+      "prefLabel": {
+        "@id": "skos:prefLabel",
+        "@container": "@language" 
+      }
+    },
+    {
+        "accrualPeriodicity": {
+        "@id": "dct:accrualPeriodicity"
+      }
+    }
+  ]
+}
