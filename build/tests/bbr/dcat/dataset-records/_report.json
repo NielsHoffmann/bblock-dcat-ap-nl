@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dataset-records - DCAT-AP-NL profile 3.0 - Dataset/Records binding",
   "bblockName": "DCAT-AP-NL profile 3.0 - Dataset/Records binding",
   "bblockId": "geonovum.bbr.dcat.dataset-records",
-  "generated": "2025-08-22T15:12:05.678545+00:00",
+  "generated": "2025-08-29T12:47:09.316140+00:00",
   "result": true,
   "items": [
     {
@@ -41,22 +41,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": [
-                    "exBB:2482250f-3b00-4439-9f93-f3118229b201"
-                  ]
+                "<https://www.ogc.org/rules/rec/#testVarExists>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: exBB:2482250f-3b00-4439-9f93-f3118229b201\n"
+              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*\n"
             }
           ]
         }
@@ -121,20 +119,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
               "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
+                "<https://www.ogc.org/rules/rec/#testVarExists>": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
+              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*\n"
             }
           ]
         }

@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
   "bblockName": "DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
   "bblockId": "geonovum.bbr.dcat.dataservice-records",
-  "generated": "2025-08-22T15:12:05.358638+00:00",
+  "generated": "2025-08-29T12:47:08.863443+00:00",
   "result": true,
   "items": [
     {
@@ -41,22 +41,52 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/rec/#testVarExists>": {
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
                   "nodes": [
-                    "exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068/rec:hasLinkTemplate"
+                    "exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068"
                   ]
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "_:nde15c9975a7f4570b1cd02649f63cf99b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": []
+                },
+                "_:nde15c9975a7f4570b1cd02649f63cf99b4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n - Shape <https://www.ogc.org/rules/rec/#testVarExists>: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068/rec:hasLinkTemplate\n"
+              "message": "Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape _:nde15c9975a7f4570b1cd02649f63cf99b3: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape _:nde15c9975a7f4570b1cd02649f63cf99b4: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n"
             }
           ]
         }
@@ -121,20 +151,50 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/rec/#testVarExists>": {
+                "dcatapnl-sh:DatasetShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "_:nde15c9975a7f4570b1cd02649f63cf99b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": []
+                },
+                "_:nde15c9975a7f4570b1cd02649f63cf99b4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:\n - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*\n"
+              "message": "Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape _:nde15c9975a7f4570b1cd02649f63cf99b3: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape _:nde15c9975a7f4570b1cd02649f63cf99b4: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n"
             }
           ]
         }

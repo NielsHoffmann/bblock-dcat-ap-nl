@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0",
   "bblockName": "DCAT-AP-NL profile 3.0",
   "bblockId": "geonovum.bbr.dcat.dcat-ap-nl",
-  "generated": "2025-08-22T15:12:06.139487+00:00",
+  "generated": "2025-08-29T12:47:10.511098+00:00",
   "result": true,
   "items": [
     {
@@ -29,7 +29,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 56,
+              "size": 131,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -41,242 +41,58 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
+              "shaclFile": "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
               "focusNodes": {
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:DatasetShape": {
                   "nodes": [
                     "exampleMS:1T2p3o4B"
                   ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B\n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
-        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_2_1.ttl",
-        "exampleIndex": 2,
-        "snippetIndex": 1,
-        "language": "text/turtle"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using example_2_1.ttl from examples"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_2_1.ttl",
-              "size": 8,
-              "isError": false,
-              "message": "Output Turtle example_2_1.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
+                },
+                "dcatapnl-sh:DataServiceShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B-dataservice-WMS"
+                  ]
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DistributionShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B-dist-SHP"
+                  ]
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": [
+                    "exampleMS:1T2p3o4B-rec"
+                  ]
+                },
+                "_:n1713650a2a064011ba02177670c47367b3": {
+                  "nodes": []
+                },
+                "_:n1713650a2a064011ba02177670c47367b4": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
-        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_3_1.ttl",
-        "exampleIndex": 3,
-        "snippetIndex": 1,
-        "language": "text/turtle"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using example_3_1.ttl from examples"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_3_1.ttl",
-              "size": 38,
-              "isError": false,
-              "message": "Output Turtle example_3_1.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
-        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_4_1.ttl",
-        "exampleIndex": 4,
-        "snippetIndex": 1,
-        "language": "text/turtle"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using example_4_1.ttl from examples"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_4_1.ttl",
-              "size": 18,
-              "isError": false,
-              "message": "Output Turtle example_4_1.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
-        "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_5_1.ttl",
-        "exampleIndex": 5,
-        "snippetIndex": 1,
-        "language": "text/turtle"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using example_5_1.ttl from examples"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_5_1.ttl",
-              "size": 6,
-              "isError": false,
-              "message": "Output Turtle example_5_1.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/dcat-ap-nl-dataset/rules.shacl",
-              "focusNodes": {
-                "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:\n - Shape dcatapnl-sh:DatasetShape: *none*\n"
+              "message": "Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B\n - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec\n - Shape _:n1713650a2a064011ba02177670c47367b3: *none*\n - Shape _:n1713650a2a064011ba02177670c47367b4: *none*\n"
             }
           ]
         }
@@ -285,8 +101,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 5,
-    "passed": 5,
+    "total": 1,
+    "passed": 1,
     "failed": 0
   }
 }

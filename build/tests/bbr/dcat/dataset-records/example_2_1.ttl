@@ -24,14 +24,14 @@
         "basisset NOVEX" ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
-            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationale datasets"@nl ],
+            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
+            skos:prefLabel "Hydrografie"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
             skos:prefLabel "Aardobservatie en milieu"@nl ],
         [ a skos:Concept ;
-            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
-            skos:prefLabel "Hydrografie"@nl ] ;
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationale datasets"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 

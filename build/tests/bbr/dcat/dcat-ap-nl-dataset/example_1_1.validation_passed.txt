@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl-dataset - DCAT-AP-NL profile 3.0 - Dataset
-Generated 2025-08-22T15:12:04.788240+00:00
+Generated 2025-08-29T12:47:08.286334+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created

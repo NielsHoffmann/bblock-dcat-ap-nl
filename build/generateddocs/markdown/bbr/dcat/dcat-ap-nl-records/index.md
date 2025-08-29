@@ -1,118 +1,25 @@
 
-# DCAT-AP-NL profile 3.0 - Dataset/Records binding (Model)
+# DCAT-AP-NL profile 3.0 - Records binding (Model)
 
-`geonovum.bbr.dcat.dataset-records` *v0.1*
+`geonovum.bbr.dcat.dcat-ap-nl-records` *v0.1*
 
-DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records
+DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP) bound to OGC API Records
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-## DCAT-AP-NL Dataset bound to OGC API records schema
+## DCAT-AP-NL 3.0 bound to OGC API records schema
 
-This building block defines a binding from OGC API Records schema to the DCAT-AP-NL profile.
+
+This building block defines a binding of the DCAT-AP-NL 3.0 profile to OGC API Records.
 
 This profile extends a building block that uses the official JSON-LD context for DCAT bound to the OGC API Records.
 
-It uses the context for a dcat:Dataset as the basis for a Record.
+It serves as a building block that follows the pattern for a Dataset description including distributions and dataservices.
 
 All very much work in progress at the moment, the implementation might still change considerably.
-
 ## Examples
-
-### DCAT-AP-NL 3.0 Dataset example showing binding to OGC API record schema.
-This example shows a linked data / turtle file that is typed both as a dcat:dataset
-as well as an ogcapi-records:Record (geojson:Feature). This is to illustrate the combined properties
-and to validate those against the validation rules.
-#### ttl
-```ttl
-@prefix exBB: <http://example/buildingblock> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://www.opengis.net/def/ogc-api/records/rec:> .
-@prefix ns2: <http://www.iana.org/assignments/> .
-@prefix oa: <http://www.w3.org/ns/oa#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-exBB:2482250f-3b00-4439-9f93-f3118229b201 a dcat:Dataset, geojson:Feature;
-    dct:title "BRT TOP10NL"@nl ;
-    dcat:distribution exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102 ;
-    dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
-        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;
-    dcat:contactPoint [ a vcard:Individual ;
-            vcard:fn "Klantcontactcenter"@nl ;
-            vcard:hasAddress [ a vcard:Address ;
-                    vcard:country-name "Nederland" ;
-                    vcard:locality "Apeldoorn" ;
-                    vcard:postal-code "7300 GH" ;
-                    vcard:region "Gelderland" ;
-                    vcard:street-address "Postbus 9046" ] ;
-            vcard:hasEmail <mailto:kcc@kadaster.nl> ;
-            vcard:hasTelephone <tel:+31088-1832200> ;
-            vcard:hasURL <https://www.kadaster.nl> ;
-            vcard:organization-name "Kadaster"@nl ] ;
-    dct:creator [ a foaf:Agent ;
-            foaf:name "Kadaster"@nl ;
-            foaf:name "Kadaster"@en ;
-            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;
-    dct:publisher [ a foaf:Agent ;
-            foaf:name "Kadaster"@nl ;
-            foaf:name "Kadaster"@en ;
-            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;
-    dct:identifier "2482250f-3b00-4439-9f93-f3118229b201"^^xsd:string ;
-    dct:language <http://publications.europa.eu/resource/authority/language/DUT> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
-    dcat:keyword "BRT"@nl,
-        "Basisregistratie Topografie"@nl,
-        "Kadaster"@nl,
-        "TOP10"@nl,
-        "TOP10NL"@nl,
-        "Topografie"@nl,
-        "Topografische kaart"@nl,
-        "basisset NOVEX"@nl ;
-    dcat:theme [ a skos:Concept ;
-            dct:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationaal"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
-            skos:prefLabel "Hydrografie"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/sr> ;
-            skos:prefLabel "Zeegebieden"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/gn> ;
-            skos:prefLabel "Geografische namen"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://data.europa.eu/bna/c_b79e35eb> ;
-            skos:prefLabel "Mobiliteit"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
-            skos:prefLabel "HVD"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/lc> ;
-            skos:prefLabel "Bodemgebruik"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/tn> ;
-            skos:prefLabel "Vervoersnetwerken"@nl ],
-        [ a skos:Concept ;
-            dct:source <http://data.europa.eu/bna/c_ac64a52d> ;
-            skos:prefLabel "Geospatiale data"@nl ] 
-
-.
-```
-
 
 ### DCAT-AP-NL 3.0 Dataset example encoded in JSON, showing binding to an OGC API record schema.
 This example shows a json file with OGC API Records info as well as DCAT-AP-NL 3.0 info.
@@ -199,9 +106,52 @@ can find under the 'Semantic Uplift' section of this building block.
           "prefLabel": {
               "nl": "Aardobservatie en milieu"
           }
+        }  
+      ],
+      "distribution": [
+        {
+          "a": "dcat:Distribution",
+          "title": "BRT TOP10NL - Download",
+          "accessURL": "https://www.kadaster.nl/-/brt-top10nl-download",
+          "format": "application/zip",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "mediaType": "application/zip"
+        },
+        {
+          "a": "dcat:Distribution",
+          "title": "BRT TOP10NL - WFS",
+          "accessURL": "https://geodata.nationaalgeoregister.nl/brt/wfs?",
+          "format": "OGC:WFS-2.0.0-http-get-capabilities",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "mediaType": "application/xml"
         }
-        
+      ],
+      "dataservice": [
+        {
+          "a": "dcat:DataService",
+          "title": "BRT TOP10NL OGC API Features",
+          "description": "TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .",
+          "endpointURL": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "servesDataset": "http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201",
+          "license": "http://creativecommons.org/licenses/by/4.0/deed.nl",
+          "accessRights" : [
+            "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+            "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+          ],
+          "endpointDescription": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "identifier": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "theme": [
+         {
+          "a": "skos:Concept", 
+          "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+          "prefLabel": {
+              "nl": "Nationale datasets"
+              }
+          }
+          ]
+        }
       ]
+
   },
   "linkTemplates": [
     
@@ -215,7 +165,7 @@ can find under the 'Semantic Uplift' section of this building block.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
+  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/context.jsonld",
   "id": "2482250f-3b00-4439-9f93-f3118229b201",
   "type": "Feature",
   "time": {
@@ -297,6 +247,49 @@ can find under the 'Semantic Uplift' section of this building block.
           "nl": "Aardobservatie en milieu"
         }
       }
+    ],
+    "distribution": [
+      {
+        "a": "dcat:Distribution",
+        "title": "BRT TOP10NL - Download",
+        "accessURL": "https://www.kadaster.nl/-/brt-top10nl-download",
+        "format": "application/zip",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "mediaType": "application/zip"
+      },
+      {
+        "a": "dcat:Distribution",
+        "title": "BRT TOP10NL - WFS",
+        "accessURL": "https://geodata.nationaalgeoregister.nl/brt/wfs?",
+        "format": "OGC:WFS-2.0.0-http-get-capabilities",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "mediaType": "application/xml"
+      }
+    ],
+    "dataservice": [
+      {
+        "a": "dcat:DataService",
+        "title": "BRT TOP10NL OGC API Features",
+        "description": "TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .",
+        "endpointURL": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+        "servesDataset": "http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201",
+        "license": "http://creativecommons.org/licenses/by/4.0/deed.nl",
+        "accessRights": [
+          "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+          "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+        ],
+        "endpointDescription": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+        "identifier": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+        "theme": [
+          {
+            "a": "skos:Concept",
+            "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+            "prefLabel": {
+              "nl": "Nationale datasets"
+            }
+          }
+        ]
+      }
     ]
   },
   "linkTemplates": [],
@@ -321,7 +314,31 @@ can find under the 'Semantic Uplift' section of this building block.
     dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/ANNUAL" ;
     dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
+    dcterms:identifier "2482250f-3b00-4439-9f93-f3118229b201" ;
     dcterms:temporal [ time:hasTime ( "1924-08-17T00:00:00Z" ".." ) ] ;
+    dcat:DataService [ a dcat:DataService ;
+            rdfs:label "BRT TOP10NL OGC API Features" ;
+            dcterms:description "TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen ." ;
+            dcterms:identifier "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
+            dcat:endpointDescription "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
+            dcat:endpointURL "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
+            dcat:license "http://creativecommons.org/licenses/by/4.0/deed.nl" ;
+            dcat:servesDataset "http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201" ;
+            dcat:theme [ a skos:Concept ;
+                    dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+                    skos:prefLabel "Nationale datasets"@nl ] ] ;
+    dcat:distribution [ a dcat:Distribution ;
+            rdfs:label "BRT TOP10NL - WFS" ;
+            dcterms:format "OGC:WFS-2.0.0-http-get-capabilities" ;
+            dcat:accessURL "https://geodata.nationaalgeoregister.nl/brt/wfs?" ;
+            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcat:mediaType "application/xml" ],
+        [ a dcat:Distribution ;
+            rdfs:label "BRT TOP10NL - Download" ;
+            dcterms:format "application/zip" ;
+            dcat:accessURL "https://www.kadaster.nl/-/brt-top10nl-download" ;
+            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcat:mediaType "application/zip" ] ;
     dcat:keyword "BRT",
         "Basisregistratie Topografie",
         "Kadaster",
@@ -369,6 +386,15 @@ x-jsonld-extra-terms:
     x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel
     x-jsonld-container: '@language'
   accrualPeriodicity: http://purl.org/dc/terms/accrualPeriodicity
+  distribution: http://www.w3.org/ns/dcat#distribution
+  accessURL: http://www.w3.org/ns/dcat#accessURL
+  mediaType: http://www.w3.org/ns/dcat#mediaType
+  format: http://purl.org/dc/terms/format
+  dataservice: http://www.w3.org/ns/dcat#DataService
+  endpointURL: http://www.w3.org/ns/dcat#endpointURL
+  servesDataset: http://www.w3.org/ns/dcat#servesDataset
+  identifier: http://purl.org/dc/terms/identifier
+  endpointDescription: http://www.w3.org/ns/dcat#endpointDescription
 x-jsonld-prefixes:
   dcat: http://www.w3.org/ns/dcat#
   skos: http://www.w3.org/2004/02/skos/core#
@@ -378,8 +404,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json)
-* JSON version: [schema.json](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/schema.json)
+* JSON version: [schema.json](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/schema.yaml)
 
 
 # JSON-LD Context
@@ -551,6 +577,15 @@ Links to the schema:
       "@container": "@language"
     },
     "accrualPeriodicity": "dct:accrualPeriodicity",
+    "distribution": "dcat:distribution",
+    "accessURL": "dcat:accessURL",
+    "mediaType": "dcat:mediaType",
+    "format": "dct:format",
+    "dataservice": "dcat:DataService",
+    "endpointURL": "dcat:endpointURL",
+    "servesDataset": "dcat:servesDataset",
+    "identifier": "dct:identifier",
+    "endpointDescription": "dcat:endpointDescription",
     "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -572,17 +607,16 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld)
+[context.jsonld](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/context.jsonld)
 
 ## Sources
 
 * [DCAT-AP-NL 3.0 Specification](https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/)
-* [API Records Specification Repository](https://github.com/opengeospatial/ogcapi-records)
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
-* Path: `_sources/dataset-records`
+* Path: `_sources/dcat-ap-nl-records`
 

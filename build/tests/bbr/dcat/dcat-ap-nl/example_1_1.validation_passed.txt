@@ -1,17 +1,27 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl - DCAT-AP-NL profile 3.0
-Generated 2025-08-22T15:12:06.118443+00:00
+Generated 2025-08-29T12:47:10.511046+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
 === End Files ===
 
 === SHACL ===
-Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:
+Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
   Validation Report
   Conforms: True
   
-Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:
+Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
  - Shape dcatapnl-sh:DatasetShape: exampleMS:1T2p3o4B
+ - Shape dcatapnl-sh:DataServiceShape: exampleMS:1T2p3o4B-dataservice-WMS
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: exampleMS:1T2p3o4B-dist-SHP
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: exampleMS:1T2p3o4B-rec
+ - Shape _:n1713650a2a064011ba02177670c47367b3: *none*
+ - Shape _:n1713650a2a064011ba02177670c47367b4: *none*
 
 === End SHACL ===
 

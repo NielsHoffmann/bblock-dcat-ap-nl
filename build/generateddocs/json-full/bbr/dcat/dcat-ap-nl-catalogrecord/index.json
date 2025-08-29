@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-22",
+  "dateOfLastChange": "2025-08-29",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "geonovum.bbr.dcat.dcat-ap-nl-catalog"
@@ -20,9 +20,20 @@
       "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
     }
   ],
-  "shaclShapes": [
-    "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-  ],
+  "shaclShapes": {
+    "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ]
+  },
   "scope": "dev",
   "tags": [
     "DCAT",
@@ -31,17 +42,6 @@
     "profile"
   ],
   "highlighted": false,
-  "shaclRules": {
-    "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl"
-    ],
-    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
-    ],
-    "ogc.geo.geodcat.dcat-ap": [
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
-    ]
-  },
   "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/",
   "rdfData": [],
   "validationPassed": true,

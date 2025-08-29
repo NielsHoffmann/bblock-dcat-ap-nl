@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dataset-records - DCAT-AP-NL profile 3.0 - Dataset/Records binding
-Generated 2025-08-22T15:12:05.678483+00:00
+Generated 2025-08-29T12:47:09.316058+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,12 +12,12 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:
+Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
   Validation Report
   Conforms: True
   
-Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:
- - Shape dcatapnl-sh:DatasetShape: *none*
+Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
+ - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*
 
 === End SHACL ===
 

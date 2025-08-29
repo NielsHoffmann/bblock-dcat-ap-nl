@@ -1,0 +1,113 @@
+
+
+{
+  "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-records",
+  "name": "DCAT-AP-NL profile 3.0 - Records binding",
+  "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP) bound to OGC API Records",
+  "status": "under-development",
+  "dateTimeAddition": "2025-08-29T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-08-29",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "ogc.geo.geodcat.dcat-records",
+    "geonovum.bbr.dcat.dcat-ap-nl"
+  ],
+  "sources": [
+    {
+      "title": "DCAT-AP-NL 3.0 Specification",
+      "link": "https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/"
+    }
+  ],
+  "shaclShapes": {
+    "geonovum.bbr.dcat.dcat-ap-nl-records": [
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "ogc.geo.geodcat.records-ontology": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl": [
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
+      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ]
+  },
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "DCAT-AP-NL",
+    "Records",
+    "profile"
+  ],
+  "highlighted": true,
+  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/schema.yaml",
+    "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/schema.json"
+  },
+  "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-records/schema.yaml",
+  "sourceLdContext": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-records/context.jsonld",
+  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-records/",
+  "rdfData": [],
+  "validationPassed": false,
+  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl-records/",
+  "description": "## DCAT-AP-NL 3.0 bound to OGC API records schema\n\n\nThis building block defines a binding of the DCAT-AP-NL 3.0 profile to OGC API Records.\n\nThis profile extends a building block that uses the official JSON-LD context for DCAT bound to the OGC API Records.\n\nIt serves as a building block that follows the pattern for a Dataset description including distributions and dataservices.\n\nAll very much work in progress at the moment, the implementation might still change considerably.",
+  "examples": [
+    {
+      "title": "DCAT-AP-NL 3.0 Dataset example encoded in JSON, showing binding to an OGC API record schema.",
+      "content": "This example shows a json file with OGC API Records info as well as DCAT-AP-NL 3.0 info.\nIt uses the JSON-LD context to transform JSON into linked data. \nThis is to illustrate the way interoperability can be achieved between OGC API Records and DCAT-AP-NL 3.0.\n\nThe JSON-LD and RDF/Turtle examples are transformed from the JSON source file using the JSON-LD context that you\ncan find under the 'Semantic Uplift' section of this building block.",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/dataset-record.json",
+          "base-uri": "http://example.com/records/",
+          "code": "{\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.30,53.60\n        ],\n        [\n          7.24,53.60\n        ],\n        [\n          7.24,50.73\n        ],\n        [\n          3.30,50.73\n        ],\n        [\n          3.30,53.60\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n      \"type\": \"Dataset\",\n      \"title\" : \"BRT TOP10NL\",\n      \"accessRights\" : [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n      ],\n      \"identifier\" : \"2482250f-3b00-4439-9f93-f3118229b201\",\n      \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n      \"accrualPeriodicity\" : \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\",\n      \"keywords\": [\n        \"BRT\",\n        \"Basisregistratie Topografie\",\n        \"Kadaster\",\n        \"TOP10\",\n        \"TOP10NL\",\n        \"Topografie\",\n        \"Topografische kaart\",\n        \"basisset NOVEX\" \n      ],\n      \"theme\": [\n         {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n          \"prefLabel\": {\n              \"nl\": \"Nationale datasets\"\n          }\n        },\n        {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy\",\n          \"prefLabel\": {\n              \"nl\": \"Hydrografie\"\n          }\n        },\n        {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://data.europa.eu/bna/c_dd313021\",\n          \"prefLabel\": {\n              \"nl\": \"Aardobservatie en milieu\"\n          }\n        }  \n      ],\n      \"distribution\": [\n        {\n          \"a\": \"dcat:Distribution\",\n          \"title\": \"BRT TOP10NL - Download\",\n          \"accessURL\": \"https://www.kadaster.nl/-/brt-top10nl-download\",\n          \"format\": \"application/zip\",\n          \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n          \"mediaType\": \"application/zip\"\n        },\n        {\n          \"a\": \"dcat:Distribution\",\n          \"title\": \"BRT TOP10NL - WFS\",\n          \"accessURL\": \"https://geodata.nationaalgeoregister.nl/brt/wfs?\",\n          \"format\": \"OGC:WFS-2.0.0-http-get-capabilities\",\n          \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n          \"mediaType\": \"application/xml\"\n        }\n      ],\n      \"dataservice\": [\n        {\n          \"a\": \"dcat:DataService\",\n          \"title\": \"BRT TOP10NL OGC API Features\",\n          \"description\": \"TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .\",\n          \"endpointURL\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n          \"servesDataset\": \"http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201\",\n          \"license\": \"http://creativecommons.org/licenses/by/4.0/deed.nl\",\n          \"accessRights\" : [\n            \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n            \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n          ],\n          \"endpointDescription\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n          \"identifier\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n          \"theme\": [\n         {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n          \"prefLabel\": {\n              \"nl\": \"Nationale datasets\"\n              }\n          }\n          ]\n        }\n      ]\n\n  },\n  \"linkTemplates\": [\n    \n  ],\n  \"links\": [\n   \n  ]\n}",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-records/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl-records/context.jsonld\",\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.3,\n          53.6\n        ],\n        [\n          7.24,\n          53.6\n        ],\n        [\n          7.24,\n          50.73\n        ],\n        [\n          3.3,\n          50.73\n        ],\n        [\n          3.3,\n          53.6\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n    \"type\": \"Dataset\",\n    \"title\": \"BRT TOP10NL\",\n    \"accessRights\": [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n    ],\n    \"identifier\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n    \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n    \"accrualPeriodicity\": \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\",\n    \"keywords\": [\n      \"BRT\",\n      \"Basisregistratie Topografie\",\n      \"Kadaster\",\n      \"TOP10\",\n      \"TOP10NL\",\n      \"Topografie\",\n      \"Topografische kaart\",\n      \"basisset NOVEX\"\n    ],\n    \"theme\": [\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n        \"prefLabel\": {\n          \"nl\": \"Nationale datasets\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy\",\n        \"prefLabel\": {\n          \"nl\": \"Hydrografie\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://data.europa.eu/bna/c_dd313021\",\n        \"prefLabel\": {\n          \"nl\": \"Aardobservatie en milieu\"\n        }\n      }\n    ],\n    \"distribution\": [\n      {\n        \"a\": \"dcat:Distribution\",\n        \"title\": \"BRT TOP10NL - Download\",\n        \"accessURL\": \"https://www.kadaster.nl/-/brt-top10nl-download\",\n        \"format\": \"application/zip\",\n        \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n        \"mediaType\": \"application/zip\"\n      },\n      {\n        \"a\": \"dcat:Distribution\",\n        \"title\": \"BRT TOP10NL - WFS\",\n        \"accessURL\": \"https://geodata.nationaalgeoregister.nl/brt/wfs?\",\n        \"format\": \"OGC:WFS-2.0.0-http-get-capabilities\",\n        \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n        \"mediaType\": \"application/xml\"\n      }\n    ],\n    \"dataservice\": [\n      {\n        \"a\": \"dcat:DataService\",\n        \"title\": \"BRT TOP10NL OGC API Features\",\n        \"description\": \"TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .\",\n        \"endpointURL\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n        \"servesDataset\": \"http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201\",\n        \"license\": \"http://creativecommons.org/licenses/by/4.0/deed.nl\",\n        \"accessRights\": [\n          \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n          \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n        ],\n        \"endpointDescription\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n        \"identifier\": \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\",\n        \"theme\": [\n          {\n            \"a\": \"skos:Concept\",\n            \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n            \"prefLabel\": {\n              \"nl\": \"Nationale datasets\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  \"linkTemplates\": [],\n  \"links\": []\n}",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-records/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dcterms:accrualPeriodicity \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\" ;\n    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:identifier \"2482250f-3b00-4439-9f93-f3118229b201\" ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    dcat:DataService [ a dcat:DataService ;\n            rdfs:label \"BRT TOP10NL OGC API Features\" ;\n            dcterms:description \"TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .\" ;\n            dcterms:identifier \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\" ;\n            dcat:endpointDescription \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\" ;\n            dcat:endpointURL \"https://api.pdok.nl/brt/top10nl/ogc/v1/api\" ;\n            dcat:license \"http://creativecommons.org/licenses/by/4.0/deed.nl\" ;\n            dcat:servesDataset \"http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201\" ;\n            dcat:theme [ a skos:Concept ;\n                    dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n                    skos:prefLabel \"Nationale datasets\"@nl ] ] ;\n    dcat:distribution [ a dcat:Distribution ;\n            rdfs:label \"BRT TOP10NL - WFS\" ;\n            dcterms:format \"OGC:WFS-2.0.0-http-get-capabilities\" ;\n            dcat:accessURL \"https://geodata.nationaalgeoregister.nl/brt/wfs?\" ;\n            dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" ;\n            dcat:mediaType \"application/xml\" ],\n        [ a dcat:Distribution ;\n            rdfs:label \"BRT TOP10NL - Download\" ;\n            dcterms:format \"application/zip\" ;\n            dcat:accessURL \"https://www.kadaster.nl/-/brt-top10nl-download\" ;\n            dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" ;\n            dcat:mediaType \"application/zip\" ] ;\n    dcat:keyword \"BRT\",\n        \"Basisregistratie Topografie\",\n        \"Kadaster\",\n        \"TOP10\",\n        \"TOP10NL\",\n        \"Topografie\",\n        \"Topografische kaart\",\n        \"basisset NOVEX\" ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" ;\n    dcat:theme [ a skos:Concept ;\n            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationale datasets\"@nl ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
+          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-records/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for DCAT Dataset - defines all extra\n  elements defined by DCAT so that the JSON-LD context can map to DCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/dcat-records/schema.yaml\nx-jsonld-extra-terms:\n  a: '@type'\n  theme:\n    x-jsonld-id: http://www.w3.org/ns/dcat#theme\n    x-jsonld-container: '@set'\n  concept:\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#Concept\n    x-jsonld-type: '@id'\n  source:\n    x-jsonld-id: http://purl.org/dc/terms/source\n    x-jsonld-type: '@id'\n  prefLabel:\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel\n    x-jsonld-container: '@language'\n  accrualPeriodicity: http://purl.org/dc/terms/accrualPeriodicity\n  distribution: http://www.w3.org/ns/dcat#distribution\n  accessURL: http://www.w3.org/ns/dcat#accessURL\n  mediaType: http://www.w3.org/ns/dcat#mediaType\n  format: http://purl.org/dc/terms/format\n  dataservice: http://www.w3.org/ns/dcat#DataService\n  endpointURL: http://www.w3.org/ns/dcat#endpointURL\n  servesDataset: http://www.w3.org/ns/dcat#servesDataset\n  identifier: http://purl.org/dc/terms/identifier\n  endpointDescription: http://www.w3.org/ns/dcat#endpointDescription\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  skos: http://www.w3.org/2004/02/skos/core#\n  dct: http://purl.org/dc/terms/\n",
+  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitPath": "_sources/dcat-ap-nl-records"
+}

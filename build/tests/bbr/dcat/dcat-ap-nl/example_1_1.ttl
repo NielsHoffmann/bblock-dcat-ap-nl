@@ -10,6 +10,91 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+exampleMS:1T2p3o4B-rec a dcat:CatalogRecord ;
+    dct:conformsTo <https://semiceu.github.io/DCAT-AP/releases/3.0.0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;
+    dct:modified "2019-02-27T15:15:08Z" ;
+    dct:source <https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ba83c30f-12f7-4582-a590-852b6d1706de?tab=general> ;
+    foaf:primaryTopic exampleMS:1T2p3o4B .
+
+exampleMS:Datacatalog a dcat:Catalogue ;
+    dct:description "beschrijving van de catalog"@nl ;
+    dct:publisher [ a foaf:Agent ;
+            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;
+            foaf:name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dct:title "De naam van de catalog"@nl ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "My Organization"@en,
+                "Mijn Organisatie"@nl ;
+            vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;
+            vcard:hasURL "http://mijnorganisatie.org/" ;
+            vcard:organization-name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dcat:dataset exampleMS:1T2p3o4B ;
+    dcat:service exampleMS:1T2p3o4B-dataservice-WMS .
+
+<http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd> a dct:Standard .
+
+<http://www.opengis.net/def/serviceType/ogc/wms> a dct:Standard .
+
+exampleMS:1T2p3o4B-dataservice-WMS a dcat:DataService ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:conformsTo <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    dct:creator [ a foaf:Agent ;
+            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;
+            foaf:name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dct:description "description of the dataservice in english"@en,
+        "beschrijving van de dataservice"@nl ;
+    dct:identifier "https://data.exampleMS.gov/id/data/1T2p3o4B-dataservice-WMS" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
+    dct:publisher [ a foaf:Agent ;
+            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;
+            foaf:name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dct:title "Title of the dataservice"@en,
+        "Naam van de dataservice"@nl ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "My Organization"@en,
+                "Mijn Organisatie"@nl ;
+            vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;
+            vcard:hasURL "http://mijnorganisatie.org/" ;
+            vcard:organization-name "My Organization"@en,
+                "Mijn Organisatie"@nl ] ;
+    dcat:endpointDescription <https://orgea.exampleMS.gov/services/wms?&request=GetCapabilities&service=WMS> ;
+    dcat:endpointURL <https://orgea.exampleMS.gov/services/wms?> ;
+    dcat:keyword "keyword 1"@en,
+        "keyword 2"@en,
+        "trefwoord 1"@nl,
+        "trefwoord 2"@nl ;
+    dcat:servesDataset exampleMS:1T2p3o4B ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+    foaf:page <https://orgea.exampleMS.gov/QoS.html> .
+
+exampleMS:1T2p3o4B-dist-SHP a dcat:Distribution ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+    dct:conformsTo <http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
+    dcat:accessURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;
+    dcat:downloadURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/vnd.shp> .
+
+<https://www.geonames.org/2750405> a dct:Location .
+
+<https://www.iana.org/assignments/media-types/application/vnd.shp> a dct:MediaType .
+
+<http://creativecommons.org/publicdomain/zero/1.0/deed.nl> a dct:LicenseDocument .
+
+<http://data.europa.eu/eli/reg/2010/1089> a dct:Standard .
+
+<https://orgea.exampleMS.gov/files/1T2p3o4B.shp> a rdf:Resource .
+
+<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a dct:RightsStatement .
+
 exampleMS:1T2p3o4B a dcat:Dataset ;
     dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
@@ -49,13 +134,7 @@ exampleMS:1T2p3o4B a dcat:Dataset ;
         "trefwoord 2"@nl ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> .
 
-<https://www.geonames.org/2750405> a dct:Location .
-
-<http://data.europa.eu/eli/reg/2010/1089> a dct:Standard .
-
 <http://data.europa.eu/eli/reg_impl/2023/138/oj> a eli:LegalResource .
-
-<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a dct:RightsStatement .
 
 <http://publications.europa.eu/resource/authority/language/NLD> a dct:LinguisticSystem .
 

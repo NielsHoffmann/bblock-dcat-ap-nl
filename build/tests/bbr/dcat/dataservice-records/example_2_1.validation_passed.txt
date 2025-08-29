@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding
-Generated 2025-08-22T15:12:05.358576+00:00
+Generated 2025-08-29T12:47:08.863386+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,12 +12,22 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
+Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
   Validation Report
   Conforms: True
   
-Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
- - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*
+Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:DataServiceShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape _:nde15c9975a7f4570b1cd02649f63cf99b3: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape _:nde15c9975a7f4570b1cd02649f63cf99b4: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
 
 === End SHACL ===
 
