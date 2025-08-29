@@ -1,0 +1,13 @@
+- title: DCAT-AP-NL 3.0 Dataset example encoded in JSON, showing binding to an OGC API record schema.
+  content: |-
+    This example shows a json file with OGC API Records info as well as DCAT-AP-NL 3.0 info.
+    It uses the JSON-LD context to transform JSON into linked data. 
+    This is to illustrate the way interoperability can be achieved between OGC API Records and DCAT-AP-NL 3.0.
+   
+    The JSON-LD and RDF/Turtle examples are transformed from the JSON source file using the JSON-LD context that you
+    can find under the 'Semantic Uplift' section of this building block.
+
+  snippets:
+    - language: json
+      ref: examples/dataset-record.json
+      base-uri: "http://example.com/records/"

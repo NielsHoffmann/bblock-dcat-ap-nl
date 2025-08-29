@@ -1,0 +1,130 @@
+{
+  "id": "2482250f-3b00-4439-9f93-f3118229b201",
+  "type": "Feature",
+  "time": {
+    "interval": [
+      "1924-08-17T00:00:00Z",
+      ".."
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.30,53.60
+        ],
+        [
+          7.24,53.60
+        ],
+        [
+          7.24,50.73
+        ],
+        [
+          3.30,50.73
+        ],
+        [
+          3.30,53.60
+        ]
+      ]
+    ]
+  },
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+    "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+  ],
+  "properties": {
+      "type": "Dataset",
+      "title" : "BRT TOP10NL",
+      "accessRights" : [
+      "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+      "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+      ],
+      "identifier" : "2482250f-3b00-4439-9f93-f3118229b201",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "accrualPeriodicity" : "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+      "keywords": [
+        "BRT",
+        "Basisregistratie Topografie",
+        "Kadaster",
+        "TOP10",
+        "TOP10NL",
+        "Topografie",
+        "Topografische kaart",
+        "basisset NOVEX" 
+      ],
+      "theme": [
+         {
+          "a": "skos:Concept", 
+          "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+          "prefLabel": {
+              "nl": "Nationale datasets"
+          }
+        },
+        {
+          "a": "skos:Concept", 
+          "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy",
+          "prefLabel": {
+              "nl": "Hydrografie"
+          }
+        },
+        {
+          "a": "skos:Concept", 
+          "source": "http://data.europa.eu/bna/c_dd313021",
+          "prefLabel": {
+              "nl": "Aardobservatie en milieu"
+          }
+        }  
+      ],
+      "distribution": [
+        {
+          "a": "dcat:Distribution",
+          "title": "BRT TOP10NL - Download",
+          "accessURL": "https://www.kadaster.nl/-/brt-top10nl-download",
+          "format": "application/zip",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "mediaType": "application/zip"
+        },
+        {
+          "a": "dcat:Distribution",
+          "title": "BRT TOP10NL - WFS",
+          "accessURL": "https://geodata.nationaalgeoregister.nl/brt/wfs?",
+          "format": "OGC:WFS-2.0.0-http-get-capabilities",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "mediaType": "application/xml"
+        }
+      ],
+      "dataservice": [
+        {
+          "a": "dcat:DataService",
+          "title": "BRT TOP10NL OGC API Features",
+          "description": "TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .",
+          "endpointURL": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "servesDataset": "http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201",
+          "license": "http://creativecommons.org/licenses/by/4.0/deed.nl",
+          "accessRights" : [
+            "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+            "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+          ],
+          "endpointDescription": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "identifier": "https://api.pdok.nl/brt/top10nl/ogc/v1/api",
+          "theme": [
+         {
+          "a": "skos:Concept", 
+          "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+          "prefLabel": {
+              "nl": "Nationale datasets"
+              }
+          }
+          ]
+        }
+      ]
+
+  },
+  "linkTemplates": [
+    
+  ],
+  "links": [
+   
+  ]
+}

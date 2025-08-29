@@ -1,21 +1,16 @@
 {
-  "name": "DCAT-AP-NL profile 3.0",
-  "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)",
+  "name": "DCAT-AP-NL profile 3.0 - Records binding",
+  "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP) bound to OGC API Records",
   "status": "under-development",
-  "dateTimeAddition": "2025-04-02T00:00:00Z",
+  "dateTimeAddition": "2025-08-29T00:00:00Z",
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-04-03",
+  "dateOfLastChange": "2025-08-29",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog",
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution",
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries"
-
+        "geonovum.bbr.dcat.dcat-ap-nl",
+        "ogc.geo.geodcat.dcat-records"
       ],
   "sources": [
     {
@@ -26,6 +21,6 @@
   "shaclShapes": [  "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
                     "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl" ],
   "scope": "dev",
-  "tags": ["DCAT","DCAT-AP-NL", "profile"],
+  "tags": ["DCAT","DCAT-AP-NL", "Records", "profile"],
   "highlighted": true
 }

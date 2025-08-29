@@ -1,42 +1,51 @@
-- title: DCAT-AP-NL example - Dataset
+- title: DCAT-AP-NL example - complete
   content: |-
-    An example from the DCAT-AP-NL profile for a Dataset
+    An example from the DCAT-AP-NL profile
 
   snippets:
     - language: ttl
-      ref: ./examples/dataset.ttl
+      ref: examples/all.ttl
 
-- title: DCAT-AP-NL example - Distribution
-  content: |-
-    An example from the DCAT-AP-NL profile for a Distribution
 
-  snippets:
-    - language: ttl
-      ref: ./examples/distribution.ttl
+# - title: DCAT-AP-NL example - Dataset
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a Dataset
 
-- title: DCAT-AP-NL example - Dataservice
-  content: |-
-    An example from the DCAT-AP-NL profile for a Dataservice
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/dataset.ttl
 
-  snippets:
-    - language: ttl
-      ref: ./examples/dataservice.ttl
+# - title: DCAT-AP-NL example - Distribution
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a Distribution
 
-- title: DCAT-AP-NL example - Catalog
-  content: |-
-    An example from the DCAT-AP-NL profile for a Catalog
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/distribution.ttl
 
-  snippets:
-    - language: ttl
-      ref: ./examples/catalog.ttl
+# - title: DCAT-AP-NL example - Dataservice
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a Dataservice
 
-- title: DCAT-AP-NL example - CatalogRecord
-  content: |-
-    An example from the DCAT-AP-NL profile for a CatalogRecord
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/dataservice.ttl
 
-  snippets:
-    - language: ttl
-      ref: ./examples/catalogrecord.ttl
+# - title: DCAT-AP-NL example - Catalog
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a Catalog
+
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/catalog.ttl
+
+# - title: DCAT-AP-NL example - CatalogRecord
+#   content: |-
+#     An example from the DCAT-AP-NL profile for a CatalogRecord
+
+#   snippets:
+#     - language: ttl
+#       ref: ./examples/catalogrecord.ttl
 
 # - title: DCAT-AP-NL example - DatasetSeries
 #   content: |-
