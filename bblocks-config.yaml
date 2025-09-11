@@ -1,5 +1,5 @@
 # A short, descriptive name of this building block collection
-name: OGC Building Blocks for DCAT-AP-NL 3.0
+name: OGC Building Blocks for DCAT-AP-NL 3.0 - EPERIMENTAL
 
 # Short abstract for this collection (optional)
 abstract: |
@@ -10,8 +10,11 @@ description: |
   The purpose of this collection is to experiment with the building block approach and to showcase how
   this potentially can add value.
 
+  Note: the building blocks in the geonovum repository are a more conservative implementation while the 
+  building blocks in this repository are more experimental.
+
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: geonovum.bbr.dcat.
+identifier-prefix: geonovum-labs.bbr.dcat.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
