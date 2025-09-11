@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl-dataservice - DCAT-AP-NL profile 3.0 - Dataservice
-Generated 2025-08-29T12:47:08.069392+00:00
+Generated 2025-09-11T07:43:10.221620+00:00
 === Files ===
 Using example_2_1.ttl from examples
 Output Turtle example_2_1.ttl created
@@ -11,12 +11,12 @@ Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
- - Shape _:n75cc21baf7704e80867ae21b6e7d6feeb3: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
- - Shape _:n75cc21baf7704e80867ae21b6e7d6feeb4: *none*
- - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068
+ - Shape _:n26395c26e9e8463fb025512c43d9845bb4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068
+ - Shape _:n26395c26e9e8463fb025512c43d9845bb3: *none*
 
 === End SHACL ===
 

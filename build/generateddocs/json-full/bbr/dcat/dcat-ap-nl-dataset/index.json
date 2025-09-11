@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-29",
+  "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "geonovum.bbr.dcat.dcat-ap-nl-catalog"
@@ -22,16 +22,16 @@
   ],
   "shaclShapes": {
     "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
     ],
     "ogc.geo.geodcat.dcat-ap": [
-      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
+      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
     ]
   },
   "scope": "dev",
@@ -42,10 +42,10 @@
     "profile"
   ],
   "highlighted": true,
-  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/",
   "rdfData": [],
   "validationPassed": true,
-  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl-dataset/",
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl-dataset/",
   "description": "## DCAT-AP-NL 3.0 - Dataset\n\nThese building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n\n\nImplementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.\n\n\n",
   "examples": [
     {
@@ -56,12 +56,12 @@
           "language": "ttl",
           "ref": "./examples/dataset.ttl",
           "code": "@prefix exBB: <http://example/buildingblock> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n\nexBB:2482250f-3b00-4439-9f93-f3118229b201 a dcat:Dataset;\n    dct:title \"BRT TOP10NL\"@nl ;\n    dcat:distribution exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102 ;\n    dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,\n        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;\n    dcat:contactPoint [ a vcard:Individual ;\n            vcard:fn \"Klantcontactcenter\"@nl ;\n            vcard:hasAddress [ a vcard:Address ;\n                    vcard:country-name \"Nederland\" ;\n                    vcard:locality \"Apeldoorn\" ;\n                    vcard:postal-code \"7300 GH\" ;\n                    vcard:region \"Gelderland\" ;\n                    vcard:street-address \"Postbus 9046\" ] ;\n            vcard:hasEmail <mailto:kcc@kadaster.nl> ;\n            vcard:hasTelephone <tel:+31088-1832200> ;\n            vcard:hasURL <https://www.kadaster.nl> ;\n            vcard:organization-name \"Kadaster\"@nl ] ;\n    dct:creator [ a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl ;\n            foaf:name \"Kadaster\"@en ;\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;\n    dct:publisher [ a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl ;\n            foaf:name \"Kadaster\"@en ;\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;\n    dct:identifier \"2482250f-3b00-4439-9f93-f3118229b201\"^^xsd:string ;\n    dcat:theme [ a skos:Concept ;\n            dct:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationaal\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/sr> ;\n            skos:prefLabel \"Zeegebieden\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/gn> ;\n            skos:prefLabel \"Geografische namen\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_b79e35eb> ;\n            skos:prefLabel \"Mobiliteit\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;\n            skos:prefLabel \"HVD\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/lc> ;\n            skos:prefLabel \"Bodemgebruik\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/tn> ;\n            skos:prefLabel \"Vervoersnetwerken\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_ac64a52d> ;\n            skos:prefLabel \"Geospatiale data\"@nl ] \n.",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataset/example_1_1.ttl"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl-dataset/example_1_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": null,
-  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "gitPath": "_sources/dcat-ap-nl-dataset"
 }

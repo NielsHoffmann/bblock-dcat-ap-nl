@@ -1,5 +1,5 @@
 {
-  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataservice-records/context.jsonld",
   "id": "2482250f-3b00-4439-9f93-f3118229b201",
   "type": "Feature",
   "time": {

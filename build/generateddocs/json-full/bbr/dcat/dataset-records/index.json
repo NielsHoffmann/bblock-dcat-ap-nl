@@ -9,11 +9,11 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-29",
+  "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "ogc.geo.geodcat.dcat-records",
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+    "ogc.geo.geodcat.dcat-records"
   ],
   "sources": [
     {
@@ -35,39 +35,39 @@
   ],
   "highlighted": true,
   "shaclShapes": {
-    "ogc.geo.geodcat.records-ontology": [
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
-    ],
     "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
     ],
     "ogc.geo.geodcat.dcat-ap": [
-      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
+      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
+    ],
+    "ogc.geo.geodcat.records-ontology": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
     ]
   },
-  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
+  "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
   "schema": {
-    "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml",
-    "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json"
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json"
   },
-  "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataset-records/schema.yaml",
-  "sourceLdContext": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataset-records/context.jsonld",
-  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataset-records/",
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dataset-records/schema.yaml",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dataset-records/context.jsonld",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dataset-records/",
   "rdfData": [],
   "validationPassed": true,
-  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dataset-records/",
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dataset-records/",
   "transforms": [
     {
       "id": "scoped-ids",
       "description": "Converts OGC API Records \"Scoped Identifer\" construct into DCAT dcterms:identifier URI form",
       "type": "sparql-update",
-      "ref": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dataset-records/transforms/scoped-ids.sparql",
+      "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dataset-records/transforms/scoped-ids.sparql",
       "code": "prefix rec: <https://www.opengis.net/def/ogc-api/records/>\nprefix dcterms: <http://purl.org/dc/terms/>\nprefix dcat: <http://www.w3.org/ns/dcat#>\n\nDELETE {}\nINSERT \n{ ?dataset dcterms:identifier ?identifier}\nWHERE\n{\n    ?dataset rec:scopedIdentifier ?sid .\n    ?sid rec:id ?id .\n    ?sid rec:scheme ?scheme_string .\n    BIND( URI( CONCAT(?scheme_string,\"/\", ?id )) AS ?identifier )\n}",
       "inputs": {
         "mediaTypes": [
@@ -140,9 +140,9 @@
           "ref": "examples/dataset-record.ttl",
           "code": "@prefix exBB: <http://example/buildingblock> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://www.opengis.net/def/ogc-api/records/rec:> .\n@prefix ns2: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nexBB:2482250f-3b00-4439-9f93-f3118229b201 a dcat:Dataset, geojson:Feature;\n    dct:title \"BRT TOP10NL\"@nl ;\n    dcat:distribution exBB:2482250f-3b00-4439-9f93-f3118229b201_d0e1102 ;\n    dct:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,\n        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;\n    dcat:contactPoint [ a vcard:Individual ;\n            vcard:fn \"Klantcontactcenter\"@nl ;\n            vcard:hasAddress [ a vcard:Address ;\n                    vcard:country-name \"Nederland\" ;\n                    vcard:locality \"Apeldoorn\" ;\n                    vcard:postal-code \"7300 GH\" ;\n                    vcard:region \"Gelderland\" ;\n                    vcard:street-address \"Postbus 9046\" ] ;\n            vcard:hasEmail <mailto:kcc@kadaster.nl> ;\n            vcard:hasTelephone <tel:+31088-1832200> ;\n            vcard:hasURL <https://www.kadaster.nl> ;\n            vcard:organization-name \"Kadaster\"@nl ] ;\n    dct:creator [ a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl ;\n            foaf:name \"Kadaster\"@en ;\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;\n    dct:publisher [ a foaf:Agent ;\n            foaf:name \"Kadaster\"@nl ;\n            foaf:name \"Kadaster\"@en ;\n            dct:type <http://purl.org/adms/publishertype/LocalAuthority> ] ;\n    dct:identifier \"2482250f-3b00-4439-9f93-f3118229b201\"^^xsd:string ;\n    dct:language <http://publications.europa.eu/resource/authority/language/DUT> ;\n    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;\n    dcat:keyword \"BRT\"@nl,\n        \"Basisregistratie Topografie\"@nl,\n        \"Kadaster\"@nl,\n        \"TOP10\"@nl,\n        \"TOP10NL\"@nl,\n        \"Topografie\"@nl,\n        \"Topografische kaart\"@nl,\n        \"basisset NOVEX\"@nl ;\n    dcat:theme [ a skos:Concept ;\n            dct:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationaal\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/sr> ;\n            skos:prefLabel \"Zeegebieden\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/gn> ;\n            skos:prefLabel \"Geografische namen\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_b79e35eb> ;\n            skos:prefLabel \"Mobiliteit\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;\n            skos:prefLabel \"HVD\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/lc> ;\n            skos:prefLabel \"Bodemgebruik\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/tn> ;\n            skos:prefLabel \"Vervoersnetwerken\"@nl ],\n        [ a skos:Concept ;\n            dct:source <http://data.europa.eu/bna/c_ac64a52d> ;\n            skos:prefLabel \"Geospatiale data\"@nl ] \n\n.",
           "transformResults": {
-            "scoped-ids": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/transforms/example_1_1.scoped-ids.ttl"
+            "scoped-ids": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/transforms/example_1_1.scoped-ids.ttl"
           },
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_1_1.ttl"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_1_1.ttl"
         }
       ]
     },
@@ -155,25 +155,25 @@
           "ref": "examples/dataset-record.json",
           "base-uri": "http://example.com/records/",
           "code": "{\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.30,53.60\n        ],\n        [\n          7.24,53.60\n        ],\n        [\n          7.24,50.73\n        ],\n        [\n          3.30,50.73\n        ],\n        [\n          3.30,53.60\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n      \"type\": \"Dataset\",\n      \"title\" : \"BRT TOP10NL\",\n      \"accessRights\" : [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n      ],\n      \"identifier\" : \"2482250f-3b00-4439-9f93-f3118229b201\",\n      \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n      \"accrualPeriodicity\" : \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\",\n      \"keywords\": [\n        \"BRT\",\n        \"Basisregistratie Topografie\",\n        \"Kadaster\",\n        \"TOP10\",\n        \"TOP10NL\",\n        \"Topografie\",\n        \"Topografische kaart\",\n        \"basisset NOVEX\" \n      ],\n      \"theme\": [\n         {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n          \"prefLabel\": {\n              \"nl\": \"Nationale datasets\"\n          }\n        },\n        {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy\",\n          \"prefLabel\": {\n              \"nl\": \"Hydrografie\"\n          }\n        },\n        {\n          \"a\": \"skos:Concept\", \n          \"source\": \"http://data.europa.eu/bna/c_dd313021\",\n          \"prefLabel\": {\n              \"nl\": \"Aardobservatie en milieu\"\n          }\n        }\n        \n      ]\n  },\n  \"linkTemplates\": [\n    \n  ],\n  \"links\": [\n   \n  ]\n}",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.json"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld\",\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.3,\n          53.6\n        ],\n        [\n          7.24,\n          53.6\n        ],\n        [\n          7.24,\n          50.73\n        ],\n        [\n          3.3,\n          50.73\n        ],\n        [\n          3.3,\n          53.6\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n    \"type\": \"Dataset\",\n    \"title\": \"BRT TOP10NL\",\n    \"accessRights\": [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n    ],\n    \"identifier\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n    \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n    \"accrualPeriodicity\": \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\",\n    \"keywords\": [\n      \"BRT\",\n      \"Basisregistratie Topografie\",\n      \"Kadaster\",\n      \"TOP10\",\n      \"TOP10NL\",\n      \"Topografie\",\n      \"Topografische kaart\",\n      \"basisset NOVEX\"\n    ],\n    \"theme\": [\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n        \"prefLabel\": {\n          \"nl\": \"Nationale datasets\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy\",\n        \"prefLabel\": {\n          \"nl\": \"Hydrografie\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://data.europa.eu/bna/c_dd313021\",\n        \"prefLabel\": {\n          \"nl\": \"Aardobservatie en milieu\"\n        }\n      }\n    ]\n  },\n  \"linkTemplates\": [],\n  \"links\": []\n}",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.jsonld"
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld\",\n  \"id\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n  \"type\": \"Feature\",\n  \"time\": {\n    \"interval\": [\n      \"1924-08-17T00:00:00Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          3.3,\n          53.6\n        ],\n        [\n          7.24,\n          53.6\n        ],\n        [\n          7.24,\n          50.73\n        ],\n        [\n          3.3,\n          50.73\n        ],\n        [\n          3.3,\n          53.6\n        ]\n      ]\n    ]\n  },\n  \"conformsTo\": [\n    \"http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core\",\n    \"http://modellen.geostandaarden.nl/dcat-ap-nl/\"\n  ],\n  \"properties\": {\n    \"type\": \"Dataset\",\n    \"title\": \"BRT TOP10NL\",\n    \"accessRights\": [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n    ],\n    \"identifier\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n    \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n    \"accrualPeriodicity\": \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\",\n    \"keywords\": [\n      \"BRT\",\n      \"Basisregistratie Topografie\",\n      \"Kadaster\",\n      \"TOP10\",\n      \"TOP10NL\",\n      \"Topografie\",\n      \"Topografische kaart\",\n      \"basisset NOVEX\"\n    ],\n    \"theme\": [\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national\",\n        \"prefLabel\": {\n          \"nl\": \"Nationale datasets\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy\",\n        \"prefLabel\": {\n          \"nl\": \"Hydrografie\"\n        }\n      },\n      {\n        \"a\": \"skos:Concept\",\n        \"source\": \"http://data.europa.eu/bna/c_dd313021\",\n        \"prefLabel\": {\n          \"nl\": \"Aardobservatie en milieu\"\n        }\n      }\n    ]\n  },\n  \"linkTemplates\": [],\n  \"links\": []\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dcterms:accrualPeriodicity \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\" ;\n    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    dcat:keyword \"BRT\",\n        \"Basisregistratie Topografie\",\n        \"Kadaster\",\n        \"TOP10\",\n        \"TOP10NL\",\n        \"Topografie\",\n        \"Topografische kaart\",\n        \"basisset NOVEX\" ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" ;\n    dcat:theme [ a skos:Concept ;\n            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationale datasets\"@nl ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dcterms:accrualPeriodicity \"http://publications.europa.eu/resource/authority/frequency/ANNUAL\" ;\n    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    dcat:keyword \"BRT\",\n        \"Basisregistratie Topografie\",\n        \"Kadaster\",\n        \"TOP10\",\n        \"TOP10NL\",\n        \"Topografie\",\n        \"Topografische kaart\",\n        \"basisset NOVEX\" ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" ;\n    dcat:theme [ a skos:Concept ;\n            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;\n            skos:prefLabel \"Nationale datasets\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;\n            skos:prefLabel \"Hydrografie\"@nl ],\n        [ a skos:Concept ;\n            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;\n            skos:prefLabel \"Aardobservatie en milieu\"@nl ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
           "transformResults": {
-            "scoped-ids": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/transforms/example_2_3.scoped-ids.ttl"
+            "scoped-ids": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/transforms/example_2_3.scoped-ids.ttl"
           },
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.ttl"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataset-records/example_2_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for DCAT Dataset - defines all extra\n  elements defined by DCAT so that the JSON-LD context can map to DCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/dcat-records/schema.yaml\nx-jsonld-extra-terms:\n  a: '@type'\n  theme:\n    x-jsonld-id: http://www.w3.org/ns/dcat#theme\n    x-jsonld-container: '@set'\n  concept:\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#Concept\n    x-jsonld-type: '@id'\n  source:\n    x-jsonld-id: http://purl.org/dc/terms/source\n    x-jsonld-type: '@id'\n  prefLabel:\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel\n    x-jsonld-container: '@language'\n  accrualPeriodicity: http://purl.org/dc/terms/accrualPeriodicity\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  skos: http://www.w3.org/2004/02/skos/core#\n  dct: http://purl.org/dc/terms/\n",
-  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "gitPath": "_sources/dataset-records"
 }

@@ -26,6 +26,6 @@ Implementation is still experimental and might change at any moment. For example
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
+* URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
 * Path: `_sources/dcat-ap-nl-datasetseries`
 

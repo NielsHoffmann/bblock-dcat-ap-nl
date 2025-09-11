@@ -9,15 +9,15 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-29",
+  "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "geonovum.bbr.dcat.dcat-ap-nl-distribution",
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog",
     "geonovum.bbr.dcat.dcat-ap-nl-datasetseries",
     "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
     "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
-    "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+    "geonovum.bbr.dcat.dcat-ap-nl-dataset"
   ],
   "sources": [
     {
@@ -30,33 +30,33 @@
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
-    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
+    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    ],
+    "ogc.geo.geodcat.dcat-ap": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
+      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-    ],
-    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-    ],
-    "ogc.geo.geodcat.dcat-ap": [
-      "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl"
-    ],
-    "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
-      "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+    ],
+    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
     ]
   },
   "scope": "dev",
@@ -67,14 +67,14 @@
   ],
   "highlighted": true,
   "schema": {
-    "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml",
-    "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json"
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/schema.json"
   },
-  "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/schema.json",
-  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/",
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/schema.json",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl/",
   "rdfData": [],
-  "validationPassed": true,
-  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl/",
+  "validationPassed": false,
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-ap-nl/",
   "description": "## DCAT-AP-NL 3.0\n\nThese building blocks provide a framework to test compatibility of the DCAT-AP-NL 3.0 profile with DCAT-AP, and to make this relationship transparent to any implementation of DCAT-AP-NL using OGC standards.\n\n\nImplementation is still experimental and might change at any moment. For example the shacl validation of the DatasetSeries example is failing at the moment, which is a known thing.\n\n\n",
   "examples": [
     {
@@ -85,12 +85,12 @@
           "language": "ttl",
           "ref": "examples/all.ttl",
           "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix eli: <http://data.europa.eu/eli/ontology#> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix example-ds: <https://data.gov.gr/id/dataset/> .\n@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .\n\n## Imports om relevante waardes uit waardelijsten of gegevens uit externe bronnen op te nemen.\n##  Dit is in principe alleen nodig voor validatie en als er gebruik gemaakt kan worden van owl:imports bij validatie.\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n[] owl:imports \n  <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ,\n  <http://data.europa.eu/eli/reg_impl/2023/138/oj> ,\n  <http://data.europa.eu/eli/reg/2010/1089> ,\n  <http://publications.europa.eu/resource/authority/language/NLD> ,\n  <http://www.geonames.org/2750405/about.rdf> ,\n  <http://publications.europa.eu/resource/authority/data-theme/EDUC> .\n## End Import\n\n## Catalog\n\nexampleMS:Datacatalog  a dcat:Catalogue;\n  dct:title \"De naam van de catalog\"@nl;\n   dcat:contactPoint [\n     a vcard:Kind ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n  dct:description \"beschrijving van de catalog\"@nl;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n  dcat:dataset exampleMS:1T2p3o4B ;\n  dcat:service exampleMS:1T2p3o4B-dataservice-WMS\n  .\n\n## CatalogRecord\n\n  exampleMS:1T2p3o4B-rec a dcat:CatalogRecord;\n   dct:conformsTo <https://semiceu.github.io/DCAT-AP/releases/3.0.0>;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:modified \"2019-02-27T15:15:08Z\" ; \n   foaf:primaryTopic exampleMS:1T2p3o4B ;\n   dct:source <https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ba83c30f-12f7-4582-a590-852b6d1706de?tab=general>\n  .\n\n## Dataset\n\nexampleMS:1T2p3o4B a dcat:Dataset;\n   dct:title \"Naam van de dataset\"@nl;\n   dct:title \"Title of the dataset\"@en;\n   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dct:conformsTo <http://data.europa.eu/eli/reg/2010/1089>;\n   dcat:contactPoint [\n     a <https://json-ld.org/playground/Organization> ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n   dct:creator [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:description \"beschrijving van de dataset\"@nl;\n   dct:description \"description of the dataset in english\"@en;\n   dct:identifier \"https://data.exampleMS.gov/id/dataset/1T2p3o4B\";\n   dcat:keyword \"trefwoord 1\"@nl;\n   dcat:keyword \"trefwoord 2\"@nl;\n   dcat:keyword \"keyword 1\"@en;\n   dcat:keyword \"keyword 2\"@en;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:spatial <https://www.geonames.org/2750405>;\n   dct:spatial [a dct:Location ;\n                  dcat:bbox \"POLYGON ((3.053 47.975,7.24 47.975,7.24 53.504,3.053 53.504,3.053 47.975))\"^^rdf:wktLiteral;\n  ] ;\n   dct:temporal [ a dct:PeriodOfTime ;\n     dcat:startDate \"2016-03-28\"^^xsd:date ;\n     dcat:endDate   \"2018-08-25\"^^xsd:date ;\n     ] ;\n   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC>;\n   dcat:distribution exampleMS:1T2p3o4B-dist-SHP;\n   dcat:distribution exampleMS:1T2p3o4B-dist-WMS\n   .\n\n# Aanvullingen voor EU waardelijsten, die nog niet volledig zijn ontsloten \n# De dct:RightsStatement zit niet in de waardelijst. Dat lijkt een fout in de waardelijst.\n<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a dct:RightsStatement .\n\n# De typering dct:LinguisticSystem zit niet in de waardelijst. Dat lijkt een fout in de waardelijst.\n<http://publications.europa.eu/resource/authority/language/NLD> a dct:LinguisticSystem .\n\n# Geen RDF van beschikbaar\n<http://data.europa.eu/eli/reg_impl/2023/138/oj> a eli:LegalResource .\n\n# Geen RDF van beschikbaar\n<http://data.europa.eu/eli/reg/2010/1089> a dct:Standard .\n\n# Geonames is niet gedefinieert als een dct:Location. \n<https://www.geonames.org/2750405> a dct:Location .\n\n# Deze zou je kunnen importeren, maar dan krijg je validatiefouten op ConceptScheme shapes, omdat de adms ConceptSchemes niet voldoen aan de ConceptScheme shape van DCAT-AP.\n<http://purl.org/adms/publishertype/LocalAuthority> a skos:Concept ;\n skos:prefLabel\"Local Authority\"@en .\n\n# ## DatasetSeries\n\n# example-ds:BeePopulation2022 a dcat:Dataset;\n#   dcat:inSeries example-ser:BeePopulation .\n\n# example-ds:BeePopulation2023 a dcat:Dataset;\n#   dcat:inSeries example-ser:BeePopulation .\n\n# example-ser:BeePopulation a dcat:DatasetSeries;\n#   dct:title \"Bee population\"@en;\n#   dct:description \"Bee population annual serie\"@en;\n#   .\n\n## Distribution\n\nexampleMS:1T2p3o4B-dist-SHP a dcat:Distribution;\n   dcat:accessURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dcat:downloadURL <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> ;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;\n   dct:conformsTo <http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd> ;\n   dcat:mediaType <https://www.iana.org/assignments/media-types/application/vnd.shp>\n   .\n\n<https://www.iana.org/assignments/media-types/application/vnd.shp> a dct:MediaType\n.\n<http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd> a dct:Standard\n.\n<https://orgea.exampleMS.gov/files/1T2p3o4B.shp>  a rdf:Resource\n.\n <https://orgea.exampleMS.gov/files/1T2p3o4B.shp> a rdf:Resource\n.\n<http://creativecommons.org/publicdomain/zero/1.0/deed.nl> a dct:LicenseDocument\n.\n\n## Dataservice\n\nexampleMS:1T2p3o4B-dataservice-WMS a dcat:DataService;\n   dct:title \"Naam van de dataservice\"@nl;\n   dct:title \"Title of the dataservice\"@en;\n   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;\n   dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj>;\n   dct:conformsTo <http://www.opengis.net/def/serviceType/ogc/wms>;\n   dcat:contactPoint [\n     a vcard:Kind;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n     ] ; \n   dct:creator [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dct:description \"beschrijving van de dataservice\"@nl;\n   dct:description \"description of the dataservice in english\"@en;\n   foaf:page <https://orgea.exampleMS.gov/QoS.html> ;\n   dcat:endpointDescription <https://orgea.exampleMS.gov/services/wms?&request=GetCapabilities&service=WMS>;\n   dcat:endpointURL <https://orgea.exampleMS.gov/services/wms?> ;\n   dct:identifier \"https://data.exampleMS.gov/id/data/1T2p3o4B-dataservice-WMS\";\n   dcat:keyword \"trefwoord 1\"@nl;\n   dcat:keyword \"trefwoord 2\"@nl;\n   dcat:keyword \"keyword 1\"@en;\n   dcat:keyword \"keyword 2\"@en;\n   dct:language <http://publications.europa.eu/resource/authority/language/NLD> ;\n   dct:license <http://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;\n   dct:publisher [\n     dct:type <http://purl.org/adms/publishertype/LocalAuthority> ;\n     a foaf:Agent ;\n     foaf:name \"Mijn Organisatie\"@nl;\n     foaf:name \"My Organization\"@en\n     ] ;\n   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC>;\n   dcat:servesDataset exampleMS:1T2p3o4B\n.\n\n<http://www.opengis.net/def/serviceType/ogc/wms> a dct:Standard\n.",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dcat-ap-nl/example_1_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  Dataset:\n    description: ''\n    type: object\n    title: ''\n    required:\n    - id\n    - description\n    - title\n    properties:\n      contactPoint:\n        description: Contact information that can be used for sending comments about\n          the Dataset.\n        title: contact point\n      hasVersion:\n        description: A related Dataset that is a version, edition, or adaptation of\n          the described Dataset.\n        title: has version\n      description:\n        description: A free-text account of the Dataset.\n        title: description\n      language:\n        description: A language of the Dataset.\n        title: language\n      source:\n        description: A related Dataset from which the described Dataset is derived.\n        title: source\n      title:\n        type: string\n        description: A name given to the Dataset.\n        title: title\n      type:\n        description: A type of the Dataset.\n        title: type\n      distribution:\n        description: An available Distribution for the Dataset.\n        title: dataset distribution\n      relation:\n        description: A related resource.\n        title: related resource\n      isReferencedBy:\n        description: A related resource, such as a publication, that references, cites,\n          or otherwise points to the dataset.\n        title: is referenced by\n      wasGeneratedBy:\n        description: An activity that generated, or provides the business context\n          for, the creation of the dataset.\n        title: was generated by\n      provenance:\n        description: A statement about the lineage of a Dataset.\n        title: provenance\n      inSeries:\n        description: A dataset series of which the dataset is part.\n        title: in series\n      temporalResolution:\n        format: duration\n        description: The minimum time period resolvable in the dataset.\n        type: string\n        title: temporal resolution\n      spatialResolutionInMeters:\n        description: The minimum spatial separation resolvable in a dataset, measured\n          in meters.\n        type: string\n        title: spatial resolution\n      qualifiedRelation:\n        description: A description of a relationship with another resource.\n        title: qualified relation\n      modified:\n        description: The most recent date on which the Dataset was changed or modified.\n        title: modification date\n      theme:\n        description: A category of the Dataset.\n        title: theme\n      id:\n        format: iri-reference\n        type: string\n      issued:\n        description: The date of formal issuance (e.g., publication) of the Dataset.\n        title: release date\n      spatial:\n        description: A geographic region that is covered by the Dataset.\n        title: geographical coverage\n      keyword:\n        description: A keyword or tag describing the Dataset.\n        title: keyword\n      temporal:\n        description: A temporal period that the Dataset covers.\n        title: temporal coverage\n      identifier:\n        description: A secondary identifier of the Dataset\n        title: other identifier\n      creator:\n        description: An entity responsible for producing the dataset.\n        title: creator\n      landingPage:\n        description: A web page that provides access to the Dataset, its Distributions\n          and/or additional information.\n        title: landing page\n      version:\n        description: The version indicator (name or identifier) of a resource.\n        title: version\n      sample:\n        description: A sample distribution of the dataset.\n        title: sample\n      publisher:\n        description: An entity (organisation) responsible for making the Dataset available.\n        title: publisher\n      accrualPeriodicity:\n        description: The frequency at which the Dataset is updated.\n        title: frequency\n      accessRights:\n        description: Information that indicates whether the Dataset is publicly accessible,\n          has access restrictions or is not public.\n        title: access rights\n      conformsTo:\n        description: An implementing rule or other specification.\n        title: conforms to\n      page:\n        description: A page or document about this Dataset.\n        title: documentation\n      versionNotes:\n        description: A description of the differences between this version and a previous\n          version of the Dataset.\n        title: version notes\n      qualifiedAttribution:\n        description: An Agent having some form of responsibility for the resource.\n        title: qualified attribution\n      applicableLegislation:\n        description: The legislation that mandates the creation or management of the\n          Dataset.\n        title: applicable legislation\n  '@context':\n    format: iri-reference\n    $comment: The URL of the JSON-LD @context\n    type: string\nproperties:\n  data:\n    minItems: 1\n    type: array\n    items:\n      $ref: '#/$defs/Dataset'\n  '@context':\n    $ref: '#/$defs/@context'\n",
-  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "gitPath": "_sources/dcat-ap-nl"
 }

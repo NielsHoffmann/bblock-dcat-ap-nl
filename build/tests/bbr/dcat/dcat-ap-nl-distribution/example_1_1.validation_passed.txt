@@ -1,5 +1,5 @@
 Validation report for geonovum.bbr.dcat.dcat-ap-nl-distribution - DCAT-AP-NL profile 3.0 - Distribution
-Generated 2025-08-29T12:47:09.899590+00:00
+Generated 2025-09-11T07:43:13.538601+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created

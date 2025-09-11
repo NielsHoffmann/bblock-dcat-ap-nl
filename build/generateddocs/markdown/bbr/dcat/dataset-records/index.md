@@ -215,7 +215,7 @@ can find under the 'Semantic Uplift' section of this building block.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
   "id": "2482250f-3b00-4439-9f93-f3118229b201",
   "type": "Feature",
   "time": {
@@ -332,14 +332,14 @@ can find under the 'Semantic Uplift' section of this building block.
         "basisset NOVEX" ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationale datasets"@nl ],
+        [ a skos:Concept ;
             dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
             skos:prefLabel "Hydrografie"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ],
-        [ a skos:Concept ;
-            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationale datasets"@nl ] ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 
@@ -378,8 +378,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json)
-* JSON version: [schema.json](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml)
+* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.json)
+* JSON version: [schema.json](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/schema.yaml)
 
 
 # JSON-LD Context
@@ -572,7 +572,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld)
+[context.jsonld](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld)
 
 ## Sources
 
@@ -583,6 +583,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
+* URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
 * Path: `_sources/dataset-records`
 

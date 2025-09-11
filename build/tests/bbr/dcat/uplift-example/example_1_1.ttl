@@ -10,11 +10,11 @@
     rdfs:label "BRT TOP10NL" ;
     dct:accessRights "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
         "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations" ;
-    rdfs:seeAlso [ dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ],
-        [ dct:type "application/ld+json" ;
+    rdfs:seeAlso [ dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ] ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ],
+        [ dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ] ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" .
 
