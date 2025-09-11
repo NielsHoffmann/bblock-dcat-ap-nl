@@ -9,12 +9,12 @@
   "dateOfLastChange": "2025-04-03",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog",
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution",
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries"
 
       ],
   "sources": [

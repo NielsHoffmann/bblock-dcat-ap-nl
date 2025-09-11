@@ -9,7 +9,7 @@
   "dateOfLastChange": "2025-06-06",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog"
       ],
   "sources": [
     {

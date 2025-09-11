@@ -9,7 +9,7 @@
   "dateOfLastChange": "2025-08-22",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset",
         "ogc.geo.geodcat.dcat-records"
       ],
   "sources": [
