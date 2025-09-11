@@ -1,7 +1,7 @@
 
 # DCAT-AP-NL profile 3.0 - Records binding (Model)
 
-`geonovum.bbr.dcat.dcat-ap-nl-records` *v0.1*
+`geonovum-labs.bbr.dcat.dcat-ap-nl-records` *v0.1*
 
 DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP) bound to OGC API Records
 
@@ -328,17 +328,17 @@ can find under the 'Semantic Uplift' section of this building block.
                     dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
                     skos:prefLabel "Nationale datasets"@nl ] ] ;
     dcat:distribution [ a dcat:Distribution ;
-            rdfs:label "BRT TOP10NL - WFS" ;
-            dcterms:format "OGC:WFS-2.0.0-http-get-capabilities" ;
-            dcat:accessURL "https://geodata.nationaalgeoregister.nl/brt/wfs?" ;
-            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-            dcat:mediaType "application/xml" ],
-        [ a dcat:Distribution ;
             rdfs:label "BRT TOP10NL - Download" ;
             dcterms:format "application/zip" ;
             dcat:accessURL "https://www.kadaster.nl/-/brt-top10nl-download" ;
             dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-            dcat:mediaType "application/zip" ] ;
+            dcat:mediaType "application/zip" ],
+        [ a dcat:Distribution ;
+            rdfs:label "BRT TOP10NL - WFS" ;
+            dcterms:format "OGC:WFS-2.0.0-http-get-capabilities" ;
+            dcat:accessURL "https://geodata.nationaalgeoregister.nl/brt/wfs?" ;
+            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcat:mediaType "application/xml" ] ;
     dcat:keyword "BRT",
         "Basisregistratie Topografie",
         "Kadaster",
@@ -349,14 +349,14 @@ can find under the 'Semantic Uplift' section of this building block.
         "basisset NOVEX" ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
-            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ],
-        [ a skos:Concept ;
             dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
             skos:prefLabel "Hydrografie"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationale datasets"@nl ] ;
+            skos:prefLabel "Nationale datasets"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 

@@ -1,7 +1,7 @@
 
 # DCAT-AP-NL profile 3.0 - Catalogrecord (Model)
 
-`geonovum.bbr.dcat.dcat-ap-nl-catalogrecord` *v0.1*
+`geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord` *v0.1*
 
 DCAT-AP-NL 3.0 Catalogrecord
 

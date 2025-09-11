@@ -1,8 +1,8 @@
 {
-  "title": "Validation report for geonovum.bbr.dcat.uplift-example - Semantic uplift example",
+  "title": "Validation report for geonovum-labs.bbr.dcat.uplift-example - Semantic uplift example",
   "bblockName": "Semantic uplift example",
-  "bblockId": "geonovum.bbr.dcat.uplift-example",
-  "generated": "2025-09-11T07:43:09.275746+00:00",
+  "bblockId": "geonovum-labs.bbr.dcat.uplift-example",
+  "generated": "2025-09-11T07:53:14.722636+00:00",
   "result": true,
   "items": [
     {

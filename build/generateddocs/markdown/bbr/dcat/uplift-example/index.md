@@ -1,7 +1,7 @@
 
 # Semantic uplift example (Model)
 
-`geonovum.bbr.dcat.uplift-example` *v0.1*
+`geonovum-labs.bbr.dcat.uplift-example` *v0.1*
 
 A building block to show how semantic uplift works.
 

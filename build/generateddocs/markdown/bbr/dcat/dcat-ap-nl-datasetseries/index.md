@@ -1,7 +1,7 @@
 
 # DCAT-AP-NL profile 3.0 - DatasetSeries (Model)
 
-`geonovum.bbr.dcat.dcat-ap-nl-datasetseries` *v0.1*
+`geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries` *v0.1*
 
 DCAT-AP-NL 3.0 DatasetSeries
 

@@ -1,7 +1,7 @@
 
 # DCAT-AP-NL profile 3.0 - Dataset/Records binding (Model)
 
-`geonovum.bbr.dcat.dataset-records` *v0.1*
+`geonovum-labs.bbr.dcat.dataset-records` *v0.1*
 
 DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records
 

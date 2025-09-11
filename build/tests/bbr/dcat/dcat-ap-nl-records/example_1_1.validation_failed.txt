@@ -1,5 +1,5 @@
-Validation report for geonovum.bbr.dcat.dcat-ap-nl-records - DCAT-AP-NL profile 3.0 - Records binding
-Generated 2025-09-11T07:43:16.433939+00:00
+Validation report for geonovum-labs.bbr.dcat.dcat-ap-nl-records - DCAT-AP-NL profile 3.0 - Records binding
+Generated 2025-09-11T07:53:20.249684+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -18,6 +18,90 @@ Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/re
   Validation Report
   Conforms: False
   Results (19):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/1a61f733fafb015548fe0e21203d559c9cb4d228>
@@ -66,134 +150,50 @@ Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/re
   	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Result Path: dc1:title
   	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dc1:title
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("application/xml")
-  	Result Path: dcat:mediaType
-  	Message: Value does not have class dc1:MediaType
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dcat:mediaType
-  	Message: Value does not have class dc1:MediaType
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("application/xml")
-  	Result Path: dcat:mediaType
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dcat:mediaType
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
-  	Result Path: dcat:accessURL
-  	Message: Value does not have class rdfs:Resource
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
-  	Result Path: dcat:accessURL
-  	Message: Value does not have class rdfs:Resource
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
-  	Result Path: dc1:format
-  	Message: Value does not have class dc1:MediaTypeOrExtent
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dc1:format
-  	Message: Value does not have class dc1:MediaTypeOrExtent
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
-  	Result Path: dcat:accessURL
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
-  	Result Path: dcat:accessURL
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
-  	Result Path: dc1:format
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dc1:format
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   
 Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl:
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService/dcat:theme
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*
 
 === End SHACL ===
 

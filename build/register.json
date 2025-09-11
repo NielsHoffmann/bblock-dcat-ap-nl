@@ -1,8 +1,8 @@
 {
-  "name": "OGC Building Blocks for DCAT-AP-NL 3.0",
+  "name": "OGC Building Blocks for DCAT-AP-NL 3.0 - EPERIMENTAL",
   "abstract": "These building blocks are an experimental implementation of DCAT-AP-NL.\n",
-  "description": "The purpose of this collection is to experiment with the building block approach and to showcase how\nthis potentially can add value.\n",
-  "modified": "2025-09-11T07:43:04.277541",
+  "description": "The purpose of this collection is to experiment with the building block approach and to showcase how\nthis potentially can add value.\n\nNote: the building blocks in the geonovum repository are a more conservative implementation while the \nbuilding blocks in this repository are more experimental.\n",
+  "modified": "2025-09-11T07:53:09.040952",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"7706428cacea50013f04585b5be2d7d29b7b2d9b",
@@ -21,7 +21,7 @@
   ],
   "bblocks": [
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-catalog",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog",
       "name": "DCAT-AP-NL profile 3.0 - Catalog",
       "abstract": "DCAT-AP-NL 3.0 Catalog",
       "status": "under-development",
@@ -41,9 +41,9 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -72,12 +72,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-catalog"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-catalog"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.uplift-example",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.uplift-example",
       "name": "Semantic uplift example",
       "abstract": "A building block to show how semantic uplift works.",
       "status": "under-development",
@@ -120,12 +120,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.uplift-example"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.uplift-example"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord",
       "name": "DCAT-AP-NL profile 3.0 - Catalogrecord",
       "abstract": "DCAT-AP-NL 3.0 Catalogrecord",
       "status": "under-development",
@@ -136,7 +136,7 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog"
       ],
       "sources": [
         {
@@ -145,13 +145,13 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-        ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord": [
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -180,12 +180,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-catalogrecord"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice",
       "name": "DCAT-AP-NL profile 3.0 - Dataservice",
       "abstract": "DCAT-AP-NL 3.0 Dataservice",
       "status": "under-development",
@@ -196,7 +196,7 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog"
       ],
       "sources": [
         {
@@ -205,13 +205,13 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -241,12 +241,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-dataservice"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-dataset",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset",
       "name": "DCAT-AP-NL profile 3.0 - Dataset",
       "abstract": "DCAT-AP-NL 3.0 Dataset",
       "status": "under-development",
@@ -257,7 +257,7 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog"
       ],
       "sources": [
         {
@@ -266,13 +266,13 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -302,12 +302,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-dataset"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dataservice-records",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dataservice-records",
       "name": "DCAT-AP-NL profile 3.0 - Dataservice/Records binding",
       "abstract": "DCAT-AP-NL 3.0 Dataservice profile bound to OGC API Records",
       "status": "under-development",
@@ -319,7 +319,7 @@
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
         "ogc.geo.geodcat.dcat-records",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice"
       ],
       "sources": [
         {
@@ -332,19 +332,19 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dataservice-records": [
+        "geonovum-labs.bbr.dcat.dataservice-records": [
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.records-ontology": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -381,12 +381,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dataservice-records"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dataservice-records"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dataset-records",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dataset-records",
       "name": "DCAT-AP-NL profile 3.0 - Dataset/Records binding",
       "abstract": "DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records",
       "status": "under-development",
@@ -397,8 +397,8 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset",
-        "ogc.geo.geodcat.dcat-records"
+        "ogc.geo.geodcat.dcat-records",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
       ],
       "sources": [
         {
@@ -420,20 +420,20 @@
       ],
       "highlighted": true,
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+        "ogc.geo.geodcat.records-ontology": [
+          "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
           "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
-        ],
-        "ogc.geo.geodcat.records-ontology": [
-          "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
         ]
       },
       "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",
@@ -525,12 +525,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dataset-records"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dataset-records"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-datasetseries",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries",
       "name": "DCAT-AP-NL profile 3.0 - DatasetSeries",
       "abstract": "DCAT-AP-NL 3.0 DatasetSeries",
       "status": "under-development",
@@ -541,7 +541,7 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
       ],
       "sources": [
         {
@@ -550,17 +550,17 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries": [
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -589,12 +589,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-datasetseries"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution",
       "name": "DCAT-AP-NL profile 3.0 - Distribution",
       "abstract": "DCAT-AP-NL 3.0 Distribution",
       "status": "under-development",
@@ -605,7 +605,7 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
       ],
       "sources": [
         {
@@ -614,17 +614,17 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
@@ -654,12 +654,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-distribution"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-distribution"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl",
       "name": "DCAT-AP-NL profile 3.0",
       "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP)",
       "status": "under-development",
@@ -670,12 +670,12 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog",
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice",
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord",
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution",
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice"
       ],
       "sources": [
         {
@@ -684,37 +684,37 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl": [
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
           "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries": [
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord": [
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-        ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-        ],
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
         ]
       },
       "scope": "dev",
@@ -744,12 +744,12 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl"
         }
       }
     },
     {
-      "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-records",
+      "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-records",
       "name": "DCAT-AP-NL profile 3.0 - Records binding",
       "abstract": "DCAT-AP-NL 3.0 (Dutch profile of DCAT-AP) bound to OGC API Records",
       "status": "under-development",
@@ -760,8 +760,8 @@
       "dateOfLastChange": "2025-09-11",
       "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
       "dependsOn": [
-        "geonovum.bbr.dcat.dcat-ap-nl",
-        "ogc.geo.geodcat.dcat-records"
+        "ogc.geo.geodcat.dcat-records",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl"
       ],
       "sources": [
         {
@@ -770,44 +770,44 @@
         }
       ],
       "shaclShapes": {
-        "geonovum.bbr.dcat.dcat-ap-nl-records": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-records": [
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl": [
+        "ogc.geo.geodcat.records-ontology": [
+          "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl": [
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
         "ogc.geo.geodcat.dcat-ap": [
           "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
           "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-datasetseries": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl",
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution": [
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-datasetseries": [
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-datasetseries/rules.shacl"
         ],
-        "geonovum.bbr.dcat.dcat-ap-nl-dataservice": [
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-catalogrecord": [
+          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
+          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl"
+        ],
+        "geonovum-labs.bbr.dcat.dcat-ap-nl-dataservice": [
           "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataservice/rules.shacl",
           "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-        ],
-        "geonovum.bbr.dcat.dcat-ap-nl-catalogrecord": [
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalogrecord/rules.shacl",
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
-        ],
-        "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
-          "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-          "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
-        ],
-        "ogc.geo.geodcat.records-ontology": [
-          "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
         ]
       },
       "scope": "dev",
@@ -840,7 +840,7 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum.bbr.dcat.dcat-ap-nl-records"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/bblock/geonovum-labs.bbr.dcat.dcat-ap-nl-records"
         }
       }
     }

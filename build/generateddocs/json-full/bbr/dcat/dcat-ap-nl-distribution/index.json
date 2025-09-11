@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "geonovum.bbr.dcat.dcat-ap-nl-distribution",
+  "itemIdentifier": "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution",
   "name": "DCAT-AP-NL profile 3.0 - Distribution",
   "abstract": "DCAT-AP-NL 3.0 Distribution",
   "status": "under-development",
@@ -12,7 +12,7 @@
   "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset"
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
   ],
   "sources": [
     {
@@ -21,17 +21,17 @@
     }
   ],
   "shaclShapes": {
-    "geonovum.bbr.dcat.dcat-ap-nl-distribution": [
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl"
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-distribution": [
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-distribution/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
       "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
-    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "ogc.geo.geodcat.dcat-ap": [
       "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",

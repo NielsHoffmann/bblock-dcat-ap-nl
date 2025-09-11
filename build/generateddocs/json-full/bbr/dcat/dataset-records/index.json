@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "geonovum.bbr.dcat.dataset-records",
+  "itemIdentifier": "geonovum-labs.bbr.dcat.dataset-records",
   "name": "DCAT-AP-NL profile 3.0 - Dataset/Records binding",
   "abstract": "DCAT-AP-NL 3.0 Dataset profile bound to OGC API Records",
   "status": "under-development",
@@ -12,8 +12,8 @@
   "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset",
-    "ogc.geo.geodcat.dcat-records"
+    "ogc.geo.geodcat.dcat-records",
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset"
   ],
   "sources": [
     {
@@ -35,20 +35,20 @@
   ],
   "highlighted": true,
   "shaclShapes": {
-    "geonovum.bbr.dcat.dcat-ap-nl-dataset": [
+    "ogc.geo.geodcat.records-ontology": [
+      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
+    ],
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-dataset": [
       "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-dataset/rules.shacl",
       "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
-    "geonovum.bbr.dcat.dcat-ap-nl-catalog": [
-      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl",
-      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl"
+    "geonovum-labs.bbr.dcat.dcat-ap-nl-catalog": [
+      "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-ap-nl-catalog/rules.shacl",
+      "https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl"
     ],
     "ogc.geo.geodcat.dcat-ap": [
       "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
       "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
-    ],
-    "ogc.geo.geodcat.records-ontology": [
-      "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl"
     ]
   },
   "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dataset-records/context.jsonld",

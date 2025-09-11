@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "geonovum.bbr.dcat.uplift-example",
+  "itemIdentifier": "geonovum-labs.bbr.dcat.uplift-example",
   "name": "Semantic uplift example",
   "abstract": "A building block to show how semantic uplift works.",
   "status": "under-development",

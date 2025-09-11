@@ -1,5 +1,5 @@
-Validation report for geonovum.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding
-Generated 2025-09-11T07:43:11.326793+00:00
+Validation report for geonovum-labs.bbr.dcat.dataservice-records - DCAT-AP-NL profile 3.0 - Dataservice/Records binding
+Generated 2025-09-11T07:53:16.242335+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -11,16 +11,16 @@ Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/re
   Conforms: True
   
 Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
- - Shape dcatapnl-sh:CatalogShape: *none*
- - Shape dcatapnl-sh:CatalogRecordShape: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape: *none*
- - Shape _:nc8628aa497df4c5a8bfbf9d04edf1611b4: *none*
- - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
  - Shape dcatapnl-sh:DatasetSeriesShape: *none*
- - Shape _:nc8628aa497df4c5a8bfbf9d04edf1611b3: *none*
- - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:n83452868064043da8de767a4eb9d85bcb4: *none*
  - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape _:n83452868064043da8de767a4eb9d85bcb3: *none*
  - Shape dcatapnl-sh:DataServiceShape: exBB:2482250f-3b00-4439-9f93-f3118229b201_DS_d0e1068
+ - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:DistributionShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
  - Shape dcatapnl-sh:DatasetShape: *none*
 
 === End SHACL ===
