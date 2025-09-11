@@ -102,6 +102,6 @@ exBB:2482250f-3b00-4439-9f93-f3118229b201 a dcat:Dataset;
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
+* URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
 * Path: `_sources/dcat-ap-nl-dataset`
 

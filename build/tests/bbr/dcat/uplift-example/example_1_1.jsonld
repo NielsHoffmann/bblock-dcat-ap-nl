@@ -1,5 +1,5 @@
 {
-  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
   "type": "Feature",
   "properties": {
     "type": "dcat:Dataset",

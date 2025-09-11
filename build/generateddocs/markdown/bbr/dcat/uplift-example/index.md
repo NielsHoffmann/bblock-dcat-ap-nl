@@ -49,7 +49,7 @@ An example to show how semantic uplift works.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
   "type": "Feature",
   "properties": {
     "type": "dcat:Dataset",
@@ -93,12 +93,12 @@ An example to show how semantic uplift works.
     rdfs:label "BRT TOP10NL" ;
     dct:accessRights "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
         "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations" ;
-    rdfs:seeAlso [ dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ],
-        [ dct:type "application/ld+json" ;
+    rdfs:seeAlso [ dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ] ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ],
+        [ dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ] ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" .
 
 
@@ -131,8 +131,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.json)
-* JSON version: [schema.json](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.yaml)
+* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.json)
+* JSON version: [schema.json](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.yaml)
 
 
 # JSON-LD Context
@@ -210,13 +210,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld)
+[context.jsonld](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/Geonovum/bblock-dcat-ap-nl](https://github.com/Geonovum/bblock-dcat-ap-nl)
+* URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
 * Path: `_sources/uplift-example`
 

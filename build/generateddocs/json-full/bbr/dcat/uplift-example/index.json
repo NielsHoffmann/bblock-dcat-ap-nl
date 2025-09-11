@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-29",
+  "dateOfLastChange": "2025-09-11",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.api.records.v1.schemas.recordGeoJSON"
@@ -22,17 +22,17 @@
   ],
   "highlighted": false,
   "shaclShapes": {},
-  "ldContext": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
+  "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld",
   "schema": {
-    "application/yaml": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.yaml",
-    "application/json": "https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.json"
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/schema.json"
   },
-  "sourceSchema": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/uplift-example/schema.yaml",
-  "sourceLdContext": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/uplift-example/context.jsonld",
-  "sourceFiles": "https://geonovum.github.io/bblock-dcat-ap-nl/_sources/uplift-example/",
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/uplift-example/schema.yaml",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/uplift-example/context.jsonld",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/uplift-example/",
   "rdfData": [],
   "validationPassed": true,
-  "testOutputs": "https://github.com/Geonovum/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/uplift-example/",
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/uplift-example/",
   "examples": [
     {
       "title": "semantic uplift example",
@@ -42,22 +42,22 @@
           "language": "json",
           "ref": "./examples/ex.json",
           "code": "{\n    \"type\": \"Feature\",\n    \"properties\" : {\n      \"type\": \"dcat:Dataset\",\n      \"title\" : \"BRT TOP10NL\",\n    \n      \"accessRights\" : [\n        \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n        \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n        ],\n      \"identifier\" : \"2482250f-3b00-4439-9f93-f3118229b201\",\n      \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\"\n    },\n    \"geometry\" : null,\n    \"id\" : \"https://data.overheid.nl/dataset/top10nl\",\n    \"linkTemplates\": [\n    \n  ],\n    \"links\": [\n      {\n        \"rel\": \"self\",\n        \"href\": \"https://data.overheid.nl/dataset/top10nl\",\n        \"type\": \"application/ld+json\"\n      },\n      {\n        \"rel\": \"alternate\",\n        \"href\": \"https://data.overheid.nl/dataset/top10nl.html\",\n        \"type\": \"text/html\"\n      }\n    ]\n}",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.json"
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://geonovum.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld\",\n  \"type\": \"Feature\",\n  \"properties\": {\n    \"type\": \"dcat:Dataset\",\n    \"title\": \"BRT TOP10NL\",\n    \"accessRights\": [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n    ],\n    \"identifier\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n    \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\"\n  },\n  \"geometry\": null,\n  \"id\": \"https://data.overheid.nl/dataset/top10nl\",\n  \"linkTemplates\": [],\n  \"links\": [\n    {\n      \"rel\": \"self\",\n      \"href\": \"https://data.overheid.nl/dataset/top10nl\",\n      \"type\": \"application/ld+json\"\n    },\n    {\n      \"rel\": \"alternate\",\n      \"href\": \"https://data.overheid.nl/dataset/top10nl.html\",\n      \"type\": \"text/html\"\n    }\n  ]\n}",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/uplift-example/context.jsonld\",\n  \"type\": \"Feature\",\n  \"properties\": {\n    \"type\": \"dcat:Dataset\",\n    \"title\": \"BRT TOP10NL\",\n    \"accessRights\": [\n      \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n      \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\"\n    ],\n    \"identifier\": \"2482250f-3b00-4439-9f93-f3118229b201\",\n    \"license\": \"https://creativecommons.org/publicdomain/zero/1.0/\"\n  },\n  \"geometry\": null,\n  \"id\": \"https://data.overheid.nl/dataset/top10nl\",\n  \"linkTemplates\": [],\n  \"links\": [\n    {\n      \"rel\": \"self\",\n      \"href\": \"https://data.overheid.nl/dataset/top10nl\",\n      \"type\": \"application/ld+json\"\n    },\n    {\n      \"rel\": \"alternate\",\n      \"href\": \"https://data.overheid.nl/dataset/top10nl.html\",\n      \"type\": \"text/html\"\n    }\n  ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://data.overheid.nl/dataset/top10nl> a dcat:Dataset,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dct:accessRights \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n        \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\" ;\n    rdfs:seeAlso [ dct:type \"text/html\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ],\n        [ dct:type \"application/ld+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ] ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" .\n\n",
-          "url": "https://geonovum.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.ttl"
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://data.overheid.nl/dataset/top10nl> a dcat:Dataset,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dct:accessRights \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n        \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\" ;\n    rdfs:seeAlso [ dct:type \"application/ld+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ],\n        [ dct:type \"text/html\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ] ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" .\n\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for GeoDCAT - defines all extra elements\n  defined by GeoDCAT so that the JSON-LD context can map to GeoDCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml\nx-jsonld-extra-terms:\n  type: '@type'\n  title:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/title\n  accessRights:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/accessRights\n  license: http://www.w3.org/ns/dcat#license\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  dct: http://purl.org/dc/terms/\n  owl: http://www.w3.org/2002/07/owl#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n",
-  "gitRepository": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "gitPath": "_sources/uplift-example"
 }
