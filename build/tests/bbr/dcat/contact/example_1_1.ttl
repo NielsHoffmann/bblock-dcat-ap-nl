@@ -1,0 +1,11 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+dcat:contactPoint a vcard:Kind ;
+    vcard:fn "My Organization"@en,
+        "Mijn Organisatie"@nl ;
+    vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;
+    vcard:hasURL "http://mijnorganisatie.org/" ;
+    vcard:organization-name "My Organization"@en,
+        "Mijn Organisatie"@nl .
+

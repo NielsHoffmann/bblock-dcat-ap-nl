@@ -1,0 +1,182 @@
+Validation report for geonovum-labs.bbr.dcat.contact - contact test
+Generated 2025-10-23T12:51:22.348321+00:00
+=== Files ===
+Using example_3_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_3_1.jsonld created
+Output Turtle example_3_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: {'contacts': [{'name': 'World Ozone and Ultraviolet Radiation Data Centre', 'links': [{'href': 'https://woudc.org', 'rel': 'about', 'type': 'text/html'}], 'roles': ['publisher']}]} is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema['allOf'][0]:
+    {'$comment': 'Adapted from '
+                 'https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/contact.yaml',
+     'anyOf': [{'required': ['name']}, {'required': ['organization']}],
+     'description': 'Identification of, and means of communication with, '
+                    'person responsible\n'
+                    'for the resource.',
+     'properties': {'addresses': {'description': 'Physical location at '
+                                                 'which contact can be '
+                                                 'made.',
+                                  'items': {'properties': {'administrativeArea': {'description': 'State '
+                                                                                                 'or '
+                                                                                                 'province '
+                                                                                                 'of '
+                                                                                                 'the '
+                                                                                                 'location.',
+                                                                                  'type': 'string'},
+                                                           'city': {'description': 'City '
+                                                                                   'for '
+                                                                                   'the '
+                                                                                   'location.',
+                                                                    'type': 'string'},
+                                                           'country': {'description': 'Country '
+                                                                                      'of '
+                                                                                      'the '
+                                                                                      'physical '
+                                                                                      'address.  '
+                                                                                      'ISO '
+                                                                                      '3166-1 '
+                                                                                      'is '
+                                                                                      'recommended.',
+                                                                       'type': 'string'},
+                                                           'deliveryPoint': {'description': 'Address '
+                                                                                            'lines '
+                                                                                            'for '
+                                                                                            'the '
+                                                                                            'location.',
+                                                                             'items': {'type': 'string'},
+                                                                             'type': 'array'},
+                                                           'postalCode': {'description': 'ZIP '
+                                                                                         'or '
+                                                                                         'other '
+                                                                                         'postal '
+                                                                                         'code.',
+                                                                          'type': 'string'},
+                                                           'roles': {'$ref': 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/roles/schema.yaml',
+                                                                     'description': 'The '
+                                                                                    'type '
+                                                                                    'of '
+                                                                                    'address '
+                                                                                    '(e.g. '
+                                                                                    'office, '
+                                                                                    'home, '
+                                                                                    'etc.).'}},
+                                            'type': 'object'},
+                                  'type': 'array'},
+                    'contactInstructions': {'description': 'Supplemental '
+                                                           'instructions '
+                                                           'on how or when '
+                                                           'to contact '
+                                                           'the\n'
+                                                           'responsible '
+                                                           'party.',
+                                            'type': 'string'},
+                    'emails': {'description': 'Email addresses at which '
+                                              'contact can be made.',
+                               'items': {'properties': {'roles': {'$ref': 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/roles/schema.yaml',
+                                                                  'description': 'The '
+                                                                                 'type '
+                                                                                 'of '
+                                                                                 'email '
+                                                                                 '(e.g. '
+                                                                                 'home, '
+                                                                                 'work, '
+                                                                                 'etc.).'},
+                                                        'value': {'description': 'The '
+                                                                                 'value '
+                                                                                 'is '
+                                                                                 'the '
+                                                                                 'email '
+                                                                                 'number '
+                                                                                 'itself.',
+                                                                  'format': 'email',
+                                                                  'type': 'string'}},
+                                         'required': ['value'],
+                                         'type': 'object'},
+                               'type': 'array'},
+                    'hoursOfService': {'description': 'Time period when '
+                                                      'the contact can be '
+                                                      'contacted.',
+                                       'example': 'Hours: Mo-Fr 10am-7pm '
+                                                  'Sa 10am-22pm Su '
+                                                  '10am-21pm',
+                                       'type': 'string'},
+                    'identifier': {'description': 'A value uniquely '
+                                                  'identifying a contact.',
+                                   'type': 'string'},
+                    'links': {'description': 'On-line information about '
+                                             'the contact.',
+                              'items': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'},
+                                                  {'required': ['type'],
+                                                   'type': 'object'}]},
+                              'type': 'array'},
+                    'logo': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'},
+                                       {'properties': {'rel': {'enum': ['icon']}},
+                                        'required': ['rel', 'type'],
+                                        'type': 'object'}],
+                             'description': 'Graphic identifying a '
+                                            'contact. The link relation '
+                                            'should be `icon` and the '
+                                            'media type should be an image '
+                                            'media type.'},
+                    'name': {'description': 'The name of the responsible '
+                                            'person.',
+                             'type': 'string'},
+                    'organization': {'description': 'Organization/affiliation '
+                                                    'of the contact.',
+                                     'type': 'string'},
+                    'phones': {'description': 'Telephone numbers at which '
+                                              'contact can be made.',
+                               'items': {'properties': {'roles': {'$ref': 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/roles/schema.yaml',
+                                                                  'description': 'The '
+                                                                                 'type '
+                                                                                 'of '
+                                                                                 'phone '
+                                                                                 'number '
+                                                                                 '(e.g. '
+                                                                                 'home, '
+                                                                                 'work, '
+                                                                                 'fax, '
+                                                                                 'etc.).'},
+                                                        'value': {'description': 'The '
+                                                                                 'value '
+                                                                                 'is '
+                                                                                 'the '
+                                                                                 'phone '
+                                                                                 'number '
+                                                                                 'itself.',
+                                                                  'example': '+14165550142',
+                                                                  'pattern': '^\\+[1-9]{1}[0-9]{3,14}$',
+                                                                  'type': 'string'}},
+                                         'required': ['value'],
+                                         'type': 'object'},
+                               'type': 'array'},
+                    'position': {'description': 'The name of the role or '
+                                                'position of the '
+                                                'responsible person taken '
+                                                "from the organization's "
+                                                'formal organizational '
+                                                'hierarchy or chart.',
+                                 'type': 'string'},
+                    'roles': {'$ref': 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/roles/schema.yaml',
+                              'description': 'The set of named duties, job '
+                                             'functions and/or permissions '
+                                             'associated with this '
+                                             'contact. (e.g. developer, '
+                                             'administrator, etc.).'}},
+     'type': 'object'}
+
+On instance:
+    {'contacts': [{'links': [{'href': 'https://woudc.org',
+                              'rel': 'about',
+                              'type': 'text/html'}],
+                   'name': 'World Ozone and Ultraviolet Radiation Data '
+                           'Centre',
+                   'roles': ['publisher']}]}
+=== End JSON Schema ===
+

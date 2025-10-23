@@ -83,22 +83,21 @@ An example to show how semantic uplift works.
 ```ttl
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.iana.org/assignments/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://data.overheid.nl/dataset/top10nl> a dcat:Dataset,
-        geojson:Feature ;
-    rdfs:label "BRT TOP10NL" ;
+<https://data.overheid.nl/dataset/top10nl> rdfs:label "BRT TOP10NL" ;
     dct:accessRights "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
         "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations" ;
-    rdfs:seeAlso [ dct:type "application/ld+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ],
-        [ dct:type "text/html" ;
+    dct:format "Feature",
+        "dcat:Dataset" ;
+    rdfs:seeAlso [ dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ] ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ],
+        [ dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ] ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" .
 
 
@@ -140,14 +139,41 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "type": "@type",
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "type": "dct:format",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "type": "@type"
+      },
+      "@id": "geojson:geometry"
     },
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
+    },
+    "links": {
+      "@context": {
+        "type": "dct:type"
+      },
+      "@id": "rdfs:seeAlso"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
     },
     "href": {
       "@type": "@id",
@@ -169,36 +195,14 @@ Links to the schema:
       "@type": "xsd:string",
       "@id": "oa:hasTarget"
     },
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": "geojson:geometry",
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
-    "links": {
-      "@context": {
-        "type": "dct:type"
-      },
-      "@id": "rdfs:seeAlso"
-    },
     "accessRights": {
       "@container": "@set",
       "@id": "dct:accessRights"
     },
     "license": "dcat:license",
     "geojson": "https://purl.org/geojson/vocab#",
-    "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "dcat": "http://www.w3.org/ns/dcat#",

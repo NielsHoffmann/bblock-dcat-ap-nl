@@ -1,0 +1,8 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+[] dcat:contactPoint [ a vcard:Individual ;
+            vcard:fn "InfoDesk"@nl ;
+            vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;
+            vcard:organization-name "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ] .
+
