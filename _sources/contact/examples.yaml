@@ -1,0 +1,29 @@
+- title: contactpoint
+  content: |-
+    example dcat-ap contactpoint in turtle
+
+  snippets:
+    - language: ttl
+      ref: examples/contactpoint.ttl
+
+- title: contact json dcat-ap
+  content: |-
+    json example of a possible structure for a dcat contactpoint.
+
+    This does not validate against the api records schema...
+
+    
+  snippets:
+    - language: json
+      ref: examples/contact-dcat.json
+      base-uri: "http://example.com/records/"
+
+- title: contact json api records
+  content: |-
+    json example of a structure conform API Records for contact information.
+
+    
+  snippets:
+    - language: json
+      ref: examples/contact-oapr.json
+      base-uri: "http://example.com/records/"

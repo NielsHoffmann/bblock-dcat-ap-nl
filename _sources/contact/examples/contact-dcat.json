@@ -1,0 +1,10 @@
+{
+    "contactpunt": [{
+              "a": "vcard:Individual",
+              "fn": "InfoDesk" ,
+              "organization-name": {
+                "nl": "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"
+              },
+              "hasEmail": "mailto:dpi-gi@kadaster.nl"
+            }]
+}

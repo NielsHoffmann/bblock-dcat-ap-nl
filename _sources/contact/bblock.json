@@ -1,0 +1,17 @@
+{
+  "name": "contact test",
+  "abstract": "experiment with contact schema",
+  "status": "under-development",
+  "dateTimeAddition": "2025-10-22T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-labs-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-10-22",
+  "link": "https://github.com/nielshoffmann/bblock-dcat-ap-nl",
+  "dependsOn": [
+        "ogc.api.records.v1.schemas.contact"
+      ],
+  "scope": "dev",
+  "tags": ["DCAT","DCAT-AP-NL", "profile"],
+  "highlighted": false
+}

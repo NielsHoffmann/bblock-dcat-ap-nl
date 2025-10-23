@@ -1,0 +1,17 @@
+{
+    "contacts": [
+      {
+        "name": "World Ozone and Ultraviolet Radiation Data Centre",
+        "links": [
+          {
+            "href": "https://woudc.org",
+            "rel": "about",
+            "type": "text/html"
+          }
+        ],
+        "roles": [
+          "publisher"
+        ]
+      }
+    ]
+}

@@ -1,0 +1,25 @@
+@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix dcatap: <http://data.europa.eu/r5r/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix example-ds: <https://data.gov.gr/id/dataset/> .
+@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .
+
+
+   dcat:contactPoint 
+     a vcard:Kind ;
+     vcard:fn "Mijn Organisatie"@nl ;
+     vcard:fn "My Organization"@en ;
+     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;
+     vcard:hasURL "http://mijnorganisatie.org/" ;
+     vcard:organization-name "Mijn Organisatie"@nl ;
+     vcard:organization-name "My Organization"@en
+  .
+
