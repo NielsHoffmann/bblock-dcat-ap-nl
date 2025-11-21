@@ -1,0 +1,18 @@
+{
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/context.jsonld",
+  "contacts": [
+    {
+      "name": "World Ozone and Ultraviolet Radiation Data Centre",
+      "links": [
+        {
+          "href": "https://woudc.org",
+          "rel": "about",
+          "type": "text/html"
+        }
+      ],
+      "roles": [
+        "publisher"
+      ]
+    }
+  ]
+}

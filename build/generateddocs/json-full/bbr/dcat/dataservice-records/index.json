@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-09-11",
+  "dateOfLastChange": "2025-10-23",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.geo.geodcat.dcat-records",
@@ -95,7 +95,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataservice>,\n        geojson:Feature ;\n    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,\n        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;\n    dcterms:format \"Dataservice\",\n        \"Feature\" ;\n    dcterms:temporal [ time:hasTime ( \"1924-08-17T00:00:00Z\" \"..\" ) ] ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .\n\n",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/dataservice-records/example_2_1.ttl"
         }
       ]

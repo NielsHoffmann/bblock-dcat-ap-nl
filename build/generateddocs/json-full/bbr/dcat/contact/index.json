@@ -1,0 +1,100 @@
+
+
+{
+  "itemIdentifier": "geonovum-labs.bbr.dcat.contact",
+  "name": "contact test",
+  "abstract": "experiment with contact schema",
+  "status": "under-development",
+  "dateTimeAddition": "2025-10-22T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-labs-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-10-23",
+  "link": "https://github.com/nielshoffmann/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "ogc.api.records.v1.schemas.contact"
+  ],
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "DCAT-AP-NL",
+    "profile"
+  ],
+  "highlighted": false,
+  "shaclShapes": {},
+  "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/context.jsonld",
+  "schema": {
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/schema.json"
+  },
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/schema.yaml",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/context.jsonld",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/",
+  "rdfData": [],
+  "validationPassed": false,
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/contact/",
+  "description": "## DCAT-AP-NL 3.0 - contactpoint\n\ntesting compatibility of OAPR contacts and DCAT-AP-NL Contactpoint\n\n",
+  "examples": [
+    {
+      "title": "contactpoint",
+      "content": "example dcat-ap contactpoint in turtle",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "examples/contactpoint.ttl",
+          "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix eli: <http://data.europa.eu/eli/ontology#> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix example-ds: <https://data.gov.gr/id/dataset/> .\n@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .\n\n\n   dcat:contactPoint \n     a vcard:Kind ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n  .\n\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "contact json dcat-ap",
+      "content": "json example of a possible structure for a dcat contactpoint.\n\nThis does not validate against the api records schema...",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/contact-dcat.json",
+          "base-uri": "http://example.com/records/",
+          "code": "{\n    \"contactpunt\": [{\n              \"a\": \"vcard:Individual\",\n              \"fn\": \"InfoDesk\" ,\n              \"organization-name\": {\n                \"nl\": \"Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement\"\n              },\n              \"hasEmail\": \"mailto:dpi-gi@kadaster.nl\"\n            }]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/context.jsonld\",\n  \"contactpunt\": [\n    {\n      \"a\": \"vcard:Individual\",\n      \"fn\": \"InfoDesk\",\n      \"organization-name\": {\n        \"nl\": \"Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement\"\n      },\n      \"hasEmail\": \"mailto:dpi-gi@kadaster.nl\"\n    }\n  ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n\n[] dcat:contactPoint [ a vcard:Individual ;\n            vcard:fn \"InfoDesk\"@nl ;\n            vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;\n            vcard:organization-name \"Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement\"@nl ] .\n\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_2_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "contact json api records",
+      "content": "json example of a structure conform API Records for contact information.",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/contact-oapr.json",
+          "base-uri": "http://example.com/records/",
+          "code": "{\n    \"contacts\": [\n      {\n        \"name\": \"World Ozone and Ultraviolet Radiation Data Centre\",\n        \"links\": [\n          {\n            \"href\": \"https://woudc.org\",\n            \"rel\": \"about\",\n            \"type\": \"text/html\"\n          }\n        ],\n        \"roles\": [\n          \"publisher\"\n        ]\n      }\n    ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_3_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/context.jsonld\",\n  \"contacts\": [\n    {\n      \"name\": \"World Ozone and Ultraviolet Radiation Data Centre\",\n      \"links\": [\n        {\n          \"href\": \"https://woudc.org\",\n          \"rel\": \"about\",\n          \"type\": \"text/html\"\n        }\n      ],\n      \"roles\": [\n        \"publisher\"\n      ]\n    }\n  ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_3_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] dcat:contactPoint [ rdfs:seeAlso [ dcterms:type \"text/html\" ;\n                    ns1:relation <http://www.iana.org/assignments/relation/about> ;\n                    oa:hasTarget <https://woudc.org> ] ] .\n\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_3_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for OGCAPI records profile for DCAT Dataset - defines all extra\n  elements defined by DCAT so that the JSON-LD context can map to DCAT RDF\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml\nx-jsonld-extra-terms:\n  a: '@type'\n  contactpunt: http://www.w3.org/ns/dcat#contactPoint\n  fn:\n    x-jsonld-id: http://www.w3.org/2006/vcard/ns#fn\n    x-jsonld-language: nl\n  organization-name:\n    x-jsonld-id: http://www.w3.org/2006/vcard/ns#organization-name\n    x-jsonld-container: '@language'\n  hasEmail:\n    x-jsonld-id: http://www.w3.org/2006/vcard/ns#hasEmail\n    x-jsonld-type: '@id'\n  contacts:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://www.w3.org/ns/dcat#contactPoint\n    x-jsonld-type: '@id'\n  links:\n    x-jsonld-context:\n      type: http://purl.org/dc/terms/type\n    x-jsonld-id: rdfs:seeAlso\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  vcard: http://www.w3.org/2006/vcard/ns#\n  dct: http://purl.org/dc/terms/\n  skos: http://www.w3.org/2004/02/skos/core#\n  foaf: http://xmlns.com/foaf/0.1/\n",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+  "gitPath": "_sources/contact"
+}

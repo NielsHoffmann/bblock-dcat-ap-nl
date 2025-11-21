@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.dcat-ap-nl-records - DCAT-AP-NL profile 3.0 - Records binding
-Generated 2025-09-11T07:53:20.249684+00:00
+Generated 2025-10-23T12:51:28.881875+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,183 +17,577 @@ Validation passed
 Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl:
   Validation Report
   Conforms: False
-  Results (19):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("application/xml")
-  	Result Path: dcat:mediaType
-  	Message: Value does not have class dc1:MediaType
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dcat:mediaType
-  	Message: Value does not have class dc1:MediaType
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("application/xml")
-  	Result Path: dcat:mediaType
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dcat:mediaType
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
-  	Result Path: dcat:accessURL
-  	Message: Value does not have class rdfs:Resource
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
-  	Result Path: dcat:accessURL
-  	Message: Value does not have class rdfs:Resource
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
-  	Result Path: dc1:format
-  	Message: Value does not have class dc1:MediaTypeOrExtent
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dc1:format
-  	Message: Value does not have class dc1:MediaTypeOrExtent
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
-  	Result Path: dcat:accessURL
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
-  	Result Path: dcat:accessURL
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
-  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
-  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
-  	Result Path: dc1:format
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
-  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
-  	Severity: shacl:Violation
-  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
-  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
-  	Value Node: Literal("application/zip")
-  	Result Path: dc1:format
-  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Results (25):
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/1a61f733fafb015548fe0e21203d559c9cb4d228>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201")
   	Result Path: dcat:servesDataset
   	Message: Value does not have class dcat:Dataset
   Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/3bde2663aaca96d953765ac2e525ef64710bf4d6>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
   	Result Path: dcat:endpointURL
   	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/63240e11f1eb66f636413d1dbb134f0ff9066a7c>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
   	Result Path: dcat:endpointDescription
   	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/ca2bd10c893237fa342edb75240b08731acda92f>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201")
   	Result Path: dcat:servesDataset
   	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://creativecommons.org/licenses/by/4.0/deed.nl")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/dc08f4dca4377fade57f89454e3fa06a8389d314>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
   	Result Path: dcat:endpointDescription
   	Message: Value does not have class rdfs:Resource
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
   	Result Path: dcat:endpointURL
   	Message: Value does not have class rdfs:Resource
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://creativecommons.org/licenses/by/4.0/deed.nl")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: shacl:Violation
   	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>
-  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
   	Result Path: dc1:title
-  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dc1:title
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dc1:title
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
   
 Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-SHACL.ttl:
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService/dcat:theme
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*
- - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*
  - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*
+
+
+** Validation error **
+Validation result for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
+  Validation Report
+  Conforms: False
+  Results (3):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_accessRights_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dct:accessRights
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dct:accessRights
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_contactPoint_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dcat:contactPoint
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dcat:contactPoint
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_publisher_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dct:publisher
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dct:publisher
+  
+Focus nodes for https://raw.githubusercontent.com/Geonovum/DCAT-AP-NL30/refs/heads/main/shapes/dcat-ap-nl-SHACL.ttl:
+ - Shape dcatapnl-sh:DistributionShape: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+ - Shape _:n41a93716838747a19231185fb9220d98b3: *none*
+ - Shape dcatapnl-sh:DatasetShape: *none*
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+ - Shape dcatapnl-sh:DataServiceShape: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape _:n41a93716838747a19231185fb9220d98b4: *none*
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:CatalogShape: *none*
+
+Validation result for _sources/dcat-ap-nl-dataset/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-dataset/rules.shacl:
+ - Shape dcatapnl-sh:DatasetShape: *none*
+
+Validation result for _sources/dcat-ap-nl-catalog/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-catalog/rules.shacl:
+ - Shape dcatapnl-sh:CatalogShape: *none*
+ - Shape dcatapnl-sh:CatalogShape_dataset_minCount: *none*
+
+
+** Validation error **
+Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (25):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/1a61f733fafb015548fe0e21203d559c9cb4d228>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201")
+  	Result Path: dcat:servesDataset
+  	Message: Value does not have class dcat:Dataset
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/3bde2663aaca96d953765ac2e525ef64710bf4d6>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
+  	Result Path: dcat:endpointURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/63240e11f1eb66f636413d1dbb134f0ff9066a7c>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
+  	Result Path: dcat:endpointDescription
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/ca2bd10c893237fa342edb75240b08731acda92f>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201")
+  	Result Path: dcat:servesDataset
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://creativecommons.org/licenses/by/4.0/deed.nl")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/dc08f4dca4377fade57f89454e3fa06a8389d314>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
+  	Result Path: dcat:endpointDescription
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api")
+  	Result Path: dcat:endpointURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Value Node: Literal("http://creativecommons.org/licenses/by/4.0/deed.nl")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dc1:title
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dc1:title
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value does not have class dc1:MediaType
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("application/xml")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dcat:mediaType
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/653804840386e33525b3d39d205c174780be414b>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value does not have class rdfs:Resource
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value does not have class dc1:MediaTypeOrExtent
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://www.kadaster.nl/-/brt-top10nl-download")
+  	Result Path: dcat:accessURL
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("OGC:WFS-2.0.0-http-get-capabilities")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("application/zip")
+  	Result Path: dc1:format
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value does not have class dc1:LicenseDocument
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:accessURL Literal("https://geodata.nationaalgeoregister.nl/brt/wfs?") ; dcat:mediaType Literal("application/xml") ; dcterms:format Literal("OGC:WFS-2.0.0-http-get-capabilities") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - WFS") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):
+  	Severity: shacl:Violation
+  	Source Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>
+  	Focus Node: [ dcat:accessURL Literal("https://www.kadaster.nl/-/brt-top10nl-download") ; dcat:mediaType Literal("application/zip") ; dcterms:format Literal("application/zip") ; dcterms:license Literal("https://creativecommons.org/publicdomain/zero/1.0/") ; rdf:type dcat:Distribution ; rdfs:label Literal("BRT TOP10NL - Download") ]
+  	Value Node: Literal("https://creativecommons.org/publicdomain/zero/1.0/")
+  	Result Path: dc1:license
+  	Message: Value is not of Node Kind shacl:BlankNodeOrIRI
+  
+Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl:
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService/dcat:theme,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:theme
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*
+ - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*
+
+Validation result for https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl:
+ - Shape dcat:Distribution: *none*
+ - Shape :DateOrDateTimeDataType: *none*
+ - Shape :DateOrDateTimeDataType/sh:or/rdf:first: *none*
+ - Shape dcat:Catalog: *none*
+ - Shape dcat:Dataset: *none*
+ - Shape dcat:CatalogRecord: *none*
+ - Shape :DateOrDateTimeDataType/sh:or/rdf:rest/rdf:first: *none*
+
+Validation result for _sources/dcat-ap-nl-distribution/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-distribution/rules.shacl:
+ - Shape dcatapnl-sh:DistributionShape: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution,<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:distribution
+
+Validation result for _sources/dcat-ap-nl-catalogrecord/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-catalogrecord/rules.shacl:
+ - Shape dcatapnl-sh:CatalogRecordShape: *none*
+
+Validation result for _sources/dcat-ap-nl-datasetseries/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/dcat-ap-nl-datasetseries/rules.shacl:
+ - Shape dcatapnl-sh:DatasetSeriesShape: *none*
+
+
+** Validation error **
+Validation result for _sources/dcat-ap-nl-dataservice/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (3):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_accessRights_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dct:accessRights
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dct:accessRights
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_contactPoint_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dcat:contactPoint
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dcat:contactPoint
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: dcatapnl-sh:DataServiceShape_publisher_minCount
+  	Focus Node: [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]
+  	Result Path: dct:publisher
+  	Message: Less than 1 values on [ dcat:endpointDescription Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:endpointURL Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcat:servesDataset Literal("http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201") ; dcat:theme [ dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ; rdf:type skos:Concept ; skos:prefLabel Literal("Nationale datasets", lang=nl) ] ; dcterms:description Literal("TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen .") ; dcterms:identifier Literal("https://api.pdok.nl/brt/top10nl/ogc/v1/api") ; dcterms:license Literal("http://creativecommons.org/licenses/by/4.0/deed.nl") ; rdf:type dcat:DataService ; rdfs:label Literal("BRT TOP10NL OGC API Features") ]->dct:publisher
+  
+Focus nodes for _sources/dcat-ap-nl-dataservice/rules.shacl:
+ - Shape _:n82213baf26ca44939a5124604f0f2c44b3: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*
+ - Shape dcatapnl-sh:DataServiceShape: <http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201>/dcat:DataService
+ - Shape _:n82213baf26ca44939a5124604f0f2c44b4: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape: *none*
+ - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*
+
+Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/records-ontology/rules.shacl:
+ - Shape <https://www.ogc.org/rules/rec/#testVarExists>: *none*
 
 === End SHACL ===
 

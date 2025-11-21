@@ -7,12 +7,13 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,
-        geojson:Feature ;
-    rdfs:label "BRT TOP10NL" ;
+<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> rdfs:label "BRT TOP10NL" ;
     dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/ANNUAL" ;
     dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
+    dcterms:format "Dataset",
+        "Feature" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:temporal [ time:hasTime ( "1924-08-17T00:00:00Z" ".." ) ] ;
     dcat:keyword "BRT",
         "Basisregistratie Topografie",
@@ -22,16 +23,15 @@
         "Topografie",
         "Topografische kaart",
         "basisset NOVEX" ;
-    dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
             dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
             skos:prefLabel "Nationale datasets"@nl ],
         [ a skos:Concept ;
-            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
-            skos:prefLabel "Hydrografie"@nl ],
-        [ a skos:Concept ;
             dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
+            skos:prefLabel "Hydrografie"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 

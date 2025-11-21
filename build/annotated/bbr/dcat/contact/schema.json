@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for OGCAPI records profile for DCAT Dataset - defines all extra elements defined by DCAT so that the JSON-LD context can map to DCAT RDF",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.json"
+    }
+  ],
+  "x-jsonld-extra-terms": {
+    "a": "@type",
+    "contactpunt": "http://www.w3.org/ns/dcat#contactPoint",
+    "fn": {
+      "x-jsonld-id": "http://www.w3.org/2006/vcard/ns#fn",
+      "x-jsonld-language": "nl"
+    },
+    "organization-name": {
+      "x-jsonld-id": "http://www.w3.org/2006/vcard/ns#organization-name",
+      "x-jsonld-container": "@language"
+    },
+    "hasEmail": {
+      "x-jsonld-id": "http://www.w3.org/2006/vcard/ns#hasEmail",
+      "x-jsonld-type": "@id"
+    },
+    "contacts": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://www.w3.org/ns/dcat#contactPoint",
+      "x-jsonld-type": "@id"
+    },
+    "links": {
+      "x-jsonld-context": {
+        "type": "http://purl.org/dc/terms/type"
+      },
+      "x-jsonld-id": "rdfs:seeAlso"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "dct": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }
+}

@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-09-11",
+  "dateOfLastChange": "2025-10-23",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.api.records.v1.schemas.recordGeoJSON"
@@ -51,7 +51,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://data.overheid.nl/dataset/top10nl> a dcat:Dataset,\n        geojson:Feature ;\n    rdfs:label \"BRT TOP10NL\" ;\n    dct:accessRights \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n        \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\" ;\n    rdfs:seeAlso [ dct:type \"application/ld+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ],\n        [ dct:type \"text/html\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ] ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" .\n\n",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://data.overheid.nl/dataset/top10nl> rdfs:label \"BRT TOP10NL\" ;\n    dct:accessRights \"http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply\",\n        \"http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations\" ;\n    dct:format \"Feature\",\n        \"dcat:Dataset\" ;\n    rdfs:seeAlso [ dct:type \"text/html\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl.html> ],\n        [ dct:type \"application/ld+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.overheid.nl/dataset/top10nl> ] ;\n    dcat:license \"https://creativecommons.org/publicdomain/zero/1.0/\" .\n\n",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/uplift-example/example_1_1.ttl"
         }
       ]

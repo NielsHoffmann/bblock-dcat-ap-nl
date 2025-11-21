@@ -315,12 +315,13 @@ can find under the 'Semantic Uplift' section of this building block.
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,
-        geojson:Feature ;
-    rdfs:label "BRT TOP10NL" ;
+<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> rdfs:label "BRT TOP10NL" ;
     dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/ANNUAL" ;
     dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
+    dcterms:format "Dataset",
+        "Feature" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:temporal [ time:hasTime ( "1924-08-17T00:00:00Z" ".." ) ] ;
     dcat:keyword "BRT",
         "Basisregistratie Topografie",
@@ -330,16 +331,15 @@ can find under the 'Semantic Uplift' section of this building block.
         "Topografie",
         "Topografische kaart",
         "basisset NOVEX" ;
-    dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
             dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
             skos:prefLabel "Nationale datasets"@nl ],
         [ a skos:Concept ;
-            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
-            skos:prefLabel "Hydrografie"@nl ],
-        [ a skos:Concept ;
             dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
+            skos:prefLabel "Hydrografie"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 
@@ -387,14 +387,41 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "type": "@type",
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "type": "dct:format",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "type": "@type"
+      },
+      "@id": "geojson:geometry"
     },
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
+    },
+    "links": {
+      "@context": {
+        "type": "dct:type"
+      },
+      "@id": "rdfs:seeAlso"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
     },
     "href": {
       "@type": "@id",
@@ -415,28 +442,6 @@ Links to the schema:
     "uriTemplate": {
       "@type": "xsd:string",
       "@id": "oa:hasTarget"
-    },
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": "geojson:geometry",
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
-    "links": {
-      "@context": {
-        "type": "dct:type"
-      },
-      "@id": "rdfs:seeAlso"
     },
     "time": {
       "@id": "dct:temporal",
@@ -505,7 +510,7 @@ Links to the schema:
             },
             "url": {
               "@type": "@id",
-              "@id": "dct:theme"
+              "@id": "dcat:theme"
             }
           }
         },
@@ -513,17 +518,18 @@ Links to the schema:
       }
     },
     "formats": {
-      "@container": "@set",
       "@id": "rec:format",
-      "@type": "@id"
+      "@context": {
+        "name": "rec:name"
+      }
     },
     "contacts": {
       "@container": "@set",
       "@id": "dcat:contactPoint",
       "@type": "@id"
     },
-    "license": "dcat:license",
-    "rights": "dcat:rights",
+    "license": "dct:license",
+    "accessrights": "dct:accessRights",
     "linkTemplates": "rec:hasLinkTemplate",
     "variables": {
       "@container": "@id",
@@ -552,8 +558,8 @@ Links to the schema:
     },
     "accrualPeriodicity": "dct:accrualPeriodicity",
     "geojson": "https://purl.org/geojson/vocab#",
-    "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "w3ctime": "http://www.w3.org/2006/time#",
