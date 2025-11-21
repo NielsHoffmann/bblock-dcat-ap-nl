@@ -1,0 +1,21 @@
+{
+  "name": "Example for a kayak trip dataset",
+  "abstract": "A building block to show semantic uplift from dataset definition to schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-21T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-08-22",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+        
+      ],
+  "sources": [
+    
+  ],
+  
+  "scope": "dev",
+  "tags": ["Building blocks","Semantic uplift"],
+  "highlighted": false
+}

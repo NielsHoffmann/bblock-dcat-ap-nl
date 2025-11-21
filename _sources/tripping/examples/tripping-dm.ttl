@@ -1,0 +1,151 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ex: <http://example.org/ontology/> .
+
+# --- Classes (Tables) ---
+
+ex:BoatType
+    rdf:type rdfs:Class ;
+    rdfs:label "Boat Type" ;
+    rdfs:comment "Represents a specific type of boat used for trips." .
+
+ex:PointOfInterest
+    rdf:type rdfs:Class ;
+    rdfs:label "Point of Interest (POI)" ;
+    rdfs:comment "A location of interest that can be visited on a trip." ;
+    rdfs:subClassOf geo:Feature . # Inherits from GeoSPARQL Feature
+
+ex:KayakTrip
+    rdf:type rdfs:Class ;
+    rdfs:label "Kayak Trip" ;
+    rdfs:comment "A defined route or journey taken by kayak." ;
+    rdfs:subClassOf geo:Feature . # Inherits from GeoSPARQL Feature
+
+ex:Visit
+    rdf:type rdfs:Class ;
+    rdfs:label "POI Visit" ;
+    rdfs:comment "Represents the relationship of a POI being visited during a specific Kayak Trip." .
+
+# --- Datatype Properties (Columns) ---
+# Properties that link a resource to a literal value (TEXT, INTEGER, etc.)
+
+# BoatType Properties
+ex:boatID
+    rdf:type rdf:Property ;
+    rdfs:label "Boat ID" ;
+    rdfs:domain ex:BoatType ;
+    rdfs:range xsd:integer .
+
+ex:boatName
+    rdf:type rdf:Property ;
+    rdfs:label "Boat Name" ;
+    rdfs:domain ex:BoatType ;
+    rdfs:range xsd:string .
+
+ex:category
+    rdf:type rdf:Property ;
+    rdfs:label "Category" ;
+    rdfs:domain ex:BoatType ;
+    rdfs:range xsd:string .
+
+ex:description
+    rdf:type rdf:Property ;
+    rdfs:label "Description" ;
+    rdfs:domain [ rdf:type rdfs:Class ;
+                  rdfs:unionOf (ex:BoatType ex:KayakTrip) # Used by multiple classes
+                ] ;
+    rdfs:range xsd:string .
+
+ex:brand
+    rdf:type rdf:Property ;
+    rdfs:label "Brand" ;
+    rdfs:domain ex:BoatType ;
+    rdfs:range xsd:string .
+
+# PointOfInterest Properties
+ex:poiID
+    rdf:type rdf:Property ;
+    rdfs:label "POI ID" ;
+    rdfs:domain ex:PointOfInterest ;
+    rdfs:range xsd:integer .
+
+ex:poiName
+    rdf:type rdf:Property ;
+    rdfs:label "POI Name" ;
+    rdfs:domain ex:PointOfInterest ;
+    rdfs:range xsd:string .
+
+ex:poiType
+    rdf:type rdf:Property ;
+    rdfs:label "POI Type" ;
+    rdfs:domain ex:PointOfInterest ;
+    rdfs:range xsd:string .
+    
+# KayakTrip Properties
+ex:tripName
+    rdf:type rdf:Property ;
+    rdfs:label "Trip Name" ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range xsd:string .
+
+ex:comment
+    rdf:type rdf:Property ;
+    rdfs:label "Comment" ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range xsd:string .
+
+ex:source
+    rdf:type rdf:Property ;
+    rdfs:label "Source" ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range xsd:string .
+
+ex:tripType
+    rdf:type rdf:Property ;
+    rdfs:label "Trip Type" ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range xsd:string .
+
+# --- Geospatial Properties ---
+
+ex:hasPointGeometry
+    rdf:type geo:GeometryProperty ;
+    rdfs:label "has Point Geometry" ;
+    rdfs:domain ex:PointOfInterest ;
+    rdfs:range geo:Geometry . # Represents the 'geom POINT' column in 'poi'
+
+ex:hasMultiLineGeometry
+    rdf:type geo:GeometryProperty ;
+    rdfs:label "has MultiLineString Geometry" ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range geo:Geometry . # Represents the 'geom MULTILINESTRING' column in 'kayak_trips'
+
+# --- Object Properties (Foreign Keys) ---
+# Properties that link a resource to another resource
+
+# FK from kayak_trips to boat_type
+ex:usesBoatType
+    rdf:type rdf:Property ;
+    rdfs:label "uses boat type" ;
+    rdfs:comment "Links a Kayak Trip to the type of boat used." ;
+    rdfs:domain ex:KayakTrip ;
+    rdfs:range ex:BoatType . # References boat_type(fid)
+
+# FK from pois_visited to poi
+ex:visitsPOI
+    rdf:type rdf:Property ;
+    rdfs:label "visits POI" ;
+    rdfs:comment "Links a POI Visit record to the specific Point of Interest." ;
+    rdfs:domain ex:Visit ;
+    rdfs:range ex:PointOfInterest . # References poi(fid)
+
+# FK from pois_visited to kayak_trips
+ex:partOfTrip
+    rdf:type rdf:Property ;
+    rdfs:label "part of trip" ;
+    rdfs:comment "Links a POI Visit record to the Kayak Trip during which the visit occurred." ;
+    rdfs:domain ex:Visit ;
+    rdfs:range ex:KayakTrip . # References kayak_trips(fid)

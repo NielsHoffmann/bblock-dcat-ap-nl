@@ -1,0 +1,7 @@
+- title: kayak trip datamodel
+  content: |-
+    An example kayak trip datamodel.
+
+  snippets:
+    - language: ttl
+      ref: ./examples/tripping-dm.ttl

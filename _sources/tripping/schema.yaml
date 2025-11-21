@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: schema for a demo dataset about kayak trips
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml
+x-jsonld-extra-terms:
+  type:
+    x-jsonld-id: http://purl.org/dc/terms/type
+    x-jsonld-type: '@id'
+  title:
+    x-jsonld-container: '@set'
+    x-jsonld-id: http://purl.org/dc/terms/title
+  # license:
+  #   x-jsonld-container: '@set'
+  #   x-jsonld-id: http://purl.org/dc/terms/license
+  accessRights:
+    x-jsonld-container: '@set'
+    x-jsonld-id: http://purl.org/dc/terms/accessRights
