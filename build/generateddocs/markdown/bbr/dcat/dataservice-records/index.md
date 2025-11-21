@@ -206,14 +206,13 @@ This example is to test records examples.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
+<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataservice>,
+        geojson:Feature ;
+    dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
-    dcterms:format "Dataservice",
-        "Feature" ;
-    dcterms:temporal [ time:hasTime ( "1924-08-17T00:00:00Z" ".." ) ] ;
+    dcterms:temporal [ ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 
@@ -255,12 +254,15 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "type": "dct:format",
+    "type": "@type",
     "id": "@id",
     "properties": "@nest",
     "geometry": {
       "@context": {
-        "type": "@type"
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
       },
       "@id": "geojson:geometry"
     },
@@ -270,43 +272,31 @@ Links to the schema:
     },
     "links": {
       "@context": {
-        "type": "dct:type"
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
       },
       "@id": "rdfs:seeAlso"
     },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "rel": {
-      "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
-      },
-      "@id": "http://www.iana.org/assignments/relation",
+    "conformsTo": {
+      "@container": "@set",
+      "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "hreflang": "dct:language",
-    "title": "rdfs:label",
-    "length": "dct:extent",
+    "time": "dct:temporal",
     "created": "dct:created",
     "updated": "dct:modified",
-    "uriTemplate": {
-      "@type": "xsd:string",
-      "@id": "oa:hasTarget"
-    },
-    "time": {
-      "@id": "dct:temporal",
-      "@context": {
-        "interval": {
-          "@id": "w3ctime:hasTime",
-          "@container": "@list"
-        },
-        "resolution": "rec:iso8601period"
-      }
+    "title": {
+      "@container": "@set",
+      "@id": "dct:title"
     },
     "description": {
       "@container": "@set",
@@ -316,76 +306,80 @@ Links to the schema:
       "@container": "@set",
       "@id": "dcat:keyword"
     },
-    "conformsTo": {
-      "@container": "@set",
-      "@id": "dct:conformsTo",
-      "@type": "@id"
-    },
-    "language": {
-      "@id": "rec:language",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
-    },
+    "language": "rec:language",
     "languages": {
       "@container": "@set",
-      "@id": "rec:languages",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
+      "@id": "rec:languages"
     },
     "resourceLanguages": {
       "@container": "@set",
-      "@id": "rec:resourceLanguages",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
+      "@id": "rec:resourceLanguages"
     },
     "externalIds": {
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier",
       "@context": {
         "scheme": "rec:scheme",
         "value": "rec:id"
-      }
+      },
+      "@container": "@set",
+      "@id": "rec:scopedIdentifier"
     },
     "themes": {
       "@container": "@set",
-      "@id": "rec:themes",
-      "@context": {
-        "concepts": {
-          "@id": "rec:concept",
-          "@context": {
-            "id": {
-              "@type": "xsd:string",
-              "@id": "rec:conceptID"
-            },
-            "url": {
-              "@type": "@id",
-              "@id": "dcat:theme"
-            }
-          }
-        },
-        "scheme": "rec:scheme"
-      }
+      "@id": "rec:themes"
     },
     "formats": {
+      "@container": "@set",
       "@id": "rec:format",
-      "@context": {
-        "name": "rec:name"
-      }
+      "@type": "@id"
     },
     "contacts": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
       "@container": "@set",
       "@id": "dcat:contactPoint",
       "@type": "@id"
     },
-    "license": "dct:license",
+    "license": "dcat:license",
+    "rights": "dcat:rights",
+    "linkTemplates": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "uriTemplate": {
+          "@type": "xsd:string",
+          "@id": "rec:uriTemplate"
+        },
+        "varBase": "rec:varBase",
+        "variables": {
+          "@id": "rec:hasVariable",
+          "@container": "@index",
+          "@index": "dct:identifier",
+          "@type": "@json"
+        }
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
     "accessrights": "dct:accessRights",
-    "linkTemplates": "rec:hasLinkTemplate",
     "variables": {
       "@container": "@id",
       "@id": "rec:hasVariable",
@@ -394,17 +388,21 @@ Links to the schema:
         "@vocab": "https://www.opengis.net/def/ogc-api/records/"
       }
     },
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "w3ctime": "http://www.w3.org/2006/time#",
-    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
     "dctype": "http://purl.org/dc/dcmitype/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "prov": "http://www.w3.org/ns/prov#",

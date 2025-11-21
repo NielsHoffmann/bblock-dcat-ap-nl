@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.contact - contact test
-Generated 2025-10-23T12:51:22.348321+00:00
+Generated 2025-11-21T16:09:51.278888+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting

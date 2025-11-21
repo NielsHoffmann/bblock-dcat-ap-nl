@@ -303,43 +303,40 @@ can find under the 'Semantic Uplift' section of this building block.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> rdfs:label "BRT TOP10NL" ;
+<http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201> a <http://example.com/records/Dataset>,
+        geojson:Feature ;
     dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/ANNUAL" ;
     dcterms:conformsTo <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
-    dcterms:format "Dataset",
-        "Feature" ;
     dcterms:identifier "2482250f-3b00-4439-9f93-f3118229b201" ;
-    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    dcterms:temporal [ time:hasTime ( "1924-08-17T00:00:00Z" ".." ) ] ;
+    dcterms:temporal [ ] ;
+    dcterms:title "BRT TOP10NL" ;
     dcat:DataService [ a dcat:DataService ;
-            rdfs:label "BRT TOP10NL OGC API Features" ;
             dcterms:description "TOP10NL is een digitaal objectgericht topografisch bestand wat ten grondslag ligt aan de topografische kaartseries 1:10.000 en 1:25.000 en wat veelvuldig in diverse GIS- en CAD-systemen wordt gebruikt voor ondergrond, analyse-, en beheers- en planningsactiviteiten. Heeft u een vermoedelijke fout in TOP10NL geconstateerd? Doe dan een melding op https://www.verbeterdekaart.nl of via de Terugmelding REST API: https://www.pdok.nl/restful-api/-/article/brt-terugmeldingen ." ;
             dcterms:identifier "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
-            dcterms:license "http://creativecommons.org/licenses/by/4.0/deed.nl" ;
+            dcterms:title "BRT TOP10NL OGC API Features" ;
             dcat:endpointDescription "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
             dcat:endpointURL "https://api.pdok.nl/brt/top10nl/ogc/v1/api" ;
+            dcat:license "http://creativecommons.org/licenses/by/4.0/deed.nl" ;
             dcat:servesDataset "http://example.com/records/2482250f-3b00-4439-9f93-f3118229b201" ;
             dcat:theme [ a skos:Concept ;
                     dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
                     skos:prefLabel "Nationale datasets"@nl ] ] ;
     dcat:distribution [ a dcat:Distribution ;
-            rdfs:label "BRT TOP10NL - WFS" ;
-            dcterms:format "OGC:WFS-2.0.0-http-get-capabilities" ;
-            dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-            dcat:accessURL "https://geodata.nationaalgeoregister.nl/brt/wfs?" ;
-            dcat:mediaType "application/xml" ],
-        [ a dcat:Distribution ;
-            rdfs:label "BRT TOP10NL - Download" ;
             dcterms:format "application/zip" ;
-            dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcterms:title "BRT TOP10NL - Download" ;
             dcat:accessURL "https://www.kadaster.nl/-/brt-top10nl-download" ;
-            dcat:mediaType "application/zip" ] ;
+            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcat:mediaType "application/zip" ],
+        [ a dcat:Distribution ;
+            dcterms:format "OGC:WFS-2.0.0-http-get-capabilities" ;
+            dcterms:title "BRT TOP10NL - WFS" ;
+            dcat:accessURL "https://geodata.nationaalgeoregister.nl/brt/wfs?" ;
+            dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+            dcat:mediaType "application/xml" ] ;
     dcat:keyword "BRT",
         "Basisregistratie Topografie",
         "Kadaster",
@@ -348,15 +345,16 @@ can find under the 'Semantic Uplift' section of this building block.
         "Topografie",
         "Topografische kaart",
         "basisset NOVEX" ;
+    dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationale datasets"@nl ],
+        [ a skos:Concept ;
             dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
             skos:prefLabel "Hydrografie"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ],
-        [ a skos:Concept ;
-            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationale datasets"@nl ] ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 
@@ -426,12 +424,15 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "type": "dct:format",
+    "type": "@type",
     "id": "@id",
     "properties": "@nest",
     "geometry": {
       "@context": {
-        "type": "@type"
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
       },
       "@id": "geojson:geometry"
     },
@@ -441,43 +442,31 @@ Links to the schema:
     },
     "links": {
       "@context": {
-        "type": "dct:type"
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
       },
       "@id": "rdfs:seeAlso"
     },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "rel": {
-      "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
-      },
-      "@id": "http://www.iana.org/assignments/relation",
+    "conformsTo": {
+      "@container": "@set",
+      "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "hreflang": "dct:language",
-    "title": "rdfs:label",
-    "length": "dct:extent",
+    "time": "dct:temporal",
     "created": "dct:created",
     "updated": "dct:modified",
-    "uriTemplate": {
-      "@type": "xsd:string",
-      "@id": "oa:hasTarget"
-    },
-    "time": {
-      "@id": "dct:temporal",
-      "@context": {
-        "interval": {
-          "@id": "w3ctime:hasTime",
-          "@container": "@list"
-        },
-        "resolution": "rec:iso8601period"
-      }
+    "title": {
+      "@container": "@set",
+      "@id": "dct:title"
     },
     "description": {
       "@container": "@set",
@@ -487,76 +476,80 @@ Links to the schema:
       "@container": "@set",
       "@id": "dcat:keyword"
     },
-    "conformsTo": {
-      "@container": "@set",
-      "@id": "dct:conformsTo",
-      "@type": "@id"
-    },
-    "language": {
-      "@id": "rec:language",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
-    },
+    "language": "rec:language",
     "languages": {
       "@container": "@set",
-      "@id": "rec:languages",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
+      "@id": "rec:languages"
     },
     "resourceLanguages": {
       "@container": "@set",
-      "@id": "rec:resourceLanguages",
-      "@context": {
-        "code": "rec:languageCode",
-        "name": "skos:prefLabel"
-      }
+      "@id": "rec:resourceLanguages"
     },
     "externalIds": {
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier",
       "@context": {
         "scheme": "rec:scheme",
         "value": "rec:id"
-      }
+      },
+      "@container": "@set",
+      "@id": "rec:scopedIdentifier"
     },
     "themes": {
       "@container": "@set",
-      "@id": "rec:themes",
-      "@context": {
-        "concepts": {
-          "@id": "rec:concept",
-          "@context": {
-            "id": {
-              "@type": "xsd:string",
-              "@id": "rec:conceptID"
-            },
-            "url": {
-              "@type": "@id",
-              "@id": "dcat:theme"
-            }
-          }
-        },
-        "scheme": "rec:scheme"
-      }
+      "@id": "rec:themes"
     },
     "formats": {
+      "@container": "@set",
       "@id": "rec:format",
-      "@context": {
-        "name": "rec:name"
-      }
+      "@type": "@id"
     },
     "contacts": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
       "@container": "@set",
       "@id": "dcat:contactPoint",
       "@type": "@id"
     },
-    "license": "dct:license",
+    "license": "dcat:license",
+    "rights": "dcat:rights",
+    "linkTemplates": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "uriTemplate": {
+          "@type": "xsd:string",
+          "@id": "rec:uriTemplate"
+        },
+        "varBase": "rec:varBase",
+        "variables": {
+          "@id": "rec:hasVariable",
+          "@container": "@index",
+          "@index": "dct:identifier",
+          "@type": "@json"
+        }
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
     "accessrights": "dct:accessRights",
-    "linkTemplates": "rec:hasLinkTemplate",
     "variables": {
       "@container": "@id",
       "@id": "rec:hasVariable",
@@ -592,17 +585,21 @@ Links to the schema:
     "servesDataset": "dcat:servesDataset",
     "identifier": "dct:identifier",
     "endpointDescription": "dcat:endpointDescription",
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "w3ctime": "http://www.w3.org/2006/time#",
-    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
     "dctype": "http://purl.org/dc/dcmitype/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "prov": "http://www.w3.org/ns/prov#",

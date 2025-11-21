@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.uplift-example - Semantic uplift example
-Generated 2025-10-23T12:51:23.295669+00:00
+Generated 2025-11-21T16:09:52.564119+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

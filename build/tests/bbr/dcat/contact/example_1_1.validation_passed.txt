@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.contact - contact test
-Generated 2025-10-23T12:51:22.272697+00:00
+Generated 2025-11-21T16:09:51.182639+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created

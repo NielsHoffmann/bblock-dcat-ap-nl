@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "schema for a demo dataset about kayak trips",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.json"
+    }
+  ],
+  "x-jsonld-extra-terms": {
+    "type": "@type",
+    "title": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/title"
+    },
+    "accessRights": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/accessRights"
+    },
+    "license": "http://www.w3.org/ns/dcat#license"
+  },
+  "x-jsonld-prefixes": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  }
+}

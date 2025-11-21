@@ -1,0 +1,53 @@
+
+
+{
+  "itemIdentifier": "geonovum-labs.bbr.dcat.tripping",
+  "name": "Example for a kayak trip dataset",
+  "abstract": "A building block to show semantic uplift from dataset definition to schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-21T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2025-11-21",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "ogc.api.records.v1.schemas.recordGeoJSON"
+  ],
+  "sources": [],
+  "scope": "dev",
+  "tags": [
+    "Building blocks",
+    "Semantic uplift"
+  ],
+  "highlighted": false,
+  "shaclShapes": {},
+  "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/context.jsonld",
+  "schema": {
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/schema.json"
+  },
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/schema.yaml",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/context.jsonld",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/tripping/",
+  "examples": [
+    {
+      "title": "kayak trip datamodel",
+      "content": "An example kayak trip datamodel.",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "./examples/tripping-dm.ttl",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix schema: <http://schema.org/> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix ex: <http://example.org/ontology/> .\n\n# --- Classes (Tables) ---\n\nex:BoatType\n    rdf:type rdfs:Class ;\n    rdfs:label \"Boat Type\" ;\n    rdfs:comment \"Represents a specific type of boat used for trips.\" .\n\nex:PointOfInterest\n    rdf:type rdfs:Class ;\n    rdfs:label \"Point of Interest (POI)\" ;\n    rdfs:comment \"A location of interest that can be visited on a trip.\" ;\n    rdfs:subClassOf geo:Feature . # Inherits from GeoSPARQL Feature\n\nex:KayakTrip\n    rdf:type rdfs:Class ;\n    rdfs:label \"Kayak Trip\" ;\n    rdfs:comment \"A defined route or journey taken by kayak.\" ;\n    rdfs:subClassOf geo:Feature . # Inherits from GeoSPARQL Feature\n\nex:Visit\n    rdf:type rdfs:Class ;\n    rdfs:label \"POI Visit\" ;\n    rdfs:comment \"Represents the relationship of a POI being visited during a specific Kayak Trip.\" .\n\n# --- Datatype Properties (Columns) ---\n# Properties that link a resource to a literal value (TEXT, INTEGER, etc.)\n\n# BoatType Properties\nex:boatID\n    rdf:type rdf:Property ;\n    rdfs:label \"Boat ID\" ;\n    rdfs:domain ex:BoatType ;\n    rdfs:range xsd:integer .\n\nex:boatName\n    rdf:type rdf:Property ;\n    rdfs:label \"Boat Name\" ;\n    rdfs:domain ex:BoatType ;\n    rdfs:range xsd:string .\n\nex:category\n    rdf:type rdf:Property ;\n    rdfs:label \"Category\" ;\n    rdfs:domain ex:BoatType ;\n    rdfs:range xsd:string .\n\nex:description\n    rdf:type rdf:Property ;\n    rdfs:label \"Description\" ;\n    rdfs:domain [ rdf:type rdfs:Class ;\n                  rdfs:unionOf (ex:BoatType ex:KayakTrip) # Used by multiple classes\n                ] ;\n    rdfs:range xsd:string .\n\nex:brand\n    rdf:type rdf:Property ;\n    rdfs:label \"Brand\" ;\n    rdfs:domain ex:BoatType ;\n    rdfs:range xsd:string .\n\n# PointOfInterest Properties\nex:poiID\n    rdf:type rdf:Property ;\n    rdfs:label \"POI ID\" ;\n    rdfs:domain ex:PointOfInterest ;\n    rdfs:range xsd:integer .\n\nex:poiName\n    rdf:type rdf:Property ;\n    rdfs:label \"POI Name\" ;\n    rdfs:domain ex:PointOfInterest ;\n    rdfs:range xsd:string .\n\nex:poiType\n    rdf:type rdf:Property ;\n    rdfs:label \"POI Type\" ;\n    rdfs:domain ex:PointOfInterest ;\n    rdfs:range xsd:string .\n    \n# KayakTrip Properties\nex:tripName\n    rdf:type rdf:Property ;\n    rdfs:label \"Trip Name\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range xsd:string .\n\nex:comment\n    rdf:type rdf:Property ;\n    rdfs:label \"Comment\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range xsd:string .\n\nex:source\n    rdf:type rdf:Property ;\n    rdfs:label \"Source\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range xsd:string .\n\nex:tripType\n    rdf:type rdf:Property ;\n    rdfs:label \"Trip Type\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range xsd:string .\n\n# --- Geospatial Properties ---\n\nex:hasPointGeometry\n    rdf:type geo:GeometryProperty ;\n    rdfs:label \"has Point Geometry\" ;\n    rdfs:domain ex:PointOfInterest ;\n    rdfs:range geo:Geometry . # Represents the 'geom POINT' column in 'poi'\n\nex:hasMultiLineGeometry\n    rdf:type geo:GeometryProperty ;\n    rdfs:label \"has MultiLineString Geometry\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range geo:Geometry . # Represents the 'geom MULTILINESTRING' column in 'kayak_trips'\n\n# --- Object Properties (Foreign Keys) ---\n# Properties that link a resource to another resource\n\n# FK from kayak_trips to boat_type\nex:usesBoatType\n    rdf:type rdf:Property ;\n    rdfs:label \"uses boat type\" ;\n    rdfs:comment \"Links a Kayak Trip to the type of boat used.\" ;\n    rdfs:domain ex:KayakTrip ;\n    rdfs:range ex:BoatType . # References boat_type(fid)\n\n# FK from pois_visited to poi\nex:visitsPOI\n    rdf:type rdf:Property ;\n    rdfs:label \"visits POI\" ;\n    rdfs:comment \"Links a POI Visit record to the specific Point of Interest.\" ;\n    rdfs:domain ex:Visit ;\n    rdfs:range ex:PointOfInterest . # References poi(fid)\n\n# FK from pois_visited to kayak_trips\nex:partOfTrip\n    rdf:type rdf:Property ;\n    rdfs:label \"part of trip\" ;\n    rdfs:comment \"Links a POI Visit record to the Kayak Trip during which the visit occurred.\" ;\n    rdfs:domain ex:Visit ;\n    rdfs:range ex:KayakTrip . # References kayak_trips(fid)",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/tripping/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: schema for a demo dataset about kayak trips\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml\nx-jsonld-extra-terms:\n  type: '@type'\n  title:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/title\n  accessRights:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/accessRights\n  license: http://www.w3.org/ns/dcat#license\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  dct: http://purl.org/dc/terms/\n  owl: http://www.w3.org/2002/07/owl#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+  "gitPath": "_sources/tripping"
+}
