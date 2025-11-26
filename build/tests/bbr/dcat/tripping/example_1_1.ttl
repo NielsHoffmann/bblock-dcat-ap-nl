@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:n388ce94d7b75452fb98894b2a7d10b3fb1 a rdfs:Class ;
+_:n41fa1c109b4b4eaa8835470b2bbf8addb1 a rdfs:Class ;
     rdfs:unionOf ( ex:BoatType ex:KayakTrip ) .
 
 ex:BoatType a rdfs:Class ;
@@ -52,7 +52,7 @@ ex:comment a rdf:Property ;
 
 ex:description a rdf:Property ;
     rdfs:label "Description" ;
-    rdfs:domain _:n388ce94d7b75452fb98894b2a7d10b3fb1 ;
+    rdfs:domain _:n41fa1c109b4b4eaa8835470b2bbf8addb1 ;
     rdfs:range xsd:string .
 
 ex:hasMultiLineGeometry a geo:GeometryProperty ;

@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.tripping - Example for a kayak trip dataset
-Generated 2025-11-21T16:09:51.902256+00:00
+Generated 2025-11-26T14:42:38.361881+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created

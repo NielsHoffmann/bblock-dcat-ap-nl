@@ -330,14 +330,14 @@ can find under the 'Semantic Uplift' section of this building block.
         "basisset NOVEX" ;
     dcat:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcat:theme [ a skos:Concept ;
-            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
-            skos:prefLabel "Aardobservatie en milieu"@nl ],
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationale datasets"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/hy> ;
             skos:prefLabel "Hydrografie"@nl ],
         [ a skos:Concept ;
-            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationale datasets"@nl ] ;
+            dcterms:source <http://data.europa.eu/bna/c_dd313021> ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 3.3e+00 5.36e+01 ) ( 7.24e+00 5.36e+01 ) ( 7.24e+00 5.073e+01 ) ( 3.3e+00 5.073e+01 ) ( 3.3e+00 5.36e+01 ) ) ) ] .
 
@@ -468,10 +468,25 @@ Links to the schema:
       "@id": "rec:scopedIdentifier"
     },
     "themes": {
+      "@context": {
+        "concepts": {
+          "@context": {
+            "id": "thns:id",
+            "url": "@id"
+          },
+          "@id": "thns:concepts",
+          "@container": "@set"
+        },
+        "scheme": "thns:scheme"
+      },
       "@container": "@set",
       "@id": "rec:themes"
     },
     "formats": {
+      "@context": {
+        "name": "rec:name",
+        "mediaType": "rec:mediaType"
+      },
       "@container": "@set",
       "@id": "rec:format",
       "@type": "@id"
@@ -517,8 +532,7 @@ Links to the schema:
         "variables": {
           "@id": "rec:hasVariable",
           "@container": "@index",
-          "@index": "dct:identifier",
-          "@type": "@json"
+          "@index": "dct:identifier"
         }
       },
       "@id": "rec:hasLinkTemplate"
@@ -569,6 +583,7 @@ Links to the schema:
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "prov": "http://www.w3.org/ns/prov#",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "thns": "https://w3id.org/ogc/stac/themes/",
     "@version": 1.1
   }
 }

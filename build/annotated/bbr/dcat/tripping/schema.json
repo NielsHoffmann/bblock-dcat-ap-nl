@@ -1,27 +1,225 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "schema for a demo dataset about kayak trips",
-  "allOf": [
-    {
-      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.json"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.org/tripping-db-schema.json",
+  "title": "Tripping Database Schema",
+  "description": "JSON Schema representing the four tables (boat_type, poi, kayak_trips, pois_visited) of the Tripping Database.",
+  "type": "object",
+  "properties": {
+    "boat_type": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BoatType"
+      }
+    },
+    "poi": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/POI"
+      }
+    },
+    "kayak_trips": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/KayakTrip"
+      }
+    },
+    "pois_visited": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/POIVisited"
+      }
     }
+  },
+  "required": [
+    "boat_type",
+    "poi",
+    "kayak_trips",
+    "pois_visited"
   ],
+  "definitions": {
+    "BoatType": {
+      "title": "Boat Type",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "boat_id": {
+          "description": "MEDIUMINT",
+          "type": "integer"
+        },
+        "boat_name": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "category": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50,
+          "x-jsonld-id": "http://example.org/ontology/category"
+        },
+        "description": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50,
+          "x-jsonld-id": "http://example.org/ontology/description"
+        },
+        "brand": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50,
+          "x-jsonld-id": "http://example.org/ontology/brand"
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "POI": {
+      "title": "Point of Interest",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "geom": {
+          "description": "Geospatial column: POINT",
+          "type": "object",
+          "format": "Point"
+        },
+        "poi_id": {
+          "description": "MEDIUMINT",
+          "type": "integer"
+        },
+        "naam": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "type": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "KayakTrip": {
+      "title": "Kayak Trip",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "geom": {
+          "description": "Geospatial column: MULTILINESTRING",
+          "type": "object",
+          "format": "MultiLineString"
+        },
+        "name": {
+          "description": "TEXT",
+          "type": "string"
+        },
+        "cmt": {
+          "description": "TEXT (Comment)",
+          "type": "string"
+        },
+        "desc": {
+          "description": "TEXT (Description, column name is 'desc')",
+          "type": "string"
+        },
+        "src": {
+          "description": "TEXT (Source)",
+          "type": "string"
+        },
+        "type": {
+          "description": "TEXT",
+          "type": "string"
+        },
+        "boat_type": {
+          "description": "Foreign Key to boat_type(fid) (INTEGER)",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "POIVisited": {
+      "title": "POI Visited (Junction Table)",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "poi_id": {
+          "description": "Foreign Key to poi(fid) (INTEGER)",
+          "type": "integer"
+        },
+        "trip_id": {
+          "description": "Foreign Key to kayak_trips(fid) (INTEGER)",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    }
+  },
   "x-jsonld-extra-terms": {
-    "type": "@type",
-    "title": {
-      "x-jsonld-container": "@set",
-      "x-jsonld-id": "http://purl.org/dc/terms/title"
+    "BoatType": "http://example.org/ontology/BoatType",
+    "PointOfInterest": "http://example.org/ontology/PointOfInterest",
+    "KayakTrip": "http://example.org/ontology/KayakTrip",
+    "Visit": "http://example.org/ontology/Visit",
+    "boatID": {
+      "x-jsonld-id": "http://example.org/ontology/boatID",
+      "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "accessRights": {
-      "x-jsonld-container": "@set",
-      "x-jsonld-id": "http://purl.org/dc/terms/accessRights"
+    "boatName": "http://example.org/ontology/boatName",
+    "poiID": {
+      "x-jsonld-id": "http://example.org/ontology/poiID",
+      "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "license": "http://www.w3.org/ns/dcat#license"
+    "poiName": "http://example.org/ontology/poiName",
+    "poiType": "http://example.org/ontology/poiType",
+    "tripName": "http://example.org/ontology/tripName",
+    "comment": "http://example.org/ontology/comment",
+    "source": "http://example.org/ontology/source",
+    "tripType": "http://example.org/ontology/tripType",
+    "hasPointGeometry": {
+      "x-jsonld-id": "http://example.org/ontology/hasPointGeometry",
+      "x-jsonld-type": "@id"
+    },
+    "hasMultiLineGeometry": {
+      "x-jsonld-id": "http://example.org/ontology/hasMultiLineGeometry",
+      "x-jsonld-type": "@id"
+    },
+    "usesBoatType": {
+      "x-jsonld-id": "http://example.org/ontology/usesBoatType",
+      "x-jsonld-type": "@id"
+    },
+    "visitsPOI": {
+      "x-jsonld-id": "http://example.org/ontology/visitsPOI",
+      "x-jsonld-type": "@id"
+    },
+    "partOfTrip": {
+      "x-jsonld-id": "http://example.org/ontology/partOfTrip",
+      "x-jsonld-type": "@id"
+    }
   },
   "x-jsonld-prefixes": {
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "dct": "http://purl.org/dc/terms/",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    "ex": "http://example.org/ontology/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "geo": "http://www.opengis.net/ont/geosparql#"
   }
 }

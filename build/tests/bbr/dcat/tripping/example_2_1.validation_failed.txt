@@ -1,0 +1,213 @@
+Validation report for geonovum-labs.bbr.dcat.tripping - Example for a kayak trip dataset
+Generated 2025-11-26T14:42:38.370756+00:00
+=== Files ===
+Using example_2_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_2_1.jsonld created
+
+** Validation error **
+**Empty** output Turtle example_2_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'boat_type' is a required property
+
+Failed validating 'required' in schema:
+    {'$id': 'http://example.org/tripping-db-schema.json',
+     '$schema': 'http://json-schema.org/draft-07/schema#',
+     'definitions': {'BoatType': {'properties': {'boat_id': {'description': 'MEDIUMINT',
+                                                             'type': 'integer'},
+                                                 'boat_name': {'description': 'TEXT(50)',
+                                                               'maxLength': 50,
+                                                               'type': 'string'},
+                                                 'brand': {'description': 'TEXT(50)',
+                                                           'maxLength': 50,
+                                                           'type': 'string',
+                                                           'x-jsonld-id': 'http://example.org/ontology/brand'},
+                                                 'category': {'description': 'TEXT(50)',
+                                                              'maxLength': 50,
+                                                              'type': 'string',
+                                                              'x-jsonld-id': 'http://example.org/ontology/category'},
+                                                 'description': {'description': 'TEXT(50)',
+                                                                 'maxLength': 50,
+                                                                 'type': 'string',
+                                                                 'x-jsonld-id': 'http://example.org/ontology/description'},
+                                                 'fid': {'description': 'Primary '
+                                                                        'Key '
+                                                                        '(INTEGER, '
+                                                                        'NOT '
+                                                                        'NULL, '
+                                                                        'AUTOINCREMENT)',
+                                                         'type': 'integer'}},
+                                  'required': ['fid'],
+                                  'title': 'Boat Type',
+                                  'type': 'object'},
+                     'KayakTrip': {'properties': {'boat_type': {'description': 'Foreign '
+                                                                               'Key '
+                                                                               'to '
+                                                                               'boat_type(fid) '
+                                                                               '(INTEGER)',
+                                                                'type': 'integer'},
+                                                  'cmt': {'description': 'TEXT '
+                                                                         '(Comment)',
+                                                          'type': 'string'},
+                                                  'desc': {'description': 'TEXT '
+                                                                          '(Description, '
+                                                                          'column '
+                                                                          'name '
+                                                                          'is '
+                                                                          "'desc')",
+                                                           'type': 'string'},
+                                                  'fid': {'description': 'Primary '
+                                                                         'Key '
+                                                                         '(INTEGER, '
+                                                                         'NOT '
+                                                                         'NULL, '
+                                                                         'AUTOINCREMENT)',
+                                                          'type': 'integer'},
+                                                  'geom': {'description': 'Geospatial '
+                                                                          'column: '
+                                                                          'MULTILINESTRING',
+                                                           'format': 'MultiLineString',
+                                                           'type': 'object'},
+                                                  'name': {'description': 'TEXT',
+                                                           'type': 'string'},
+                                                  'src': {'description': 'TEXT '
+                                                                         '(Source)',
+                                                          'type': 'string'},
+                                                  'type': {'description': 'TEXT',
+                                                           'type': 'string'}},
+                                   'required': ['fid'],
+                                   'title': 'Kayak Trip',
+                                   'type': 'object'},
+                     'POI': {'properties': {'fid': {'description': 'Primary '
+                                                                   'Key '
+                                                                   '(INTEGER, '
+                                                                   'NOT '
+                                                                   'NULL, '
+                                                                   'AUTOINCREMENT)',
+                                                    'type': 'integer'},
+                                            'geom': {'description': 'Geospatial '
+                                                                    'column: '
+                                                                    'POINT',
+                                                     'format': 'Point',
+                                                     'type': 'object'},
+                                            'naam': {'description': 'TEXT(50)',
+                                                     'maxLength': 50,
+                                                     'type': 'string'},
+                                            'poi_id': {'description': 'MEDIUMINT',
+                                                       'type': 'integer'},
+                                            'type': {'description': 'TEXT(50)',
+                                                     'maxLength': 50,
+                                                     'type': 'string'}},
+                             'required': ['fid'],
+                             'title': 'Point of Interest',
+                             'type': 'object'},
+                     'POIVisited': {'properties': {'fid': {'description': 'Primary '
+                                                                          'Key '
+                                                                          '(INTEGER, '
+                                                                          'NOT '
+                                                                          'NULL, '
+                                                                          'AUTOINCREMENT)',
+                                                           'type': 'integer'},
+                                                   'poi_id': {'description': 'Foreign '
+                                                                             'Key '
+                                                                             'to '
+                                                                             'poi(fid) '
+                                                                             '(INTEGER)',
+                                                              'type': 'integer'},
+                                                   'trip_id': {'description': 'Foreign '
+                                                                              'Key '
+                                                                              'to '
+                                                                              'kayak_trips(fid) '
+                                                                              '(INTEGER)',
+                                                               'type': 'integer'}},
+                                    'required': ['fid'],
+                                    'title': 'POI Visited (Junction Table)',
+                                    'type': 'object'}},
+     'description': 'JSON Schema representing the four tables (boat_type, '
+                    'poi, kayak_trips, pois_visited) of the Tripping '
+                    'Database.',
+     'properties': {'boat_type': {'items': {'$ref': '#/definitions/BoatType'},
+                                  'type': 'array'},
+                    'kayak_trips': {'items': {'$ref': '#/definitions/KayakTrip'},
+                                    'type': 'array'},
+                    'poi': {'items': {'$ref': '#/definitions/POI'},
+                            'type': 'array'},
+                    'pois_visited': {'items': {'$ref': '#/definitions/POIVisited'},
+                                     'type': 'array'}},
+     'required': ['boat_type', 'poi', 'kayak_trips', 'pois_visited'],
+     'title': 'Tripping Database Schema',
+     'type': 'object',
+     'x-jsonld-extra-terms': {'BoatType': 'http://example.org/ontology/BoatType',
+                              'KayakTrip': 'http://example.org/ontology/KayakTrip',
+                              'PointOfInterest': 'http://example.org/ontology/PointOfInterest',
+                              'Visit': 'http://example.org/ontology/Visit',
+                              'boatID': {'x-jsonld-id': 'http://example.org/ontology/boatID',
+                                         'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},
+                              'boatName': 'http://example.org/ontology/boatName',
+                              'comment': 'http://example.org/ontology/comment',
+                              'hasMultiLineGeometry': {'x-jsonld-id': 'http://example.org/ontology/hasMultiLineGeometry',
+                                                       'x-jsonld-type': '@id'},
+                              'hasPointGeometry': {'x-jsonld-id': 'http://example.org/ontology/hasPointGeometry',
+                                                   'x-jsonld-type': '@id'},
+                              'partOfTrip': {'x-jsonld-id': 'http://example.org/ontology/partOfTrip',
+                                             'x-jsonld-type': '@id'},
+                              'poiID': {'x-jsonld-id': 'http://example.org/ontology/poiID',
+                                        'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},
+                              'poiName': 'http://example.org/ontology/poiName',
+                              'poiType': 'http://example.org/ontology/poiType',
+                              'source': 'http://example.org/ontology/source',
+                              'tripName': 'http://example.org/ontology/tripName',
+                              'tripType': 'http://example.org/ontology/tripType',
+                              'usesBoatType': {'x-jsonld-id': 'http://example.org/ontology/usesBoatType',
+                                               'x-jsonld-type': '@id'},
+                              'visitsPOI': {'x-jsonld-id': 'http://example.org/ontology/visitsPOI',
+                                            'x-jsonld-type': '@id'}},
+     'x-jsonld-prefixes': {'ex': 'http://example.org/ontology/',
+                           'geo': 'http://www.opengis.net/ont/geosparql#',
+                           'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
+                           'schema': 'http://schema.org/',
+                           'xsd': 'http://www.w3.org/2001/XMLSchema#'}}
+
+On instance:
+    {'boat_types': [{'boat_id': 1,
+                     'boat_name': "Touring Kayak 'Swift'",
+                     'brand': 'OceanPro',
+                     'category': 'Sea/Touring',
+                     'description': 'Fast and stable kayak for long trips.',
+                     'fid': 1},
+                    {'boat_id': 2,
+                     'boat_name': "Sit-on-top 'Rental'",
+                     'brand': 'WaterFun',
+                     'category': 'Recreational',
+                     'description': 'Simple and stable for easy use.',
+                     'fid': 2}],
+     'kayak_trips': [{'boat_type': 1,
+                      'cmt': 'Perfect weather for a paddle.',
+                      'desc': 'Route covering the eastern bay area.',
+                      'fid': 101,
+                      'geom': {'coordinates': [[[4.89, 52.37],
+                                                [4.88, 52.36],
+                                                [4.87, 52.35]]],
+                               'type': 'MultiLineString'},
+                      'name': 'Coastal Explorer Day 1',
+                      'src': 'GPS Logger 2025-08-15',
+                      'type': 'Expedition'}],
+     'pois': [{'fid': 10,
+               'geom': {'coordinates': [4.9, 52.35], 'type': 'Point'},
+               'naam': 'Old Lighthouse Ruin',
+               'poi_id': 1001,
+               'type': 'Historic Landmark'},
+              {'fid': 11,
+               'geom': {'coordinates': [4.88, 52.3], 'type': 'Point'},
+               'naam': 'Seal Resting Spot',
+               'poi_id': 1002,
+               'type': 'Wildlife Observation'}],
+     'pois_visited': [{'fid': 50, 'poi_id': 10, 'trip_id': 101},
+                      {'fid': 51, 'poi_id': 11, 'trip_id': 101}]}
+=== End JSON Schema ===
+

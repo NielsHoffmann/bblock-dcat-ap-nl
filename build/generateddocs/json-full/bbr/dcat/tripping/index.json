@@ -9,11 +9,9 @@
   "itemClass": "model",
   "register": "geonovum-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-11-21",
+  "dateOfLastChange": "2025-11-26",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
-  "dependsOn": [
-    "ogc.api.records.v1.schemas.recordGeoJSON"
-  ],
+  "dependsOn": [],
   "sources": [],
   "scope": "dev",
   "tags": [
@@ -27,11 +25,11 @@
     "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/schema.yaml",
     "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/schema.json"
   },
-  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/schema.yaml",
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/schema.json",
   "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/context.jsonld",
   "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/tripping/",
   "rdfData": [],
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/tripping/",
   "examples": [
     {
@@ -45,9 +43,31 @@
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/tripping/example_1_1.ttl"
         }
       ]
+    },
+    {
+      "title": "example trip",
+      "content": "An example kayak trip",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "./examples/example-trip.json",
+          "code": "{\n  \"boat_types\": [\n    {\n      \"fid\": 1,\n      \"boat_id\": 1,\n      \"boat_name\": \"Touring Kayak 'Swift'\",\n      \"category\": \"Sea/Touring\",\n      \"description\": \"Fast and stable kayak for long trips.\",\n      \"brand\": \"OceanPro\"\n    },\n    {\n      \"fid\": 2,\n      \"boat_id\": 2,\n      \"boat_name\": \"Sit-on-top 'Rental'\",\n      \"category\": \"Recreational\",\n      \"description\": \"Simple and stable for easy use.\",\n      \"brand\": \"WaterFun\"\n    }\n  ],\n  \"pois\": [\n    {\n      \"fid\": 10,\n      \"poi_id\": 1001,\n      \"naam\": \"Old Lighthouse Ruin\",\n      \"type\": \"Historic Landmark\",\n      \"geom\": {\n        \"type\": \"Point\",\n        \"coordinates\": [4.90, 52.35]\n      }\n    },\n    {\n      \"fid\": 11,\n      \"poi_id\": 1002,\n      \"naam\": \"Seal Resting Spot\",\n      \"type\": \"Wildlife Observation\",\n      \"geom\": {\n        \"type\": \"Point\",\n        \"coordinates\": [4.88, 52.30]\n      }\n    }\n  ],\n  \"kayak_trips\": [\n    {\n      \"fid\": 101,\n      \"name\": \"Coastal Explorer Day 1\",\n      \"cmt\": \"Perfect weather for a paddle.\",\n      \"desc\": \"Route covering the eastern bay area.\",\n      \"src\": \"GPS Logger 2025-08-15\",\n      \"type\": \"Expedition\",\n      \"boat_type\": 1, \n      \"geom\": {\n        \"type\": \"MultiLineString\",\n        \"coordinates\": [\n          [\n            [4.89, 52.37],\n            [4.88, 52.36],\n            [4.87, 52.35]\n          ]\n        ]\n      }\n    }\n  ],\n  \"pois_visited\": [\n    {\n      \"fid\": 50,\n      \"poi_id\": 10, \n      \"trip_id\": 101 \n    },\n    {\n      \"fid\": 51,\n      \"poi_id\": 11,\n      \"trip_id\": 101\n    }\n  ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/tripping/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/tripping/context.jsonld\",\n  \"boat_types\": [\n    {\n      \"fid\": 1,\n      \"boat_id\": 1,\n      \"boat_name\": \"Touring Kayak 'Swift'\",\n      \"category\": \"Sea/Touring\",\n      \"description\": \"Fast and stable kayak for long trips.\",\n      \"brand\": \"OceanPro\"\n    },\n    {\n      \"fid\": 2,\n      \"boat_id\": 2,\n      \"boat_name\": \"Sit-on-top 'Rental'\",\n      \"category\": \"Recreational\",\n      \"description\": \"Simple and stable for easy use.\",\n      \"brand\": \"WaterFun\"\n    }\n  ],\n  \"pois\": [\n    {\n      \"fid\": 10,\n      \"poi_id\": 1001,\n      \"naam\": \"Old Lighthouse Ruin\",\n      \"type\": \"Historic Landmark\",\n      \"geom\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          4.9,\n          52.35\n        ]\n      }\n    },\n    {\n      \"fid\": 11,\n      \"poi_id\": 1002,\n      \"naam\": \"Seal Resting Spot\",\n      \"type\": \"Wildlife Observation\",\n      \"geom\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          4.88,\n          52.3\n        ]\n      }\n    }\n  ],\n  \"kayak_trips\": [\n    {\n      \"fid\": 101,\n      \"name\": \"Coastal Explorer Day 1\",\n      \"cmt\": \"Perfect weather for a paddle.\",\n      \"desc\": \"Route covering the eastern bay area.\",\n      \"src\": \"GPS Logger 2025-08-15\",\n      \"type\": \"Expedition\",\n      \"boat_type\": 1,\n      \"geom\": {\n        \"type\": \"MultiLineString\",\n        \"coordinates\": [\n          [\n            [\n              4.89,\n              52.37\n            ],\n            [\n              4.88,\n              52.36\n            ],\n            [\n              4.87,\n              52.35\n            ]\n          ]\n        ]\n      }\n    }\n  ],\n  \"pois_visited\": [\n    {\n      \"fid\": 50,\n      \"poi_id\": 10,\n      \"trip_id\": 101\n    },\n    {\n      \"fid\": 51,\n      \"poi_id\": 11,\n      \"trip_id\": 101\n    }\n  ]\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/tripping/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/tripping/example_2_1.ttl"
+        }
+      ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: schema for a demo dataset about kayak trips\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml\nx-jsonld-extra-terms:\n  type: '@type'\n  title:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/title\n  accessRights:\n    x-jsonld-container: '@set'\n    x-jsonld-id: http://purl.org/dc/terms/accessRights\n  license: http://www.w3.org/ns/dcat#license\nx-jsonld-prefixes:\n  dcat: http://www.w3.org/ns/dcat#\n  dct: http://purl.org/dc/terms/\n  owl: http://www.w3.org/2002/07/owl#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n",
+  "annotatedSchema": "$schema: http://json-schema.org/draft-07/schema#\n$id: http://example.org/tripping-db-schema.json\ntitle: Tripping Database Schema\ndescription: JSON Schema representing the four tables (boat_type, poi, kayak_trips,\n  pois_visited) of the Tripping Database.\ntype: object\nproperties:\n  boat_type:\n    type: array\n    items:\n      $ref: '#/definitions/BoatType'\n  poi:\n    type: array\n    items:\n      $ref: '#/definitions/POI'\n  kayak_trips:\n    type: array\n    items:\n      $ref: '#/definitions/KayakTrip'\n  pois_visited:\n    type: array\n    items:\n      $ref: '#/definitions/POIVisited'\nrequired:\n- boat_type\n- poi\n- kayak_trips\n- pois_visited\ndefinitions:\n  BoatType:\n    title: Boat Type\n    type: object\n    properties:\n      fid:\n        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)\n        type: integer\n      boat_id:\n        description: MEDIUMINT\n        type: integer\n      boat_name:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n      category:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n        x-jsonld-id: http://example.org/ontology/category\n      description:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n        x-jsonld-id: http://example.org/ontology/description\n      brand:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n        x-jsonld-id: http://example.org/ontology/brand\n    required:\n    - fid\n  POI:\n    title: Point of Interest\n    type: object\n    properties:\n      fid:\n        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)\n        type: integer\n      geom:\n        description: 'Geospatial column: POINT'\n        type: object\n        format: Point\n      poi_id:\n        description: MEDIUMINT\n        type: integer\n      naam:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n      type:\n        description: TEXT(50)\n        type: string\n        maxLength: 50\n    required:\n    - fid\n  KayakTrip:\n    title: Kayak Trip\n    type: object\n    properties:\n      fid:\n        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)\n        type: integer\n      geom:\n        description: 'Geospatial column: MULTILINESTRING'\n        type: object\n        format: MultiLineString\n      name:\n        description: TEXT\n        type: string\n      cmt:\n        description: TEXT (Comment)\n        type: string\n      desc:\n        description: TEXT (Description, column name is 'desc')\n        type: string\n      src:\n        description: TEXT (Source)\n        type: string\n      type:\n        description: TEXT\n        type: string\n      boat_type:\n        description: Foreign Key to boat_type(fid) (INTEGER)\n        type: integer\n    required:\n    - fid\n  POIVisited:\n    title: POI Visited (Junction Table)\n    type: object\n    properties:\n      fid:\n        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)\n        type: integer\n      poi_id:\n        description: Foreign Key to poi(fid) (INTEGER)\n        type: integer\n      trip_id:\n        description: Foreign Key to kayak_trips(fid) (INTEGER)\n        type: integer\n    required:\n    - fid\nx-jsonld-extra-terms:\n  BoatType: http://example.org/ontology/BoatType\n  PointOfInterest: http://example.org/ontology/PointOfInterest\n  KayakTrip: http://example.org/ontology/KayakTrip\n  Visit: http://example.org/ontology/Visit\n  boatID:\n    x-jsonld-id: http://example.org/ontology/boatID\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer\n  boatName: http://example.org/ontology/boatName\n  poiID:\n    x-jsonld-id: http://example.org/ontology/poiID\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer\n  poiName: http://example.org/ontology/poiName\n  poiType: http://example.org/ontology/poiType\n  tripName: http://example.org/ontology/tripName\n  comment: http://example.org/ontology/comment\n  source: http://example.org/ontology/source\n  tripType: http://example.org/ontology/tripType\n  hasPointGeometry:\n    x-jsonld-id: http://example.org/ontology/hasPointGeometry\n    x-jsonld-type: '@id'\n  hasMultiLineGeometry:\n    x-jsonld-id: http://example.org/ontology/hasMultiLineGeometry\n    x-jsonld-type: '@id'\n  usesBoatType:\n    x-jsonld-id: http://example.org/ontology/usesBoatType\n    x-jsonld-type: '@id'\n  visitsPOI:\n    x-jsonld-id: http://example.org/ontology/visitsPOI\n    x-jsonld-type: '@id'\n  partOfTrip:\n    x-jsonld-id: http://example.org/ontology/partOfTrip\n    x-jsonld-type: '@id'\nx-jsonld-prefixes:\n  ex: http://example.org/ontology/\n  xsd: http://www.w3.org/2001/XMLSchema#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  schema: http://schema.org/\n  geo: http://www.opengis.net/ont/geosparql#\n",
   "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
   "gitPath": "_sources/tripping"
 }

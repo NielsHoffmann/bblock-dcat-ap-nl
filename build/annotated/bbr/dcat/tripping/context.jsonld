@@ -1,166 +1,53 @@
 {
   "@context": {
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
+    "BoatType": "ex:BoatType",
+    "PointOfInterest": "ex:PointOfInterest",
+    "KayakTrip": "ex:KayakTrip",
+    "Visit": "ex:Visit",
+    "boatID": {
+      "@id": "ex:boatID",
+      "@type": "xsd:integer"
     },
-    "type": "@type",
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": {
-      "@context": {
-        "coordinates": {
-          "@container": "@list",
-          "@id": "geojson:coordinates"
-        }
-      },
-      "@id": "geojson:geometry"
+    "boatName": "ex:boatName",
+    "poiID": {
+      "@id": "ex:poiID",
+      "@type": "xsd:integer"
     },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "links": {
-      "@context": {
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:format",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@id": "rdfs:seeAlso"
-    },
-    "conformsTo": {
-      "@container": "@set",
-      "@id": "dct:conformsTo",
+    "poiName": "ex:poiName",
+    "poiType": "ex:poiType",
+    "tripName": "ex:tripName",
+    "comment": "ex:comment",
+    "source": "ex:source",
+    "tripType": "ex:tripType",
+    "hasPointGeometry": {
+      "@id": "ex:hasPointGeometry",
       "@type": "@id"
     },
-    "time": "dct:temporal",
-    "created": "dct:created",
-    "updated": "dct:modified",
-    "title": {
-      "@container": "@set",
-      "@id": "dct:title"
-    },
-    "description": {
-      "@container": "@set",
-      "@id": "dct:description"
-    },
-    "keywords": {
-      "@container": "@set",
-      "@id": "dcat:keyword"
-    },
-    "language": "rec:language",
-    "languages": {
-      "@container": "@set",
-      "@id": "rec:languages"
-    },
-    "resourceLanguages": {
-      "@container": "@set",
-      "@id": "rec:resourceLanguages"
-    },
-    "externalIds": {
-      "@context": {
-        "scheme": "rec:scheme",
-        "value": "rec:id"
-      },
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier"
-    },
-    "themes": {
-      "@container": "@set",
-      "@id": "rec:themes"
-    },
-    "formats": {
-      "@container": "@set",
-      "@id": "rec:format",
+    "hasMultiLineGeometry": {
+      "@id": "ex:hasMultiLineGeometry",
       "@type": "@id"
     },
-    "contacts": {
-      "@context": {
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@container": "@set",
-      "@id": "dcat:contactPoint",
+    "usesBoatType": {
+      "@id": "ex:usesBoatType",
       "@type": "@id"
     },
-    "license": "dcat:license",
-    "rights": "dcat:rights",
-    "linkTemplates": {
-      "@context": {
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:format",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent",
-        "uriTemplate": {
-          "@type": "xsd:string",
-          "@id": "rec:uriTemplate"
-        },
-        "varBase": "rec:varBase",
-        "variables": {
-          "@id": "rec:hasVariable",
-          "@container": "@index",
-          "@index": "dct:identifier",
-          "@type": "@json"
-        }
-      },
-      "@id": "rec:hasLinkTemplate"
+    "visitsPOI": {
+      "@id": "ex:visitsPOI",
+      "@type": "@id"
     },
-    "accessRights": {
-      "@container": "@set",
-      "@id": "dct:accessRights"
+    "partOfTrip": {
+      "@id": "ex:partOfTrip",
+      "@type": "@id"
     },
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "geojson": "https://purl.org/geojson/vocab#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "oa": "http://www.w3.org/ns/oa#",
-    "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "rec": "https://www.opengis.net/def/ogc-api/records/",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "category": "ex:category",
+    "description": "ex:description",
+    "brand": "ex:brand",
+    "ex": "http://example.org/ontology/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "w3ctime": "http://www.w3.org/2006/time#",
-    "dctype": "http://purl.org/dc/dcmitype/",
-    "vcard": "http://www.w3.org/2006/vcard/ns#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "@version": 1.1
   }
 }
