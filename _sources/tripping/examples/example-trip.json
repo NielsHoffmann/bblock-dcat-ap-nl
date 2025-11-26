@@ -1,0 +1,75 @@
+{
+  "boat_types": [
+    {
+      "fid": 1,
+      "boat_id": 1,
+      "boat_name": "Touring Kayak 'Swift'",
+      "category": "Sea/Touring",
+      "description": "Fast and stable kayak for long trips.",
+      "brand": "OceanPro"
+    },
+    {
+      "fid": 2,
+      "boat_id": 2,
+      "boat_name": "Sit-on-top 'Rental'",
+      "category": "Recreational",
+      "description": "Simple and stable for easy use.",
+      "brand": "WaterFun"
+    }
+  ],
+  "pois": [
+    {
+      "fid": 10,
+      "poi_id": 1001,
+      "naam": "Old Lighthouse Ruin",
+      "type": "Historic Landmark",
+      "geom": {
+        "type": "Point",
+        "coordinates": [4.90, 52.35]
+      }
+    },
+    {
+      "fid": 11,
+      "poi_id": 1002,
+      "naam": "Seal Resting Spot",
+      "type": "Wildlife Observation",
+      "geom": {
+        "type": "Point",
+        "coordinates": [4.88, 52.30]
+      }
+    }
+  ],
+  "kayak_trips": [
+    {
+      "fid": 101,
+      "name": "Coastal Explorer Day 1",
+      "cmt": "Perfect weather for a paddle.",
+      "desc": "Route covering the eastern bay area.",
+      "src": "GPS Logger 2025-08-15",
+      "type": "Expedition",
+      "boat_type": 1, 
+      "geom": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [4.89, 52.37],
+            [4.88, 52.36],
+            [4.87, 52.35]
+          ]
+        ]
+      }
+    }
+  ],
+  "pois_visited": [
+    {
+      "fid": 50,
+      "poi_id": 10, 
+      "trip_id": 101 
+    },
+    {
+      "fid": 51,
+      "poi_id": 11,
+      "trip_id": 101
+    }
+  ]
+}

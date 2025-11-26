@@ -1,22 +1,56 @@
 {
-  "@context": [
-    {
-        "dct": "http://purl.org/dc/terms/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "dcat": "http://www.w3.org/ns/dcat#"
+  "@context": {
+    "ex": "http://example.org/ontology/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    
+    "BoatType": "ex:BoatType",
+    "PointOfInterest": "ex:PointOfInterest",
+    "KayakTrip": "ex:KayakTrip",
+    "Visit": "ex:Visit",
+    
+    "boatID": {
+      "@id": "ex:boatID",
+      "@type": "xsd:integer"
     },
-    {
-    "type": "@type",
-    "license": "dcat:license",
-    "title": {
-        "@container": "@set",
-        "@id": "dct:title"
-      },
-    "accessRights" : {
-        "@container": "@set",
-        "@id": "dct:accessRights"
-      }
+    "boatName": "ex:boatName",
+    "category": "ex:category",
+    "description": "ex:description",
+    "brand": "ex:brand",
+    "poiID": {
+      "@id": "ex:poiID",
+      "@type": "xsd:integer"
+    },
+    "poiName": "ex:poiName",
+    "poiType": "ex:poiType",
+    "tripName": "ex:tripName",
+    "comment": "ex:comment",
+    "source": "ex:source",
+    "tripType": "ex:tripType",
+    
+    "hasPointGeometry": {
+      "@id": "ex:hasPointGeometry",
+      "@type": "@id" 
+    },
+    "hasMultiLineGeometry": {
+      "@id": "ex:hasMultiLineGeometry",
+      "@type": "@id"
+    },
+
+    "usesBoatType": {
+      "@id": "ex:usesBoatType",
+      "@type": "@id"
+    },
+    "visitsPOI": {
+      "@id": "ex:visitsPOI",
+      "@type": "@id"
+    },
+    "partOfTrip": {
+      "@id": "ex:partOfTrip",
+      "@type": "@id"
+    }
   }
-]
 }

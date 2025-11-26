@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.org/tripping-db-schema.json",
+  "title": "Tripping Database Schema",
+  "description": "JSON Schema representing the four tables (boat_type, poi, kayak_trips, pois_visited) of the Tripping Database.",
+  "type": "object",
+  "properties": {
+    "boat_type": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BoatType"
+      }
+    },
+    "poi": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/POI"
+      }
+    },
+    "kayak_trips": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/KayakTrip"
+      }
+    },
+    "pois_visited": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/POIVisited"
+      }
+    }
+  },
+  "required": [
+    "boat_type",
+    "poi",
+    "kayak_trips",
+    "pois_visited"
+  ],
+  "definitions": {
+    "BoatType": {
+      "title": "Boat Type",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "boat_id": {
+          "description": "MEDIUMINT",
+          "type": "integer"
+        },
+        "boat_name": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "category": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "description": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "brand": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "POI": {
+      "title": "Point of Interest",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "geom": {
+          "description": "Geospatial column: POINT",
+          "type": "object",
+          "format": "Point"
+        },
+        "poi_id": {
+          "description": "MEDIUMINT",
+          "type": "integer"
+        },
+        "naam": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        },
+        "type": {
+          "description": "TEXT(50)",
+          "type": "string",
+          "maxLength": 50
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "KayakTrip": {
+      "title": "Kayak Trip",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "geom": {
+          "description": "Geospatial column: MULTILINESTRING",
+          "type": "object",
+          "format": "MultiLineString"
+        },
+        "name": {
+          "description": "TEXT",
+          "type": "string"
+        },
+        "cmt": {
+          "description": "TEXT (Comment)",
+          "type": "string"
+        },
+        "desc": {
+          "description": "TEXT (Description, column name is 'desc')",
+          "type": "string"
+        },
+        "src": {
+          "description": "TEXT (Source)",
+          "type": "string"
+        },
+        "type": {
+          "description": "TEXT",
+          "type": "string"
+        },
+        "boat_type": {
+          "description": "Foreign Key to boat_type(fid) (INTEGER)",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    },
+    "POIVisited": {
+      "title": "POI Visited (Junction Table)",
+      "type": "object",
+      "properties": {
+        "fid": {
+          "description": "Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)",
+          "type": "integer"
+        },
+        "poi_id": {
+          "description": "Foreign Key to poi(fid) (INTEGER)",
+          "type": "integer"
+        },
+        "trip_id": {
+          "description": "Foreign Key to kayak_trips(fid) (INTEGER)",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "fid"
+      ]
+    }
+  }
+}
