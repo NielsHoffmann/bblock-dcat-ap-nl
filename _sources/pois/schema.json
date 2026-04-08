@@ -1,0 +1,31 @@
+{
+  "$schema":"http://json-schema.org/draft/2019-09/schema",
+    "$id":"http://localhost:5000/collections/pois/schema",
+    "type":"object",
+    "title":"pois",
+    "properties":{
+        "fid":{
+            "type":"number"
+        },
+        "naam":{
+            "type":"string"
+        },
+        "type":{
+            "type":"string"
+        },
+        "geometry":{
+            "type":"object",
+            "properties":{
+                "type":{
+                    "type":"string"
+                },
+                "coordinates":{
+                    "type":"array",
+                    "items":{
+                        "type":"number"
+                    }
+                }
+            }
+        }
+    }   
+}

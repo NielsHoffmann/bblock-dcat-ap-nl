@@ -1,0 +1,8 @@
+
+- title: poi examples 
+  content: |-
+    An example of a poi dataset in JSON format.
+
+  snippets:
+    - language: json
+      ref: ./examples/pois.json
