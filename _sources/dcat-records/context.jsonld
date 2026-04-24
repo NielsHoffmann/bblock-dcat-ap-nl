@@ -1,126 +1,209 @@
 {
-  "@context": [
-    {
-      "rec": "https://www.opengis.net/def/ogc-api/records/",
-      "dct": "http://purl.org/dc/terms/",
-      "owl": "http://www.w3.org/2002/07/owl#",
-      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "w3ctime": "http://www.w3.org/2006/time#",
-      "dctype": "http://purl.org/dc/dcmitype/",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "skos": "http://www.w3.org/2004/02/skos/core#",
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "vcard": "http://www.w3.org/2006/vcard/ns#",
-      "dcat": "http://www.w3.org/ns/dcat#",
-      "prov": "http://www.w3.org/ns/prov#",
-      "foaf": "http://xmlns.com/foaf/0.1/"
+  "@context": {
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
     },
-    {
-      "properties": "@nest",
-      "time": {
-        "@id": "dct:temporal",
-        "@context": {
-          "interval": {
-            "@id": "w3ctime:hasTime",
-            "@container": "@list"
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "links": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
           },
-          "resolution": "rec:iso8601period"
-        }
-      },
-      "created": {
-        "@id": "dct:created"
-      },
-      "updated": {
-        "@id": "dct:modified"
-      },
-      "type": {
-        "@id": "dct:type",
-        "@type": "@id"
-      },
-      "title": {
-        "@container": "@set",
-        "@id": "dct:title"
-      },
-      "description": {
-        "@container": "@set",
-        "@id": "dct:description"
-      },
-      "keywords": {
-        "@container": "@set",
-        "@id": "dcat:keyword"
-      },
-      "conformsTo": {
-        "@container": "@set",
-        "@id": "dct:conformsTo",
-        "@type": "@id"
-      },
-      "language": {
-        "@id": "rec:language",
-        "@context": {
-          "code": "rec:languageCode",
-          "name": "skos:prefLabel"
-        }
-      },
-      "languages": {
-        "@container": "@set",
-        "@id": "rec:languages",
-        "@context": {
-          "code": "rec:languageCode",
-          "name": "skos:prefLabel"
-        }
-      },
-      "resourceLanguages": {
-        "@container": "@set",
-        "@id": "rec:resourceLanguages",
-        "@context": {
-          "code": "rec:languageCode",
-          "name": "skos:prefLabel"
-        }
-      },
-      "externalIds": {
-        "@container": "@set",
-        "@id": "rec:scopedIdentifier",
-        "@context": {
-          "scheme": "rec:scheme",
-          "value": "rec:id"
-        }
-      },
-      "themes": {
-        "@container": "@set",
-        "@id": "rec:themes",
-        "@context": {
-          "concepts": {
-            "@id": "rec:concept",
-            "@context": {
-              "id": { "@type":  "xsd:string" , "@id": "rec:conceptID" },
-              "url": { "@type":  "@id" , "@id": "dcat:theme" }
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "distribution" : {
+          "@context": {
+            "mediaType": "rec:mediaType",
+            "name": "rec:name",
+            "description": "rec:description",
+            "license": "rec:license",
+            "accessRights": "rec:accessRights",
+            "conformsTo": {
+              "@container": "@set",
+              "@id": "dct:conformsTo",
+              "@type": "@id"
             }
           },
-          "scheme": "rec:scheme"
+          "@id": "dcat:distribution",
+          "@type": "@id"
         }
       },
-         "formats": {
-      "@id": "rec:format",
+      "@id": "rdfs:seeAlso"
+    },
+    "conformsTo": {
+      "@container": "@set",
+      "@id": "dct:conformsTo",
+      "@type": "@id"
+    },
+    "time": "dct:temporal",
+    "linkTemplates": {
       "@context": {
-        "name": { "@id": "rec:name" }
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "uriTemplate": {
+          "@type": "xsd:string",
+          "@id": "rec:uriTemplate"
+        },
+        "varBase": "rec:varBase",
+        "variables": {
+          "@id": "rec:hasVariable",
+          "@container": "@index",
+          "@index": "dct:identifier"
+        }
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
+    "created": "dct:created",
+    "updated": "dct:modified",
+    "title": {
+      "@container": "@set",
+      "@id": "dct:title"
+    },
+    "description": {
+      "@container": "@set",
+      "@id": "dct:description"
+    },
+    "keywords": {
+      "@container": "@set",
+      "@id": "dcat:keyword"
+    },
+    "language": {
+      "@id": "rec:language",
+      "@context": {
+        "code": "rec:languageCode",
+        "name": "skos:prefLabel"
       }
     },
-      "contacts": {
-        "@container": "@set",
-        "@id": "dcat:contactPoint",
-        "@type": "@id"
-      },
-      "license": "dct:license",
-      "accessrights": "dct:accessRights",
-      "linkTemplates": "rec:hasLinkTemplate",
-      "variables": {
-        "@container": "@id",
-        "@id": "rec:hasVariable",
-        "@context": {
-          "@base": "http://example.com/variables/",
-          "@vocab": "https://www.opengis.net/def/ogc-api/records/"
-        }
+    "languages": {
+      "@container": "@set",
+      "@id": "rec:languages",
+      "@context": {
+        "code": "rec:languageCode",
+        "name": "skos:prefLabel"
       }
-    }
-  ]
+    },
+    "resourceLanguages": {
+      "@container": "@set",
+      "@id": "rec:resourceLanguages",
+      "@context": {
+        "code": "rec:languageCode",
+        "name": "skos:prefLabel"
+      }
+    },
+    "externalIds": {
+      "@container": "@set",
+      "@id": "rec:scopedIdentifier",
+      "@context": {
+        "scheme": "rec:scheme",
+        "value": "rec:id"
+      }
+    },
+    "themes": {
+      "@container": "@set",
+      "@id": "rec:themes",
+      "@context": {
+        "concepts": {
+          "@id": "thns:concepts",
+          "@context": {
+            "id": {
+              "@type": "xsd:string",
+              "@id": "thns:id"
+            },
+            "url": {
+              "@type": "@id",
+              "@id": "@id"
+            }
+          },
+          "@container": "@set"
+        },
+        "scheme": "thns:scheme"
+      }
+    },
+    "formats": {
+      "@id": "rec:format",
+      "@context": {
+        "name": "rec:name",
+        "mediaType": "rec:mediaType"
+      },
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "contacts": {
+      "@container": "@set",
+      "@id": "dcat:contactPoint",
+      "@type": "@id"
+    },
+    "license": "dcat:license",
+    "accessrights": "dct:accessRights",
+    "variables": {
+      "@container": "@id",
+      "@id": "rec:hasVariable",
+      "@context": {
+        "@base": "http://example.com/variables/",
+        "@vocab": "https://www.opengis.net/def/ogc-api/records/"
+      }
+    },
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "rights": "dcat:rights",
+    "@version": 1.1
+  }
 }
