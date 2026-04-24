@@ -1,0 +1,61 @@
+
+
+{
+  "itemIdentifier": "geonovum-labs.bbr.dcat.pois",
+  "name": "Example for a poi dataset",
+  "abstract": "A building block to demonstrate how to document a point of interest (POI) dataset.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-21T00:00:00Z",
+  "itemClass": "model",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2026-04-24",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [],
+  "sources": [],
+  "scope": "dev",
+  "tags": [
+    "Building blocks",
+    "Semantic uplift"
+  ],
+  "highlighted": false,
+  "shaclShapes": {},
+  "ldContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/context.jsonld",
+  "schema": {
+    "application/yaml": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/schema.json"
+  },
+  "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/pois/schema.json",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/pois/context.jsonld",
+  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/resolvedProperties.json",
+  "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/pois/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/pois/",
+  "examples": [
+    {
+      "title": "poi examples",
+      "content": "An example of a poi dataset in JSON format.",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/pois/examples/pois.json",
+          "code": "{\n    \"type\":\"Feature\",\n    \"geometry\":{\n        \"type\":\"Point\",\n        \"coordinates\":[\n            5.068888697271806,\n            52.3642967901659\n        ]\n    },\n    \"properties\":{\n        \"poi_id\":null,\n        \"naam\":\"Pampus\",\n        \"type\":null\n    },\n    \"id\":1\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/pois/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/context.jsonld\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      5.068888697271806,\n      52.3642967901659\n    ]\n  },\n  \"properties\": {\n    \"poi_id\": null,\n    \"naam\": \"Pampus\",\n    \"type\": null\n  },\n  \"id\": 1\n}",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/pois/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix ex: <http://example.org/ontology/> .\n\n[] ex:geometry [ ex:type \"Point\" ] ;\n    ex:type \"Feature\" .\n\n",
+          "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/pois/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: http://json-schema.org/draft/2019-09/schema\n$id: http://localhost:5000/collections/pois/schema\ntype: object\ntitle: pois\nproperties:\n  fid:\n    type: number\n  naam:\n    type: string\n    x-jsonld-id: http://example.org/ontology/naam\n  type:\n    type: string\n    x-jsonld-id: http://example.org/ontology/type\n  geometry:\n    type: object\n    properties:\n      type:\n        type: string\n        x-jsonld-id: http://example.org/ontology/type\n      coordinates:\n        type: array\n        items:\n          type: number\n    x-jsonld-id: http://example.org/ontology/geometry\n    x-jsonld-type: '@id'\nx-jsonld-extra-terms:\n  poi_id: http://example.org/ontology/poi_id\nx-jsonld-prefixes:\n  ex: http://example.org/ontology/\n  dct: http://purl.org/dc/terms/\n  dcat: http://www.w3.org/ns/dcat#\n  skos: http://www.w3.org/2004/02/skos/core#\n  vcard: http://www.w3.org/2006/vcard/ns#\n  foaf: http://xmlns.com/foaf/0.1/\n",
+  "gitRepository": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl",
+  "gitPath": "_sources/pois"
+}

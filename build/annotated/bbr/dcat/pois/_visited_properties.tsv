@@ -1,0 +1,7 @@
+path	@id	schema
+/fid		/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml
+/naam	http://example.org/ontology/naam	/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml
+/type	http://example.org/ontology/type	/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml
+/geometry	http://example.org/ontology/geometry	/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml
+/geometry/type	http://example.org/ontology/type	/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml
+/geometry/coordinates		/github/workspace/build/annotated/bbr/dcat/pois/schema.yaml

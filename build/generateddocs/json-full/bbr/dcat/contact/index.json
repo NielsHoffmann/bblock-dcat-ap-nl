@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-labs-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2025-11-26",
+  "dateOfLastChange": "2026-04-24",
   "link": "https://github.com/nielshoffmann/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.api.records.v1.schemas.contact"
@@ -29,8 +29,8 @@
   },
   "sourceSchema": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/schema.yaml",
   "sourceLdContext": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/context.jsonld",
+  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/contact/resolvedProperties.json",
   "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/",
-  "rdfData": [],
   "validationPassed": false,
   "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/contact/",
   "description": "## DCAT-AP-NL 3.0 - contactpoint\n\ntesting compatibility of OAPR contacts and DCAT-AP-NL Contactpoint\n\n",
@@ -41,7 +41,7 @@
       "snippets": [
         {
           "language": "ttl",
-          "ref": "examples/contactpoint.ttl",
+          "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/examples/contactpoint.ttl",
           "code": "@prefix exampleMS: <https://data.exampleMS.gov/id/data/>.\n@prefix dcat: <http://www.w3.org/ns/dcat#>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .\n@prefix eli: <http://data.europa.eu/eli/ontology#> .\n@prefix adms: <http://www.w3.org/ns/adms#>.\n@prefix dcatap: <http://data.europa.eu/r5r/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix example-ds: <https://data.gov.gr/id/dataset/> .\n@prefix example-ser: <https://data.gov.gr/id/datasetseries/> .\n\n\n   dcat:contactPoint \n     a vcard:Kind ;\n     vcard:fn \"Mijn Organisatie\"@nl ;\n     vcard:fn \"My Organization\"@en ;\n     vcard:hasEmail <mailto:opendata@mijnorganisatie.nl> ;\n     vcard:hasURL \"http://mijnorganisatie.org/\" ;\n     vcard:organization-name \"Mijn Organisatie\"@nl ;\n     vcard:organization-name \"My Organization\"@en\n  .\n\n",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_1_1.ttl"
         }
@@ -53,7 +53,7 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "examples/contact-dcat.json",
+          "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/examples/contact-dcat.json",
           "base-uri": "http://example.com/records/",
           "code": "{\n    \"contactpunt\": [{\n              \"a\": \"vcard:Individual\",\n              \"fn\": \"InfoDesk\" ,\n              \"organization-name\": {\n                \"nl\": \"Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement\"\n              },\n              \"hasEmail\": \"mailto:dpi-gi@kadaster.nl\"\n            }]\n}",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_2_1.json"
@@ -76,7 +76,7 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "examples/contact-oapr.json",
+          "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/contact/examples/contact-oapr.json",
           "base-uri": "http://example.com/records/",
           "code": "{\n    \"contacts\": [\n      {\n        \"name\": \"World Ozone and Ultraviolet Radiation Data Centre\",\n        \"links\": [\n          {\n            \"href\": \"https://woudc.org\",\n            \"rel\": \"about\",\n            \"type\": \"text/html\"\n          }\n        ],\n        \"roles\": [\n          \"publisher\"\n        ]\n      }\n    ]\n}",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_3_1.json"
@@ -88,7 +88,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] dcat:contactPoint [ rdfs:seeAlso [ dcterms:type \"text/html\" ;\n                    ns1:relation <http://www.iana.org/assignments/relation/about> ;\n                    oa:hasTarget <https://woudc.org> ] ] .\n\n",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] dcat:contactPoint [ rdfs:seeAlso [ dcterms:type \"text/html\" ] ] .\n\n",
           "url": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/tests/bbr/dcat/contact/example_3_1.ttl"
         }
       ]

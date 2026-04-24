@@ -1,0 +1,48 @@
+path	@id	schema
+/id		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/conformsTo	http://purl.org/dc/terms/conformsTo	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/type	http://purl.org/dc/terms/type	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/time	http://purl.org/dc/terms/temporal	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/time/_oneOf/1/date		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/time/_oneOf/1/timestamp		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/time/_oneOf/1/interval	http://www.w3.org/2006/time#hasTime	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/time/_oneOf/1/resolution	https://www.opengis.net/def/ogc-api/records/iso8601period	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/geometry		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/geometry/_oneOf/1/_oneOf/0/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/pointGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/0/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/pointGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/1/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multipointGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/1/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multipointGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/2/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/linestringGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/2/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/linestringGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/3/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multilinestringGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/3/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multilinestringGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/4/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/polygonGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/4/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/polygonGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/5/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multipolygonGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/5/coordinates		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/multipolygonGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/6/type		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/geometrycollectionGeoJSON.yaml
+/geometry/_oneOf/1/_oneOf/6/geometries		https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/geometrycollectionGeoJSON.yaml
+/properties	@nest	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/type	http://purl.org/dc/terms/type	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/keywords	http://www.w3.org/ns/dcat#keyword	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/themes	https://www.opengis.net/def/ogc-api/records/themes	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/properties/themes/concepts		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/properties/themes/concepts/id		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/properties/themes/concepts/title		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/properties/themes/concepts/description		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/properties/themes/concepts/url		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/properties/themes/scheme		https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/theme.yaml
+/links		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/href		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/rel		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/type	http://purl.org/dc/terms/type	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/accessURL		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/downloadURL		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/format		/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml
+/links/distribution/license	http://purl.org/dc/terms/license	/github/workspace/build/annotated/bbr/dcat/dcat-records/schema.yaml

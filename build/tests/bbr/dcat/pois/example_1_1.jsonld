@@ -1,0 +1,17 @@
+{
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/pois/context.jsonld",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.068888697271806,
+      52.3642967901659
+    ]
+  },
+  "properties": {
+    "poi_id": null,
+    "naam": "Pampus",
+    "type": null
+  },
+  "id": 1
+}

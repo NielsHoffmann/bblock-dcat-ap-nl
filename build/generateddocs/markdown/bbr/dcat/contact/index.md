@@ -147,13 +147,9 @@ json example of a structure conform API Records for contact information.
 ```ttl
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://www.iana.org/assignments/> .
-@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-[] dcat:contactPoint [ rdfs:seeAlso [ dcterms:type "text/html" ;
-                    ns1:relation <http://www.iana.org/assignments/relation/about> ;
-                    oa:hasTarget <https://woudc.org> ] ] .
+[] dcat:contactPoint [ rdfs:seeAlso [ dcterms:type "text/html" ] ] .
 
 
 ```
@@ -206,21 +202,12 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "rel": {
+    "links": {
       "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
+        "type": "dct:type"
       },
-      "@id": "http://www.iana.org/assignments/relation",
-      "@type": "@id"
+      "@id": "rdfs:seeAlso"
     },
-    "type": "dct:type",
-    "hreflang": "dct:language",
-    "title": "rdfs:label",
-    "length": "dct:extent",
     "a": "@type",
     "contactpunt": "dcat:contactPoint",
     "fn": {
@@ -240,7 +227,6 @@ Links to the schema:
       "@id": "dcat:contactPoint",
       "@type": "@id"
     },
-    "links": "rdfs:seeAlso",
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",

@@ -1,0 +1,28 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <dcterms:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
+
+[] dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
+            ns1:issued "2010-12-08" ;
+            ns1:title [ ] ],
+        <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
+        <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
+    dct:created "2013-02-18" ;
+    dct:description [ ] ;
+    dct:title [ ] ;
+    dct:type <file:///github/workspace/Feature>,
+        dcat:Dataset,
+        prov:Entity ;
+    dcat:keyword [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    rec:language "http://publications.europa.eu/resource/authority/language/DUT" ;
+    rec:themes [ ],
+        [ ] .
+

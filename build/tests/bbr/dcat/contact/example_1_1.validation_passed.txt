@@ -1,7 +1,7 @@
 Validation report for geonovum-labs.bbr.dcat.contact - contact test
-Generated 2025-11-26T14:42:38.380393+00:00
+Generated 2026-04-24T13:55:07.116408+00:00
 === Files ===
-Using example_1_1.ttl from examples
+Using examples/contactpoint.ttl from examples
 Output Turtle example_1_1.ttl created
 === End Files ===
 

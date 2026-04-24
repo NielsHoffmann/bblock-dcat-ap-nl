@@ -1,5 +1,7 @@
 path
+/fid
+/name
+/cmt
+/desc
+/src
 /boat_type
-/poi
-/kayak_trips
-/pois_visited

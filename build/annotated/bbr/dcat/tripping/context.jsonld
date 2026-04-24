@@ -1,53 +1,18 @@
 {
   "@context": {
-    "BoatType": "ex:BoatType",
-    "PointOfInterest": "ex:PointOfInterest",
-    "KayakTrip": "ex:KayakTrip",
-    "Visit": "ex:Visit",
-    "boatID": {
-      "@id": "ex:boatID",
-      "@type": "xsd:integer"
-    },
-    "boatName": "ex:boatName",
-    "poiID": {
-      "@id": "ex:poiID",
-      "@type": "xsd:integer"
-    },
-    "poiName": "ex:poiName",
-    "poiType": "ex:poiType",
-    "tripName": "ex:tripName",
-    "comment": "ex:comment",
-    "source": "ex:source",
-    "tripType": "ex:tripType",
-    "hasPointGeometry": {
-      "@id": "ex:hasPointGeometry",
+    "naam": "ex:naam",
+    "poi_id": "ex:poi_id",
+    "geometry": {
+      "@id": "ex:geometry",
       "@type": "@id"
     },
-    "hasMultiLineGeometry": {
-      "@id": "ex:hasMultiLineGeometry",
-      "@type": "@id"
-    },
-    "usesBoatType": {
-      "@id": "ex:usesBoatType",
-      "@type": "@id"
-    },
-    "visitsPOI": {
-      "@id": "ex:visitsPOI",
-      "@type": "@id"
-    },
-    "partOfTrip": {
-      "@id": "ex:partOfTrip",
-      "@type": "@id"
-    },
-    "category": "ex:category",
-    "description": "ex:description",
-    "brand": "ex:brand",
+    "type": "ex:type",
     "ex": "http://example.org/ontology/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "schema": "http://schema.org/",
-    "geo": "http://www.opengis.net/ont/geosparql#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
     "@version": 1.1
   }
 }

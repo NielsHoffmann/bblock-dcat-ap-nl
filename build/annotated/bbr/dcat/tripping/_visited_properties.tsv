@@ -1,27 +1,9 @@
-path	@id
-/boat_type	
-/boat_type/fid	
-/boat_type/boat_id	
-/boat_type/boat_name	
-/boat_type/category	http://example.org/ontology/category
-/boat_type/description	http://example.org/ontology/description
-/boat_type/brand	http://example.org/ontology/brand
-/poi	
-/poi/fid	
-/poi/geom	
-/poi/poi_id	
-/poi/naam	
-/poi/type	
-/kayak_trips	
-/kayak_trips/fid	
-/kayak_trips/geom	
-/kayak_trips/name	
-/kayak_trips/cmt	
-/kayak_trips/desc	
-/kayak_trips/src	
-/kayak_trips/type	
-/kayak_trips/boat_type	
-/pois_visited	
-/pois_visited/fid	
-/pois_visited/poi_id	
-/pois_visited/trip_id	
+path	@id	schema
+/geometry	http://example.org/ontology/geometry	/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/fid		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/name		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/cmt		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/desc		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/src		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/type	http://example.org/ontology/type	/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml
+/boat_type		/github/workspace/build/annotated/bbr/dcat/tripping/schema.yaml

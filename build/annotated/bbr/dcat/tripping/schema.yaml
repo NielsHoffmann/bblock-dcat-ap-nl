@@ -1,170 +1,34 @@
-$schema: http://json-schema.org/draft-07/schema#
-$id: http://example.org/tripping-db-schema.json
-title: Tripping Database Schema
-description: JSON Schema representing the four tables (boat_type, poi, kayak_trips,
-  pois_visited) of the Tripping Database.
+$schema: http://json-schema.org/draft/2019-09/schema
+$id: http://localhost:5000/collections/kayak_trips/schema
 type: object
+title: kayak_trips
 properties:
+  geometry:
+    format: geometry-any
+    x-jsonld-id: http://example.org/ontology/geometry
+    x-jsonld-type: '@id'
+  fid:
+    type: number
+  name:
+    type: string
+  cmt:
+    type: string
+  desc:
+    type: string
+  src:
+    type: string
+  type:
+    type: string
+    x-jsonld-id: http://example.org/ontology/type
   boat_type:
-    type: array
-    items:
-      $ref: '#/definitions/BoatType'
-  poi:
-    type: array
-    items:
-      $ref: '#/definitions/POI'
-  kayak_trips:
-    type: array
-    items:
-      $ref: '#/definitions/KayakTrip'
-  pois_visited:
-    type: array
-    items:
-      $ref: '#/definitions/POIVisited'
-required:
-- boat_type
-- poi
-- kayak_trips
-- pois_visited
-definitions:
-  BoatType:
-    title: Boat Type
-    type: object
-    properties:
-      fid:
-        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)
-        type: integer
-      boat_id:
-        description: MEDIUMINT
-        type: integer
-      boat_name:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-      category:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-        x-jsonld-id: http://example.org/ontology/category
-      description:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-        x-jsonld-id: http://example.org/ontology/description
-      brand:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-        x-jsonld-id: http://example.org/ontology/brand
-    required:
-    - fid
-  POI:
-    title: Point of Interest
-    type: object
-    properties:
-      fid:
-        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)
-        type: integer
-      geom:
-        description: 'Geospatial column: POINT'
-        type: object
-        format: Point
-      poi_id:
-        description: MEDIUMINT
-        type: integer
-      naam:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-      type:
-        description: TEXT(50)
-        type: string
-        maxLength: 50
-    required:
-    - fid
-  KayakTrip:
-    title: Kayak Trip
-    type: object
-    properties:
-      fid:
-        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)
-        type: integer
-      geom:
-        description: 'Geospatial column: MULTILINESTRING'
-        type: object
-        format: MultiLineString
-      name:
-        description: TEXT
-        type: string
-      cmt:
-        description: TEXT (Comment)
-        type: string
-      desc:
-        description: TEXT (Description, column name is 'desc')
-        type: string
-      src:
-        description: TEXT (Source)
-        type: string
-      type:
-        description: TEXT
-        type: string
-      boat_type:
-        description: Foreign Key to boat_type(fid) (INTEGER)
-        type: integer
-    required:
-    - fid
-  POIVisited:
-    title: POI Visited (Junction Table)
-    type: object
-    properties:
-      fid:
-        description: Primary Key (INTEGER, NOT NULL, AUTOINCREMENT)
-        type: integer
-      poi_id:
-        description: Foreign Key to poi(fid) (INTEGER)
-        type: integer
-      trip_id:
-        description: Foreign Key to kayak_trips(fid) (INTEGER)
-        type: integer
-    required:
-    - fid
+    type: number
 x-jsonld-extra-terms:
-  BoatType: http://example.org/ontology/BoatType
-  PointOfInterest: http://example.org/ontology/PointOfInterest
-  KayakTrip: http://example.org/ontology/KayakTrip
-  Visit: http://example.org/ontology/Visit
-  boatID:
-    x-jsonld-id: http://example.org/ontology/boatID
-    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
-  boatName: http://example.org/ontology/boatName
-  poiID:
-    x-jsonld-id: http://example.org/ontology/poiID
-    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
-  poiName: http://example.org/ontology/poiName
-  poiType: http://example.org/ontology/poiType
-  tripName: http://example.org/ontology/tripName
-  comment: http://example.org/ontology/comment
-  source: http://example.org/ontology/source
-  tripType: http://example.org/ontology/tripType
-  hasPointGeometry:
-    x-jsonld-id: http://example.org/ontology/hasPointGeometry
-    x-jsonld-type: '@id'
-  hasMultiLineGeometry:
-    x-jsonld-id: http://example.org/ontology/hasMultiLineGeometry
-    x-jsonld-type: '@id'
-  usesBoatType:
-    x-jsonld-id: http://example.org/ontology/usesBoatType
-    x-jsonld-type: '@id'
-  visitsPOI:
-    x-jsonld-id: http://example.org/ontology/visitsPOI
-    x-jsonld-type: '@id'
-  partOfTrip:
-    x-jsonld-id: http://example.org/ontology/partOfTrip
-    x-jsonld-type: '@id'
+  naam: http://example.org/ontology/naam
+  poi_id: http://example.org/ontology/poi_id
 x-jsonld-prefixes:
   ex: http://example.org/ontology/
-  xsd: http://www.w3.org/2001/XMLSchema#
-  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  rdfs: http://www.w3.org/2000/01/rdf-schema#
-  schema: http://schema.org/
-  geo: http://www.opengis.net/ont/geosparql#
+  dct: http://purl.org/dc/terms/
+  dcat: http://www.w3.org/ns/dcat#
+  skos: http://www.w3.org/2004/02/skos/core#
+  vcard: http://www.w3.org/2006/vcard/ns#
+  foaf: http://xmlns.com/foaf/0.1/

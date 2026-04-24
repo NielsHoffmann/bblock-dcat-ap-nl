@@ -191,12 +191,63 @@ Links to the schema:
       "@type": "@id"
     },
     "time": "dct:temporal",
-    "created": "dct:created",
-    "updated": "dct:modified",
+    "linkTemplates": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "uriTemplate": {
+          "@type": "xsd:string",
+          "@id": "rec:uriTemplate"
+        },
+        "varBase": "rec:varBase",
+        "variables": {
+          "@id": "rec:hasVariable",
+          "@container": "@index",
+          "@index": "dct:identifier"
+        }
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
     "title": {
       "@container": "@set",
       "@id": "dct:title"
     },
+    "accessRights": {
+      "@container": "@set",
+      "@id": "dct:accessRights"
+    },
+    "license": "dcat:license",
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "created": "dct:created",
+    "updated": "dct:modified",
     "description": {
       "@container": "@set",
       "@id": "dct:description"
@@ -247,75 +298,11 @@ Links to the schema:
       "@type": "@id"
     },
     "contacts": {
-      "@context": {
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@container": "@set",
       "@id": "dcat:contactPoint",
       "@type": "@id"
     },
-    "license": "dcat:license",
     "rights": "dcat:rights",
-    "linkTemplates": {
-      "@context": {
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:format",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent",
-        "uriTemplate": {
-          "@type": "xsd:string",
-          "@id": "rec:uriTemplate"
-        },
-        "varBase": "rec:varBase",
-        "variables": {
-          "@id": "rec:hasVariable",
-          "@container": "@index",
-          "@index": "dct:identifier"
-        }
-      },
-      "@id": "rec:hasLinkTemplate"
-    },
-    "accessRights": {
-      "@container": "@set",
-      "@id": "dct:accessRights"
-    },
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "geojson": "https://purl.org/geojson/vocab#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "oa": "http://www.w3.org/ns/oa#",
-    "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "rec": "https://www.opengis.net/def/ogc-api/records/",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "w3ctime": "http://www.w3.org/2006/time#",
-    "dctype": "http://purl.org/dc/dcmitype/",
-    "vcard": "http://www.w3.org/2006/vcard/ns#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "thns": "https://w3id.org/ogc/stac/themes/",
     "@version": 1.1
   }
 }

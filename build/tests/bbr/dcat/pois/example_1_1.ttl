@@ -1,0 +1,5 @@
+@prefix ex: <http://example.org/ontology/> .
+
+[] ex:geometry [ ex:type "Point" ] ;
+    ex:type "Feature" .
+

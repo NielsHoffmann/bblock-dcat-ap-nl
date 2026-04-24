@@ -1,7 +1,13 @@
 Validation report for geonovum-labs.bbr.dcat.tripping - Example for a kayak trip dataset
-Generated 2025-11-26T14:42:38.361881+00:00
+Generated 2026-04-24T13:55:07.088322+00:00
 === Files ===
-Using example_1_1.ttl from examples
+Using ./examples/example-trip.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
 Output Turtle example_1_1.ttl created
 === End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
 
