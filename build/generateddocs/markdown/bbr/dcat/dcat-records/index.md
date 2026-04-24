@@ -199,7 +199,7 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
         "description": {
           "nl": "accessPoint"
         },
-        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
       }
     },
     {
@@ -214,7 +214,7 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
         "description": {
           "nl": "accessPoint"
         },
-        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
       }
     }
   ]
@@ -422,11 +422,20 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
 ```ttl
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <dcterms:> .
+@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
+<urn:ogc:record:generated-id> a dcat:Dataset,
+        prov:Entity,
+        geojson:Feature ;
+    dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
             ns1:issued "2010-12-08" ;
             ns1:title [ ] ],
         <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
@@ -434,9 +443,18 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
     dct:created "2013-02-18" ;
     dct:description [ ] ;
     dct:title [ ] ;
-    dct:type <file:///github/workspace/Feature>,
-        dcat:Dataset,
-        prov:Entity ;
+    rdfs:seeAlso [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+            dcat:distribution [ a dcat:Distribution ;
+                    dct:description [ ] ;
+                    dct:title [ ] ;
+                    dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
+            oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ],
+        [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+            dcat:distribution [ a dcat:Distribution ;
+                    dct:description [ ] ;
+                    dct:title [ ] ;
+                    dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
+            oa:hasTarget <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ] ;
     dcat:keyword [ ],
         [ ],
         [ ],
@@ -444,6 +462,8 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
         [ ],
         [ ],
         [ ] ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 2.4807e+00 5.37187e+01 ) ( 7.9685e+00 5.37187e+01 ) ( 7.9685e+00 5.06058e+01 ) ( 2.4807e+00 5.06058e+01 ) ( 2.4807e+00 5.37187e+01 ) ) ) ] ;
     rec:language "http://publications.europa.eu/resource/authority/language/DUT" ;
     rec:themes [ ],
         [ ] .
@@ -464,6 +484,7 @@ required:
 properties:
   id:
     $ref: https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/recordGeoJSON.yaml#/properties/id
+    x-jsonld-id: '@id'
   conformsTo:
     type: array
     x-jsonld-container: '@set'
@@ -471,8 +492,7 @@ properties:
     x-jsonld-type: '@id'
   type:
     $ref: https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/recordGeoJSON.yaml#/properties/type
-    x-jsonld-id: http://purl.org/dc/terms/type
-    x-jsonld-type: '@id'
+    x-jsonld-id: '@type'
   time:
     oneOf:
     - enum:
@@ -504,17 +524,19 @@ properties:
             - type: string
               enum:
               - ..
-          x-jsonld-id: http://www.w3.org/2006/time#hasTime
-          x-jsonld-container: '@list'
         resolution:
           type: string
           description: Minimum time period resolvable in the dataset, as an ISO 8601
             duration
           pattern: ^(-?)P(?=\\d|T\\d)(?:(\\d+)Y)?(?:(\\d+)M)?(?:(\\d+)([DW]))?(?:T(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?)?$
-          x-jsonld-id: https://www.opengis.net/def/ogc-api/records/iso8601period
     x-jsonld-id: http://purl.org/dc/terms/temporal
   geometry:
     $ref: https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/recordGeoJSON.yaml#/properties/geometry
+    x-jsonld-id: https://purl.org/geojson/vocab#geometry
+    x-jsonld-extra-terms:
+      coordinates:
+        x-jsonld-container: '@list'
+        x-jsonld-id: https://purl.org/geojson/vocab#coordinates
   properties:
     type: object
     required:
@@ -525,8 +547,7 @@ properties:
     properties:
       type:
         $ref: https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/recordCommonProperties.yaml#/properties/type
-        x-jsonld-id: http://purl.org/dc/terms/type
-        x-jsonld-type: '@id'
+        x-jsonld-id: '@type'
       title:
         $ref: '#/definitions/MultilingualString'
         description: A human-readable name given to the resource.
@@ -565,6 +586,10 @@ properties:
     minItems: 1
     items:
       $ref: '#/definitions/Link'
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
+    x-jsonld-extra-terms:
+      hreflang: http://purl.org/dc/terms/language
+      length: http://purl.org/dc/terms/extent
 definitions:
   Link:
     title: Link object definition
@@ -576,12 +601,16 @@ definitions:
       href:
         type: string
         format: uri
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/oa#hasTarget
       rel:
         type: string
+        x-jsonld-id: http://www.iana.org/assignments/relation
+        x-jsonld-type: '@id'
+        x-jsonld-base: http://www.iana.org/assignments/relation/
       type:
         type: string
-        x-jsonld-id: http://purl.org/dc/terms/type
-        x-jsonld-type: '@id'
+        x-jsonld-id: '@type'
       title:
         type: string
         x-jsonld-container: '@set'
@@ -608,7 +637,9 @@ definitions:
             type: string
           license:
             type: string
-            x-jsonld-id: http://purl.org/dc/terms/license
+            x-jsonld-id: http://www.w3.org/ns/dcat#license
+        x-jsonld-id: http://www.w3.org/ns/dcat#distribution
+        x-jsonld-type: '@id'
   LanguageMap:
     type: object
     description: A language-mapped string where keys are BCP 47 language tags and
@@ -622,6 +653,41 @@ definitions:
     - type: string
     - $ref: '#/definitions/LanguageMap'
 x-jsonld-extra-terms:
+  Feature: https://purl.org/geojson/vocab#Feature
+  FeatureCollection: https://purl.org/geojson/vocab#FeatureCollection
+  GeometryCollection: https://purl.org/geojson/vocab#GeometryCollection
+  LineString: https://purl.org/geojson/vocab#LineString
+  MultiLineString: https://purl.org/geojson/vocab#MultiLineString
+  MultiPoint: https://purl.org/geojson/vocab#MultiPoint
+  MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
+  Point: https://purl.org/geojson/vocab#Point
+  Polygon: https://purl.org/geojson/vocab#Polygon
+  features:
+    x-jsonld-container: '@set'
+    x-jsonld-id: https://purl.org/geojson/vocab#features
+  bbox:
+    x-jsonld-container: '@list'
+    x-jsonld-id: https://purl.org/geojson/vocab#bbox
+  linkTemplates:
+    x-jsonld-context:
+      rel:
+        '@context':
+          '@base': http://www.iana.org/assignments/relation/
+        '@id': http://www.iana.org/assignments/relation
+        '@type': '@id'
+      type: http://purl.org/dc/terms/format
+      hreflang: http://purl.org/dc/terms/language
+      title: http://www.w3.org/2000/01/rdf-schema#label
+      length: http://purl.org/dc/terms/extent
+      uriTemplate:
+        '@type': http://www.w3.org/2001/XMLSchema#string
+        '@id': https://www.opengis.net/def/ogc-api/records/uriTemplate
+      varBase: https://www.opengis.net/def/ogc-api/records/varBase
+      variables:
+        '@id': https://www.opengis.net/def/ogc-api/records/hasVariable
+        '@container': '@index'
+        '@index': http://purl.org/dc/terms/identifier
+    x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasLinkTemplate
   created: http://purl.org/dc/terms/created
   updated: http://purl.org/dc/terms/modified
   language:
@@ -650,31 +716,36 @@ x-jsonld-extra-terms:
   formats:
     x-jsonld-id: https://www.opengis.net/def/ogc-api/records/format
     x-jsonld-context:
-      name:
-        '@id': https://www.opengis.net/def/ogc-api/records/name
+      name: https://www.opengis.net/def/ogc-api/records/name
+      mediaType: https://www.opengis.net/def/ogc-api/records/mediaType
+    x-jsonld-container: '@set'
+    x-jsonld-type: '@id'
   contacts:
     x-jsonld-container: '@set'
     x-jsonld-id: http://www.w3.org/ns/dcat#contactPoint
     x-jsonld-type: '@id'
   accessrights: http://purl.org/dc/terms/accessRights
-  linkTemplates: https://www.opengis.net/def/ogc-api/records/hasLinkTemplate
   variables:
     x-jsonld-container: '@id'
     x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasVariable
     x-jsonld-context:
       '@base': http://example.com/variables/
       '@vocab': https://www.opengis.net/def/ogc-api/records/
+  rights: http://www.w3.org/ns/dcat#rights
 x-jsonld-prefixes:
+  geojson: https://purl.org/geojson/vocab#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
   dct: http://purl.org/dc/terms/
-  w3ctime: http://www.w3.org/2006/time#
-  rec: https://www.opengis.net/def/ogc-api/records/
   dcat: http://www.w3.org/ns/dcat#
-  skos: http://www.w3.org/2004/02/skos/core#
+  rec: https://www.opengis.net/def/ogc-api/records/
   xsd: http://www.w3.org/2001/XMLSchema#
+  skos: http://www.w3.org/2004/02/skos/core#
+  thns: https://w3id.org/ogc/stac/themes/
+  oa: http://www.w3.org/ns/oa#
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  w3ctime: http://www.w3.org/2006/time#
   dctype: http://purl.org/dc/dcmitype/
-  rdfs: http://www.w3.org/2000/01/rdf-schema#
   vcard: http://www.w3.org/2006/vcard/ns#
   prov: http://www.w3.org/ns/prov#
   foaf: http://xmlns.com/foaf/0.1/
@@ -692,6 +763,49 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "linkTemplates": {
+      "@context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:format",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "uriTemplate": {
+          "@type": "xsd:string",
+          "@id": "rec:uriTemplate"
+        },
+        "varBase": "rec:varBase",
+        "variables": {
+          "@id": "rec:hasVariable",
+          "@container": "@index",
+          "@index": "dct:identifier"
+        }
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
     "created": "dct:created",
     "updated": "dct:modified",
     "language": {
@@ -728,8 +842,11 @@ Links to the schema:
     "formats": {
       "@id": "rec:format",
       "@context": {
-        "name": "rec:name"
-      }
+        "name": "rec:name",
+        "mediaType": "rec:mediaType"
+      },
+      "@container": "@set",
+      "@type": "@id"
     },
     "contacts": {
       "@container": "@set",
@@ -737,7 +854,6 @@ Links to the schema:
       "@type": "@id"
     },
     "accessrights": "dct:accessRights",
-    "linkTemplates": "rec:hasLinkTemplate",
     "variables": {
       "@container": "@id",
       "@id": "rec:hasVariable",
@@ -746,24 +862,23 @@ Links to the schema:
         "@vocab": "https://www.opengis.net/def/ogc-api/records/"
       }
     },
+    "rights": "dcat:rights",
+    "id": "@id",
     "conformsTo": {
       "@container": "@set",
       "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "type": {
-      "@id": "dct:type",
-      "@type": "@id"
-    },
-    "time": {
+    "type": "@type",
+    "time": "dct:temporal",
+    "geometry": {
       "@context": {
-        "interval": {
-          "@id": "w3ctime:hasTime",
-          "@container": "@list"
-        },
-        "resolution": "rec:iso8601period"
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
       },
-      "@id": "dct:temporal"
+      "@id": "geojson:geometry"
     },
     "title": {
       "@container": "@set",
@@ -782,16 +897,44 @@ Links to the schema:
       "@id": "rec:themes"
     },
     "properties": "@nest",
+    "links": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "distribution": {
+          "@context": {
+            "license": "dcat:license"
+          },
+          "@id": "dcat:distribution",
+          "@type": "@id"
+        },
+        "hreflang": "dct:language",
+        "length": "dct:extent"
+      },
+      "@id": "rdfs:seeAlso"
+    },
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
-    "w3ctime": "http://www.w3.org/2006/time#",
-    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "oa": "http://www.w3.org/ns/oa#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
     "dctype": "http://purl.org/dc/dcmitype/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "prov": "http://www.w3.org/ns/prov#",
     "foaf": "http://xmlns.com/foaf/0.1/",

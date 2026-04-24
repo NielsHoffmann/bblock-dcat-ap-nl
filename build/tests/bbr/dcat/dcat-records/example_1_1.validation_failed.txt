@@ -1,6 +1,7 @@
 Validation report for geonovum-labs.bbr.dcat.dcat-records - DCAT/Records binding
-Generated 2026-04-24T13:57:56.504974+00:00
+Generated 2026-04-24T14:15:00.363048+00:00
 === Files ===
+Using examples/bag.geojson from examples
 JSON-LD context is present - uplifting
 Output JSON-LD example_1_1.jsonld created
 Output Turtle example_1_1.ttl created
@@ -9,7 +10,19 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 
 ** Validation error **
-Error parsing JSON example: Expecting property name enclosed in double quotes: line 174 column 7 (char 5900) on or near line 174 column 7
+ValidationError: {'type': 'Polygon', 'coordinates': [[[2.4807, 53.7187], [7.9685, 53.7187], [7.9685, 50.6058], [2.4807, 50.6058], [2.4807, 53.7187]]]} is valid under each of {'$ref': 'https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/geometryGeoJSON.yaml'}, {'type': 'object', 'nullable': True}
+
+Failed validating 'oneOf' in schema['properties']['geometry']:
+    {'oneOf': [{'nullable': True, 'type': 'object'},
+               {'$ref': 'https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/geometryGeoJSON.yaml'}]}
+
+On instance['geometry']:
+    {'coordinates': [[[2.4807, 53.7187],
+                      [7.9685, 53.7187],
+                      [7.9685, 50.6058],
+                      [2.4807, 50.6058],
+                      [2.4807, 53.7187]]],
+     'type': 'Polygon'}
 === End JSON Schema ===
 
 === SHACL ===
@@ -26,10 +39,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: <urn:ogc:record:generated-id>
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 

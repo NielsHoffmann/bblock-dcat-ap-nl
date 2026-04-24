@@ -1,10 +1,19 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <dcterms:> .
+@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
+<urn:ogc:record:generated-id> a dcat:Dataset,
+        prov:Entity,
+        geojson:Feature ;
+    dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
             ns1:issued "2010-12-08" ;
             ns1:title [ ] ],
         <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
@@ -12,9 +21,18 @@
     dct:created "2013-02-18" ;
     dct:description [ ] ;
     dct:title [ ] ;
-    dct:type <file:///github/workspace/Feature>,
-        dcat:Dataset,
-        prov:Entity ;
+    rdfs:seeAlso [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+            dcat:distribution [ a dcat:Distribution ;
+                    dct:description [ ] ;
+                    dct:title [ ] ;
+                    dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
+            oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ],
+        [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+            dcat:distribution [ a dcat:Distribution ;
+                    dct:description [ ] ;
+                    dct:title [ ] ;
+                    dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
+            oa:hasTarget <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ] ;
     dcat:keyword [ ],
         [ ],
         [ ],
@@ -22,6 +40,8 @@
         [ ],
         [ ],
         [ ] ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 2.4807e+00 5.37187e+01 ) ( 7.9685e+00 5.37187e+01 ) ( 7.9685e+00 5.06058e+01 ) ( 2.4807e+00 5.06058e+01 ) ( 2.4807e+00 5.37187e+01 ) ) ) ] ;
     rec:language "http://publications.europa.eu/resource/authority/language/DUT" ;
     rec:themes [ ],
         [ ] .
