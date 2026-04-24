@@ -1,0 +1,8 @@
+- title: DCAT-AP-NL with OGC API Records in JSON
+  content: |-
+    An example based on the BAG metadata record from the NGR. 
+    Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
+
+  snippets:
+    - language: json
+      ref: examples/bag.geojson
