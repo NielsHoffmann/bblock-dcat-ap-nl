@@ -12,8 +12,8 @@
   "dateOfLastChange": "2026-04-24",
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
-    "ogc.api.records.v1.schemas.recordGeoJSON",
-    "ogc.geo.geodcat.dcat"
+    "ogc.geo.geodcat.dcat",
+    "ogc.api.records.v1.schemas.recordGeoJSON"
   ],
   "sources": [
     {
@@ -51,7 +51,7 @@
   "sourceFiles": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/dcat-records/",
   "validationPassed": false,
   "testOutputs": "https://github.com/NielsHoffmann/bblock-dcat-ap-nl/blob/master/build/tests/bbr/dcat/dcat-records/",
-  "description": "## DCAT baseline bound to OGC API records schema\n\nThis building block defines a binding from OGC API Records schema to the DCAT Vocabulary.\n\nThe JSON-LD context is derived from the [JSON-LD context for DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld).\n\nIt uses the context for a dcat:Dataset as the basis for a Record.\n\nMain differences with the ogc-incubator version are the explicit definition of dcat:Distribution in the links section and multilingual properties.",
+  "description": "## DCAT baseline bound to OGC API records schema\n\nThis building block defines a binding from OGC API Records schema to the DCAT Vocabulary.\n\nThe JSON-LD context is derived from the [JSON-LD context for DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld).\n\nIt uses the context for a dcat:Dataset as the basis for a Record.\n\nMain differences with the ogc-incubator version are the explicit definition of dcat:Distribution in the links section and multilingual properties.\n\n__NOTE:__ Still work in progress !! context mapping is not complete for example",
   "examples": [
     {
       "title": "DCAT-AP-NL with OGC API Records in JSON",

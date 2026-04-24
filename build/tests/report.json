@@ -10,7 +10,7 @@
       "title": "Validation report for geonovum-labs.bbr.dcat.pois - Example for a poi dataset",
       "bblockName": "Example for a poi dataset",
       "bblockId": "geonovum-labs.bbr.dcat.pois",
-      "generated": "2026-04-24T13:55:06.571618+00:00",
+      "generated": "2026-04-24T13:57:55.630887+00:00",
       "result": true,
       "items": [
         {
@@ -80,7 +80,7 @@
       "title": "Validation report for geonovum-labs.bbr.dcat.tripping - Example for a kayak trip dataset",
       "bblockName": "Example for a kayak trip dataset",
       "bblockId": "geonovum-labs.bbr.dcat.tripping",
-      "generated": "2026-04-24T13:55:07.088390+00:00",
+      "generated": "2026-04-24T13:57:56.235311+00:00",
       "result": true,
       "items": [
         {
@@ -150,7 +150,7 @@
       "title": "Validation report for geonovum-labs.bbr.dcat.contact - contact test",
       "bblockName": "contact test",
       "bblockId": "geonovum-labs.bbr.dcat.contact",
-      "generated": "2026-04-24T13:55:07.191033+00:00",
+      "generated": "2026-04-24T13:57:56.311130+00:00",
       "result": false,
       "items": [
         {
@@ -311,7 +311,7 @@
       "title": "Validation report for geonovum-labs.bbr.dcat.dcat-records - DCAT/Records binding",
       "bblockName": "DCAT/Records binding",
       "bblockId": "geonovum-labs.bbr.dcat.dcat-records",
-      "generated": "2026-04-24T13:55:07.486299+00:00",
+      "generated": "2026-04-24T13:57:56.505039+00:00",
       "result": false,
       "items": [
         {
@@ -395,24 +395,24 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:FeatureShape": {
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                    "geojson:FeatureShape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n"
                 }
               ]
             }
@@ -430,7 +430,7 @@
       "title": "Validation report for geonovum-labs.bbr.dcat.uplift-example - Semantic uplift example",
       "bblockName": "Semantic uplift example",
       "bblockId": "geonovum-labs.bbr.dcat.uplift-example",
-      "generated": "2026-04-24T13:55:08.197855+00:00",
+      "generated": "2026-04-24T13:57:56.820525+00:00",
       "result": true,
       "items": [
         {
@@ -517,26 +517,26 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
                     "geojson:LinkShape": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<https://data.overheid.nl/dataset/top10nl>"
                       ]
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: <https://data.overheid.nl/dataset/top10nl>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://data.overheid.nl/dataset/top10nl>\n"
                 }
               ]
             }

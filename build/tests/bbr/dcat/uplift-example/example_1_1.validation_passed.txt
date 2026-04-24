@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.uplift-example - Semantic uplift example
-Generated 2026-04-24T13:55:08.197794+00:00
+Generated 2026-04-24T13:57:56.820461+00:00
 === Files ===
 Using ./examples/ex.json from examples
 JSON-LD context is present - uplifting
@@ -24,11 +24,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <https://data.overheid.nl/dataset/top10nl>
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: <https://data.overheid.nl/dataset/top10nl>
 
 === End SHACL ===
 
