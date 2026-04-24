@@ -6,11 +6,11 @@ description: DCAT OGC API record definition
 required:
   - id
   - conformsTo
-  - type
-  - time
-  - geometry
-  - properties
-  - links
+  # - type
+  # - time
+  # - geometry
+  # - properties
+  # - links
 properties:
   id:
     $ref: 'https://schemas.opengis.net/ogcapi/records/part1/1.0/openapi/schemas/recordGeoJSON.yaml#/properties/id'

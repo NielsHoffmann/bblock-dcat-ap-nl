@@ -10,7 +10,7 @@
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.geo.geodcat.dcat",
-    "ogc.api.records.records-ontology"
+    "ogc.api.records.v1.schemas.recordGeoJSON"
   ],
   "sources": [
     {
@@ -27,5 +27,6 @@
     "DCAT",
     "profile",
     "Records"
-  ]
+  ],
+  "highlighted": true
 }

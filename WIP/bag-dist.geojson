@@ -1,0 +1,113 @@
+"distributions": [
+      {
+        "type": "dcat:Distribution",
+        "dcterms:title": {
+          "nl": "BAG (WMS)"
+        },
+        "dcterms:description": {
+          "nl": "accessPoint"
+        },
+        "dcat:accessURL": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
+        "dcat:mediaType": null,
+        "dcterms:format": null,
+        "dcterms:license": {
+          "@id": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+          "rdf:type": [
+            "http://purl.org/dc/terms/LicenseDocument",
+            "http://purl.org/dc/terms/RightsStatement"
+          ]
+        },
+        "dcat:accessService": {
+          "@id": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000",
+          "rdf:type": "http://www.w3.org/ns/dcat#DataService",
+          "dcterms:description": {
+            "nl": "accessPoint"
+          },
+          "dcterms:license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+          "dcat:theme": [
+            {
+              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "dcterms:source": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021",
+              "skos:prefLabel": {
+                "nl": "Geodata"
+              }
+            },
+            {
+              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "dcterms:source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad",
+              "skos:prefLabel": {
+                "nl": "Adressen"
+              }
+            },
+            {
+              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "dcterms:source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu",
+              "skos:prefLabel": {
+                "nl": "Gebouwen"
+              }
+            },
+            {
+              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "dcterms:source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+              "skos:prefLabel": {
+                "nl": "Nationaal"
+              }
+            }
+          ],
+          "dcterms:accessRights": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+          "dcat:contactPoint": {
+            "rdf:type": [
+              "http://www.w3.org/2006/vcard/ns#Individual",
+              "http://www.w3.org/2006/vcard/ns#Kind"
+            ],
+            "vcard:fn": {
+              "nl": "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"
+            },
+            "vcard:hasAddress": {
+              "rdf:type": "http://www.w3.org/2006/vcard/ns#Address",
+              "vcard:country-name": "Nederland",
+              "vcard:locality": "Apeldoorn",
+              "vcard:postal-code": "7311 KZ",
+              "vcard:region": "Gelderland",
+              "vcard:street-address": "Hofstraat 110"
+            },
+            "vcard:hasEmail": "mailto:dpi-gi@kadaster.nl",
+            "vcard:hasURL": "https://www.kadaster.nl",
+            "vcard:organization-name": {
+              "nl": "Kadaster"
+            }
+          },
+          "dcterms:publisher": {
+            "dcterms:type": "http://purl.org/adms/publishertype/LocalAuthority",
+            "rdf:type": "http://xmlns.com/foaf/0.1/Agent",
+            "foaf:name": {
+              "nl": "Kadaster"
+            }
+          },
+          "dcterms:identifier": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000",
+          "dcterms:title": {
+            "nl": "BAG (WMS)"
+          },
+          "dcat:endpointDescription": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
+          "dcat:endpointURL": "https://service.pdok.nl/lv/bag/wms/v2_0"
+        },
+        "dcterms:conformsTo": null,
+        "odrl:hasPolicy": null
+      },
+      {
+        "type": "dcat:Distribution",
+        "dcterms:title": {
+          "nl": "BAG download Geopackage"
+        },
+        "dcterms:description": {
+          "nl": "accessPoint"
+        },
+        "dcat:accessURL": "https://service.pdok.nl/lv/bag/atom/bag.xml",
+        "dcat:mediaType": null,
+        "dcterms:format": null,
+        "dcterms:license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+        "dcat:accessService": null,
+        "dcterms:conformsTo": null,
+        "odrl:hasPolicy": null
+      }
+    ],

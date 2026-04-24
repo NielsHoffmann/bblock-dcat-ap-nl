@@ -16,6 +16,7 @@
       "foaf": "http://xmlns.com/foaf/0.1/"
     },
     {
+      "properties": "@nest",
       "time": {
         "@id": "dct:temporal",
         "@context": {
