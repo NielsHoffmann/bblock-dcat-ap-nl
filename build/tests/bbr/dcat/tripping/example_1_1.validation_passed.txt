@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.tripping - Example for a kayak trip dataset
-Generated 2026-04-24T14:14:54.321664+00:00
+Generated 2026-04-30T07:40:46.116144+00:00
 === Files ===
 Using ./examples/example-trip.json from examples
 JSON-LD context is present - uplifting

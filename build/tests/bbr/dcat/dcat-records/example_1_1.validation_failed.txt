@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.dcat-records - DCAT/Records binding
-Generated 2026-04-24T14:15:00.363048+00:00
+Generated 2026-04-30T07:40:52.208242+00:00
 === Files ===
 Using examples/bag.geojson from examples
 JSON-LD context is present - uplifting
@@ -38,10 +38,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <urn:ogc:record:generated-id>
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <urn:ogc:record:generated-id>
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===

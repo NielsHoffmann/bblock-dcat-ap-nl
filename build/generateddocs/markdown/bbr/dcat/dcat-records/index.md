@@ -423,8 +423,8 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <dcterms:> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <dcterms:> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -436,20 +436,20 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
         prov:Entity,
         geojson:Feature ;
     dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
-            ns1:issued "2010-12-08" ;
-            ns1:title [ ] ],
+            ns2:issued "2010-12-08" ;
+            ns2:title [ ] ],
         <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
     dct:created "2013-02-18" ;
     dct:description [ ] ;
     dct:title [ ] ;
-    rdfs:seeAlso [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/access> ;
             dcat:distribution [ a dcat:Distribution ;
                     dct:description [ ] ;
                     dct:title [ ] ;
                     dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
             oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ],
-        [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
+        [ ns1:relation <http://www.iana.org/assignments/relation/access> ;
             dcat:distribution [ a dcat:Distribution ;
                     dct:description [ ] ;
                     dct:title [ ] ;
