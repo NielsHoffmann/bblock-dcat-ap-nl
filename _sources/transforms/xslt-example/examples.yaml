@@ -1,0 +1,19 @@
+examples:
+  - title: Example for XSLT transform
+    snippets:
+      - language: xml
+        code: |-
+          <?xml version="1.0"?>
+          <Article>
+            <Title>My Article</Title>
+            <Authors>
+              <Author>Mr. Foo</Author>
+              <Author>Mr. Bar</Author>
+            </Authors>
+            <Body>This is my article text.</Body>
+          </Article>
+
+  - title: iso19139 to dcat-ap example
+    snippets:
+      - language: xml
+        ref: examples/4e2ef670-cddd-11dd-ad8b-0800200c9a66.xml

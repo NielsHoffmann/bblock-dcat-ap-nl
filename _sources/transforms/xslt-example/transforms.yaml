@@ -1,0 +1,10 @@
+transforms:
+  - id: sample-xslt
+    description: This transform applies some changes to input XML to demonstrate XSLT transforms
+    type: xslt
+    ref: transforms/sample.xslt
+
+  - id: iso19139-to-dcat-ap
+    description: This transform converts ISO 19139 metadata to DCAT-AP records, using an XSLT stylesheet.
+    type: xslt
+    ref: transforms/iso-19139-to-dcat-ap.xsl
