@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document type="article">
+  <Heading>My Article</Heading>
+  <Contributors>
+    <Author>Mr. Foo</Author>
+    <Author>Mr. Bar</Author>
+  </Contributors>
+  <Body>This is my article text. [Modified]</Body>
+</Document>

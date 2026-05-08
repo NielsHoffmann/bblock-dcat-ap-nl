@@ -1,0 +1,105 @@
+{
+  "id": "7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
+  ],
+  "type": "Feature",
+  "time": {
+    "interval": [
+      "2024-09-30",
+      "9999-12-31"
+    ],
+    "resolution": "P1D"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.4807,
+          53.7187
+        ],
+        [
+          7.9685,
+          53.7187
+        ],
+        [
+          7.9685,
+          50.6058
+        ],
+        [
+          2.4807,
+          50.6058
+        ],
+        [
+          2.4807,
+          53.7187
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "created": "2024-09-30",
+    "updated": "2024-12-06T09:49:52Z",
+    "type": "dataset",
+    "title": "Bomen",
+    "description": "Subset van bomen in de omgeving van Sloten (Amsterdam)",
+    "providers": [
+      {
+        "contactInfo": {
+          "address": {
+            "office": {}
+          },
+          "email": {
+            "office": "opendata@amsterdam.nl"
+          }
+        },
+        "name": null,
+        "roles": [
+          {
+            "name": "pointOfContact"
+          }
+        ]
+      }
+    ],
+    "externalIds": [
+      {
+        "scheme": "default",
+        "value": "7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83"
+      }
+    ],
+    "themes": [
+      {
+        "concepts": [
+          {
+            "id": "Boom",
+            "url": "https://definities.geostandaarden.nl/ibro/id/begrip/boom"
+          },
+          {
+            "id": "Park",
+            "url": "https://definities.geostandaarden.nl/ibro/id/begrip/park"
+          }
+        ],
+        "scheme": "https://definities.geostandaarden.nl/ibro/nl/"
+      }
+    ]
+  },
+  "links": [
+    {
+      "href": "http://localhost:5000/collections/bomen",
+      "rel": "access",
+      "title": "Bomen",
+      "type": "OGC API Features",
+      "distribution": {
+        "type": "dcat:Distribution",
+        "title": {
+          "nl": "Bomen (OGC API Features)"
+        },
+        "description": {
+          "nl": "API"
+        },
+        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
+      }
+    }
+  ]
+}

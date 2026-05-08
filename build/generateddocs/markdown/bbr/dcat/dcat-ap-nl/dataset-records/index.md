@@ -1,23 +1,17 @@
 
-# DCAT/Records binding (Schema)
+# DCAT-AP-NL-Dataset/Records binding (Schema)
 
-`geonovum-labs.bbr.dcat.dcat-records` *v0.1*
+`geonovum-labs.bbr.dcat.dcat-ap-nl.dataset-records` *v0.1*
 
-DCAT profile of OGC API Records binds the OGC API Records schema to the DCAT vocabulary. This is the baseline for semantic equivalence of OGC API records and the DCAT model. This is an alternative block to the ogc-incubator version of DCAT/Records binding
+DCAT-AP-NL profile biding to the OGC API Records schema.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-## DCAT baseline bound to OGC API records schema
+## DCAT-AP-NL profile bound to OGC API records schema
 
-This building block defines a binding from OGC API Records schema to the DCAT Vocabulary.
-
-The JSON-LD context is derived from the [JSON-LD context for DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld).
-
-It uses the context for a dcat:Dataset as the basis for a Record.
-
-Main differences with the ogc-incubator version are the explicit definition of dcat:Distribution in the links section and multilingual properties.
+This building block defines a binding from OGC API Records schema to the DCAT-AP-NL.
 
 __NOTE:__ Still work in progress !! context mapping is not complete for example
 ## Examples
@@ -224,7 +218,7 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-records/context.jsonld",
+  "@context": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/dataset-records/context.jsonld",
   "type": "Feature",
   "conformsTo": [
     "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
@@ -423,8 +417,8 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://www.iana.org/assignments/> .
-@prefix ns2: <dcterms:> .
+@prefix ns1: <dcterms:> .
+@prefix ns2: <http://www.iana.org/assignments/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -436,20 +430,20 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
         prov:Entity,
         geojson:Feature ;
     dct:conformsTo [ a "http://purl.org/dc/terms/Standard" ;
-            ns2:issued "2010-12-08" ;
-            ns2:title [ ] ],
+            ns1:issued "2010-12-08" ;
+            ns1:title [ ] ],
         <http://modellen.geostandaarden.nl/dcat-ap-nl/>,
         <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ;
     dct:created "2013-02-18" ;
     dct:description [ ] ;
     dct:title [ ] ;
-    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/access> ;
+    rdfs:seeAlso [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
             dcat:distribution [ a dcat:Distribution ;
                     dct:description [ ] ;
                     dct:title [ ] ;
                     dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
             oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/access> ;
+        [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
             dcat:distribution [ a dcat:Distribution ;
                     dct:description [ ] ;
                     dct:title [ ] ;
@@ -477,7 +471,7 @@ Converted in JSON so the Semantic uplift via a JSON-LD context can be shown.
 $schema: https://json-schema.org/draft/2020-12/schema
 $id: https://geonovum-labs.bbr.dcat.dataset-records.json
 title: DCAT OGC API record definition
-description: DCAT OGC API record definition
+description: DCAT Dataset OGC API record definition
 required:
 - id
 - conformsTo
@@ -754,8 +748,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-records/schema.json)
-* JSON version: [schema.json](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-records/schema.yaml)
+* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/dataset-records/schema.json)
+* JSON version: [schema.json](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/dataset-records/schema.yaml)
 
 
 # JSON-LD Context
@@ -944,17 +938,16 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-records/context.jsonld)
+[context.jsonld](https://nielshoffmann.github.io/bblock-dcat-ap-nl/build/annotated/bbr/dcat/dcat-ap-nl/dataset-records/context.jsonld)
 
 ## Sources
 
-* [DCAT v3 Specification](https://www.w3.org/TR/vocab-dcat-3/)
-* [API Records Specification Repository](https://github.com/opengeospatial/ogcapi-records)
+* [DCAT-AP-NL Specification](https://geonovum.github.io/DCAT-AP-NL30)
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/NielsHoffmann/bblock-dcat-ap-nl](https://github.com/NielsHoffmann/bblock-dcat-ap-nl)
-* Path: `_sources/dcat-records`
+* Path: `_sources/dcat-ap-nl/dataset-records`
 

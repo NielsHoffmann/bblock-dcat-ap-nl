@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geonovum-labs.bbr.dcat.dataset-records.json",
+  "title": "DCAT OGC API record definition",
+  "description": "DCAT Dataset OGC API record definition",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.json"
+    }
+  ],
+  "links": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "$ref": "#/definitions/Link"
+    }
+  },
+  "definitions": {
+    "Link": {
+      "title": "Link object definition",
+      "description": "Link object definition including distribution",
+      "type": "object",
+      "required": [
+        "href"
+      ],
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "http://www.w3.org/ns/oa#hasTarget"
+        },
+        "rel": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "x-jsonld-id": "@type"
+        },
+        "title": {
+          "type": "string",
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "http://purl.org/dc/terms/title"
+        },
+        "distribution": {
+          "type": "object",
+          "description": "Available distribution of the dataset via this link.",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/MultilingualString",
+              "x-jsonld-container": "@set",
+              "x-jsonld-id": "http://purl.org/dc/terms/title"
+            },
+            "description": {
+              "$ref": "#/definitions/MultilingualString",
+              "x-jsonld-container": "@set",
+              "x-jsonld-id": "http://purl.org/dc/terms/description"
+            },
+            "accessURL": {
+              "type": "string",
+              "format": "uri"
+            },
+            "downloadURL": {
+              "type": "string",
+              "format": "uri"
+            },
+            "format": {
+              "type": "string"
+            },
+            "license": {
+              "type": "string",
+              "x-jsonld-id": "http://www.w3.org/ns/dcat#license"
+            }
+          }
+        }
+      }
+    },
+    "LanguageMap": {
+      "type": "object",
+      "description": "A language-mapped string where keys are BCP 47 language tags and values are the localized strings.",
+      "patternProperties": {
+        "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{2,8})*$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MultilingualString": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "#/definitions/LanguageMap"
+        }
+      ]
+    }
+  },
+  "x-jsonld-extra-terms": {
+    "Feature": "https://purl.org/geojson/vocab#Feature",
+    "FeatureCollection": "https://purl.org/geojson/vocab#FeatureCollection",
+    "GeometryCollection": "https://purl.org/geojson/vocab#GeometryCollection",
+    "LineString": "https://purl.org/geojson/vocab#LineString",
+    "MultiLineString": "https://purl.org/geojson/vocab#MultiLineString",
+    "MultiPoint": "https://purl.org/geojson/vocab#MultiPoint",
+    "MultiPolygon": "https://purl.org/geojson/vocab#MultiPolygon",
+    "Point": "https://purl.org/geojson/vocab#Point",
+    "Polygon": "https://purl.org/geojson/vocab#Polygon",
+    "features": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "https://purl.org/geojson/vocab#features"
+    },
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "x-jsonld-context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "https://purl.org/geojson/vocab#coordinates"
+        }
+      },
+      "x-jsonld-id": "https://purl.org/geojson/vocab#geometry"
+    },
+    "bbox": {
+      "x-jsonld-container": "@list",
+      "x-jsonld-id": "https://purl.org/geojson/vocab#bbox"
+    },
+    "links": {
+      "x-jsonld-context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "http://purl.org/dc/terms/format",
+        "hreflang": "http://purl.org/dc/terms/language",
+        "title": "http://www.w3.org/2000/01/rdf-schema#label",
+        "length": "http://purl.org/dc/terms/extent",
+        "distribution": {
+          "@context": {
+            "mediaType": "https://www.opengis.net/def/ogc-api/records/mediaType",
+            "name": "https://www.opengis.net/def/ogc-api/records/name",
+            "description": "https://www.opengis.net/def/ogc-api/records/description",
+            "license": "https://www.opengis.net/def/ogc-api/records/license",
+            "accessRights": "https://www.opengis.net/def/ogc-api/records/accessRights",
+            "conformsTo": {
+              "@container": "@set",
+              "@id": "http://purl.org/dc/terms/conformsTo",
+              "@type": "@id"
+            }
+          },
+          "@id": "http://www.w3.org/ns/dcat#distribution",
+          "@type": "@id"
+        }
+      },
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "conformsTo": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/conformsTo",
+      "x-jsonld-type": "@id"
+    },
+    "time": "http://purl.org/dc/terms/temporal",
+    "linkTemplates": {
+      "x-jsonld-context": {
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "http://purl.org/dc/terms/format",
+        "hreflang": "http://purl.org/dc/terms/language",
+        "title": "http://www.w3.org/2000/01/rdf-schema#label",
+        "length": "http://purl.org/dc/terms/extent",
+        "uriTemplate": {
+          "@type": "http://www.w3.org/2001/XMLSchema#string",
+          "@id": "https://www.opengis.net/def/ogc-api/records/uriTemplate"
+        },
+        "varBase": "https://www.opengis.net/def/ogc-api/records/varBase",
+        "variables": {
+          "@id": "https://www.opengis.net/def/ogc-api/records/hasVariable",
+          "@container": "@index",
+          "@index": "http://purl.org/dc/terms/identifier"
+        }
+      },
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/hasLinkTemplate"
+    },
+    "created": "http://purl.org/dc/terms/created",
+    "updated": "http://purl.org/dc/terms/modified",
+    "title": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/title"
+    },
+    "description": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/description"
+    },
+    "keywords": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "language": {
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/language",
+      "x-jsonld-context": {
+        "code": "https://www.opengis.net/def/ogc-api/records/languageCode",
+        "name": "http://www.w3.org/2004/02/skos/core#prefLabel"
+      }
+    },
+    "languages": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/languages",
+      "x-jsonld-context": {
+        "code": "https://www.opengis.net/def/ogc-api/records/languageCode",
+        "name": "http://www.w3.org/2004/02/skos/core#prefLabel"
+      }
+    },
+    "resourceLanguages": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/resourceLanguages",
+      "x-jsonld-context": {
+        "code": "https://www.opengis.net/def/ogc-api/records/languageCode",
+        "name": "http://www.w3.org/2004/02/skos/core#prefLabel"
+      }
+    },
+    "externalIds": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/scopedIdentifier",
+      "x-jsonld-context": {
+        "scheme": "https://www.opengis.net/def/ogc-api/records/scheme",
+        "value": "https://www.opengis.net/def/ogc-api/records/id"
+      }
+    },
+    "themes": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/themes",
+      "x-jsonld-context": {
+        "concepts": {
+          "@id": "https://w3id.org/ogc/stac/themes/concepts",
+          "@context": {
+            "id": {
+              "@type": "http://www.w3.org/2001/XMLSchema#string",
+              "@id": "https://w3id.org/ogc/stac/themes/id"
+            },
+            "url": {
+              "@type": "@id",
+              "@id": "@id"
+            }
+          },
+          "@container": "@set"
+        },
+        "scheme": "https://w3id.org/ogc/stac/themes/scheme"
+      }
+    },
+    "formats": {
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/format",
+      "x-jsonld-context": {
+        "name": "https://www.opengis.net/def/ogc-api/records/name",
+        "mediaType": "https://www.opengis.net/def/ogc-api/records/mediaType"
+      },
+      "x-jsonld-container": "@set",
+      "x-jsonld-type": "@id"
+    },
+    "contacts": {
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://www.w3.org/ns/dcat#contactPoint",
+      "x-jsonld-type": "@id"
+    },
+    "license": "http://www.w3.org/ns/dcat#license",
+    "accessrights": "http://purl.org/dc/terms/accessRights",
+    "variables": {
+      "x-jsonld-container": "@id",
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/hasVariable",
+      "x-jsonld-context": {
+        "@base": "http://example.com/variables/",
+        "@vocab": "https://www.opengis.net/def/ogc-api/records/"
+      }
+    },
+    "href": {
+      "x-jsonld-type": "@id",
+      "x-jsonld-id": "http://www.w3.org/ns/oa#hasTarget"
+    },
+    "rights": "http://www.w3.org/ns/dcat#rights"
+  },
+  "x-jsonld-prefixes": {
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "oa": "http://www.w3.org/ns/oa#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }
+}

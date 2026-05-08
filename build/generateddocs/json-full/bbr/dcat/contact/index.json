@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "geonovum-labs-building-blocks",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-30",
+  "dateOfLastChange": "2026-05-08",
   "link": "https://github.com/nielshoffmann/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.api.records.v1.schemas.contact"

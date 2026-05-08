@@ -1,5 +1,5 @@
 Validation report for geonovum-labs.bbr.dcat.pois - Example for a poi dataset
-Generated 2026-04-30T07:40:45.550038+00:00
+Generated 2026-05-08T14:25:23.162742+00:00
 === Files ===
 Using ./examples/pois.json from examples
 JSON-LD context is present - uplifting
