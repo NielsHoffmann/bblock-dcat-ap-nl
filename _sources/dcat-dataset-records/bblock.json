@@ -1,6 +1,6 @@
 {
-  "name": "DCAT/Records binding",
-  "abstract": "DCAT profile of OGC API Records binds the OGC API Records schema to the DCAT vocabulary. This is the baseline for semantic equivalence of OGC API records and the DCAT model. This is an alternative block to the ogc-incubator version of DCAT/Records binding",
+  "name": "DCAT-Dataset/Records binding",
+  "abstract": "DCAT profile of OGC API Records binds the OGC API Records schema to a DCAT Dataset. This is the baseline for semantic equivalence of OGC API records and a DCAT Dataset. This is an alternative block to the ogc-incubator version of DCAT/Records binding",
   "status": "under-development",
   "dateTimeAddition": "2026-04-08T00:00:00Z",
   "itemClass": "schema",
@@ -10,6 +10,7 @@
   "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
   "dependsOn": [
     "ogc.geo.geodcat.dcat",
+    "ogc.api.records.records-ontology",
     "ogc.api.records.v1.schemas.recordGeoJSON"
   ],
   "sources": [
@@ -25,6 +26,7 @@
   "scope": "dev",
   "tags": [
     "DCAT",
+    "Dataset",
     "profile",
     "Records"
   ],

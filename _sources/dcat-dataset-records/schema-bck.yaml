@@ -1,7 +1,7 @@
 $schema: 'https://json-schema.org/draft/2020-12/schema'
 $id: 'https://geonovum-labs.bbr.dcat.dataset-records.json'
 title: DCAT OGC API record definition
-description: DCAT OGC API record definition
+description: DCAT Dataset OGC API record definition
 
 required:
   - id

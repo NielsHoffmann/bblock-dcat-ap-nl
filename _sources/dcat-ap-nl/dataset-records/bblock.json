@@ -1,0 +1,30 @@
+{
+  "name": "DCAT-AP-NL-Dataset/Records binding",
+  "abstract": "DCAT-AP-NL profile biding to the OGC API Records schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-08T00:00:00Z",
+  "itemClass": "schema",
+  "register": "geonovum-building-blocks",
+  "version": "0.1",
+  "dateOfLastChange": "2026-05-08",
+  "link": "https://github.com/Geonovum/bblock-dcat-ap-nl",
+  "dependsOn": [
+    "ogc.geo.geodcat.dcat-ap",
+    "ogc.geo.geodcat.dcat-records"
+  ],
+  "sources": [
+    {
+      "title": "DCAT-AP-NL Specification",
+      "link": "https://geonovum.github.io/DCAT-AP-NL30"
+    }
+  ],
+   "shaclShapes": ["https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl"],
+  "scope": "dev",
+  "tags": [
+    "DCAT-AP-NL",
+    "Dataset",
+    "profile",
+    "Records"
+  ],
+  "highlighted": true
+}
