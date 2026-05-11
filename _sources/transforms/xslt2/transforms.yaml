@@ -1,0 +1,5 @@
+transforms:
+  - id: iso19139-to-dcat-ap
+    description: This transform converts ISO 19139 metadata to DCAT-AP records, using an XSLT stylesheet.
+    type: xslt2
+    ref: transforms/iso-19139-to-dcat-ap.xsl
