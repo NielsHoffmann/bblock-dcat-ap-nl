@@ -26,13 +26,13 @@
                     dct:description [ ] ;
                     dct:title [ ] ;
                     dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
-            oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ],
+            oa:hasTarget <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ],
         [ ns2:relation <http://www.iana.org/assignments/relation/access> ;
             dcat:distribution [ a dcat:Distribution ;
                     dct:description [ ] ;
                     dct:title [ ] ;
                     dcat:license "http://creativecommons.org/publicdomain/mark/1.0/deed.nl" ] ;
-            oa:hasTarget <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ] ;
+            oa:hasTarget <https://service.pdok.nl/lv/bag/atom/bag.xml> ] ;
     dcat:keyword [ ],
         [ ],
         [ ],
