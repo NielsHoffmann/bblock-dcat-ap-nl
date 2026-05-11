@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum-labs.bbr.dcat.dcat-ap-nl.dataservice-records - DCAT-AP-NL-DataService/Records binding",
   "bblockName": "DCAT-AP-NL-DataService/Records binding",
   "bblockId": "geonovum-labs.bbr.dcat.dcat-ap-nl.dataservice-records",
-  "generated": "2026-05-11T15:07:10.087499+00:00",
+  "generated": "2026-05-11T21:07:08.779958+00:00",
   "result": false,
   "items": [
     {
@@ -62,32 +62,17 @@
             {
               "op": "shacl-report",
               "shaclFile": "https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl",
-              "graph": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcatapnl-sh: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointDescription\" ;\n            sh:resultPath dcat:endpointDescription ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_endpointDescription_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:license\" ;\n            sh:resultPath dct:license ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_license_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_contactPoint_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_theme_minCount ] .\n\n",
+              "graph": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcatapnl-sh: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:license\" ;\n            sh:resultPath dct:license ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_license_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointDescription\" ;\n            sh:resultPath dcat:endpointDescription ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_endpointDescription_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:theme\" ;\n            sh:resultPath dcat:theme ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_theme_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:publisher\" ;\n            sh:resultPath dct:publisher ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_publisher_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:accessRights\" ;\n            sh:resultPath dct:accessRights ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_accessRights_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:contactPoint\" ;\n            sh:resultPath dcat:contactPoint ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_contactPoint_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dct:identifier\" ;\n            sh:resultPath dct:identifier ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_identifier_minCount ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ogc:record:generated-id> ;\n            sh:resultMessage \"Value is not of Node Kind sh:Literal\" ;\n            sh:resultPath dcat:keyword ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;\n            sh:sourceShape dcatapnl-sh:DataServiceShape_keyword_nodeKind ;\n            sh:value [ ] ] .\n\n",
               "isError": true,
               "message": "Validation result for https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (14):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_accessRights_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dct:accessRights\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dct:accessRights\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_contactPoint_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dcat:contactPoint\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dcat:contactPoint\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_endpointDescription_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dcat:endpointDescription\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointDescription\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_identifier_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dct:identifier\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dct:identifier\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_keyword_nodeKind\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind sh:Literal\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_license_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dct:license\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dct:license\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_publisher_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dct:publisher\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dct:publisher\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: dcatapnl-sh:DataServiceShape_theme_minCount\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dcat:theme\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dcat:theme\n  "
             },
             {
               "shaclFile": "https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl",
               "focusNodes": {
-                "dcatapnl-sh:CatalogRecordShape": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:TemporalLiteralShape": {
                   "nodes": []
                 },
-                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
-                  "nodes": []
-                },
                 "dcatapnl-sh:DatasetShape": {
-                  "nodes": []
-                },
-                "_:n4beca4c4d796418ab14b357720cf1de1b4": {
-                  "nodes": []
-                },
-                "dcatapnl-sh:DatasetSeriesShape": {
                   "nodes": []
                 },
                 "dcatapnl-sh:DataServiceShape": {
@@ -98,15 +83,30 @@
                 "dcatapnl-sh:DistributionShape": {
                   "nodes": []
                 },
+                "_:n6d3a3fff57a5493992c549165ae1c8b3b4": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:DatasetSeriesShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:CatalogRecordShape": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first": {
+                  "nodes": []
+                },
                 "dcatapnl-sh:CatalogShape": {
                   "nodes": []
                 },
-                "_:n4beca4c4d796418ab14b357720cf1de1b3": {
+                "_:n6d3a3fff57a5493992c549165ae1c8b3b3": {
+                  "nodes": []
+                },
+                "dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl:\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape _:n4beca4c4d796418ab14b357720cf1de1b4: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: <urn:ogc:record:generated-id>\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape _:n4beca4c4d796418ab14b357720cf1de1b3: *none*\n"
+              "message": "Focus nodes for https://geonovum.github.io/DCAT-AP-NL30/shapes/dcat-ap-nl-SHACL.ttl:\n - Shape dcatapnl-sh:TemporalLiteralShape: *none*\n - Shape dcatapnl-sh:DatasetShape: *none*\n - Shape dcatapnl-sh:DataServiceShape: <urn:ogc:record:generated-id>\n - Shape dcatapnl-sh:DistributionShape: *none*\n - Shape _:n6d3a3fff57a5493992c549165ae1c8b3b4: *none*\n - Shape dcatapnl-sh:DatasetSeriesShape: *none*\n - Shape dcatapnl-sh:CatalogRecordShape: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:first: *none*\n - Shape dcatapnl-sh:CatalogShape: *none*\n - Shape _:n6d3a3fff57a5493992c549165ae1c8b3b3: *none*\n - Shape dcatapnl-sh:TemporalLiteralShape/sh:xone/rdf:rest/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -135,26 +135,26 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "<urn:ogc:record:generated-id>"
-                  ]
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape": {
                   "nodes": []
                 },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "<urn:ogc:record:generated-id>"
+                  ]
+                },
                 "geojson:LinkShape": {
                   "nodes": []
                 },
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <urn:ogc:record:generated-id>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: <urn:ogc:record:generated-id>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -166,159 +166,111 @@
             {
               "shaclFile": "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl",
               "focusNodes": {
+                "dcat:Dataset": {
+                  "nodes": []
+                },
+                ":DateOrDateTimeDataType/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "dcat:Catalog": {
+                  "nodes": []
+                },
+                "dcat:CatalogRecord": {
+                  "nodes": []
+                },
                 ":DateOrDateTimeDataType": {
                   "nodes": []
                 },
                 "dcat:Distribution": {
                   "nodes": []
                 },
-                ":DateOrDateTimeDataType/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "dcat:Dataset": {
-                  "nodes": []
-                },
-                "dcat:Catalog": {
-                  "nodes": []
-                },
                 ":DateOrDateTimeDataType/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "dcat:CatalogRecord": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl:\n - Shape :DateOrDateTimeDataType: *none*\n - Shape dcat:Distribution: *none*\n - Shape :DateOrDateTimeDataType/sh:or/rdf:rest/rdf:first: *none*\n - Shape dcat:Dataset: *none*\n - Shape dcat:Catalog: *none*\n - Shape :DateOrDateTimeDataType/sh:or/rdf:first: *none*\n - Shape dcat:CatalogRecord: *none*\n"
+              "message": "Focus nodes for https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl:\n - Shape dcat:Dataset: *none*\n - Shape :DateOrDateTimeDataType/sh:or/rdf:rest/rdf:first: *none*\n - Shape dcat:Catalog: *none*\n - Shape dcat:CatalogRecord: *none*\n - Shape :DateOrDateTimeDataType: *none*\n - Shape dcat:Distribution: *none*\n - Shape :DateOrDateTimeDataType/sh:or/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
               "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
-              "graph": "@prefix dc1: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix shacl: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a shacl:ValidationReport ;\n    shacl:conforms false ;\n    shacl:result [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value does not have class dc1:Standard\" ;\n            shacl:resultPath dc1:conformsTo ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac> ;\n            shacl:value <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dc1:description ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/6cae9880e515253132af1452a38a8a5827165149> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointURL\" ;\n            shacl:resultPath dcat:endpointURL ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:MinCountConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/83ad7325cc6681e43e44550c269847065a95a14f> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dc1:title ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/d5d74574f70f9a979535f3624608f88180dd0c97> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value does not have class dc1:Standard\" ;\n            shacl:resultPath dc1:conformsTo ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac> ;\n            shacl:value <http://modellen.geostandaarden.nl/dcat-ap-nl/> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ] .\n\n",
+              "graph": "@prefix dc1: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix shacl: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a shacl:ValidationReport ;\n    shacl:conforms false ;\n    shacl:result [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dc1:title ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/d5d74574f70f9a979535f3624608f88180dd0c97> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dc1:description ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/6cae9880e515253132af1452a38a8a5827165149> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointURL\" ;\n            shacl:resultPath dcat:endpointURL ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:MinCountConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/83ad7325cc6681e43e44550c269847065a95a14f> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value does not have class dc1:Standard\" ;\n            shacl:resultPath dc1:conformsTo ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac> ;\n            shacl:value <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value does not have class dc1:Standard\" ;\n            shacl:resultPath dc1:conformsTo ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac> ;\n            shacl:value <http://modellen.geostandaarden.nl/dcat-ap-nl/> ],\n        [ a shacl:ValidationResult ;\n            shacl:focusNode <urn:ogc:record:generated-id> ;\n            shacl:resultMessage \"Value is not of Node Kind shacl:Literal\" ;\n            shacl:resultPath dcat:keyword ;\n            shacl:resultSeverity shacl:Violation ;\n            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;\n            shacl:sourceShape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857> ;\n            shacl:value [ ] ] .\n\n",
               "isError": true,
               "message": "Validation result for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/5bc739112726cd993c279f81380611cafc3a9857>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dcat:keyword\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/6cae9880e515253132af1452a38a8a5827165149>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dc1:description\n  \tMessage: Value is not of Node Kind shacl:Literal\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/83ad7325cc6681e43e44550c269847065a95a14f>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tResult Path: dcat:endpointURL\n  \tMessage: Less than 1 values on <urn:ogc:record:generated-id>->dcat:endpointURL\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: <http://modellen.geostandaarden.nl/dcat-ap-nl/>\n  \tResult Path: dc1:conformsTo\n  \tMessage: Value does not have class dc1:Standard\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: <http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core>\n  \tResult Path: dc1:conformsTo\n  \tMessage: Value does not have class dc1:Standard\n  Constraint Violation in NodeKindConstraintComponent (http://www.w3.org/ns/shacl#NodeKindConstraintComponent):\n  \tSeverity: shacl:Violation\n  \tSource Shape: <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape/d5d74574f70f9a979535f3624608f88180dd0c97>\n  \tFocus Node: <urn:ogc:record:generated-id>\n  \tValue Node: [ ]\n  \tResult Path: dc1:title\n  \tMessage: Value is not of Node Kind shacl:Literal\n  "
             },
             {
               "shaclFile": "https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl",
               "focusNodes": {
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>": {
-                  "nodes": []
-                },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>": {
                   "nodes": []
                 },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>": {
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>": {
                   "nodes": []
                 },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>": {
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>": {
                   "nodes": []
                 },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>": {
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>": {
                   "nodes": []
                 },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>": {
-                  "nodes": []
-                },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>": {
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>": {
                   "nodes": []
                 },
-                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>": {
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>": {
                   "nodes": []
                 },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>": {
@@ -326,12 +278,60 @@
                     "<urn:ogc:record:generated-id>"
                   ]
                 },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>": {
+                  "nodes": []
+                },
                 "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>": {
+                  "nodes": []
+                },
+                "<https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl:\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <urn:ogc:record:generated-id>\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*\n"
+              "message": "Focus nodes for https://ogcincubator.github.io/geodcat-ogcapi-records/_sources/dcat-ap/rules.shacl:\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#adms:IdentifierShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:FrequencyShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#odrl:PolicyShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:AttributionShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LicenseDocumentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:PeriodOfTimeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:durationShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#vcard:KindShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:StandardShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#ChecksumAlgorithmShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:decimalShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:ResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:MediaTypeOrExtentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:LiteralShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DatasetSeriesShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:RightsStatementShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LinguisticSystemShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:nonNegativeIntegerShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#locn:GeometryShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#prov:ActivityShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:AgentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DataServiceShape>: <urn:ogc:record:generated-id>\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#rdfs:ResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:dateTimeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RoleShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#xsd:hexBinaryShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogRecordShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:RelationshipShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:CatalogShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:ProvenanceStatementShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TimeInstantShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#TemporalLiteralShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:mediaTypeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#eli:LegalResourceShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#foaf:DocumentShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#skos:ConceptSchemeShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dct:LocationShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#spdx:ChecksumShape>: *none*\n - Shape <https://semiceu.github.io/DCAT-AP/releases/3.0.0/shacl/dcat-ap-SHACL.ttl#dcat:DistributionShape>: *none*\n"
             }
           ]
         }

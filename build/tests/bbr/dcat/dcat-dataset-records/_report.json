@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum-labs.bbr.dcat.dcat-dataset-records - DCAT-Dataset/Records binding",
   "bblockName": "DCAT-Dataset/Records binding",
   "bblockId": "geonovum-labs.bbr.dcat.dcat-dataset-records",
-  "generated": "2026-05-11T15:07:08.963481+00:00",
+  "generated": "2026-05-11T21:07:07.161784+00:00",
   "result": true,
   "items": [
     {
@@ -89,16 +89,16 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "<file:///github/workspace/7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83>"
-                  ]
-                },
                 "geojson:GeometryShape": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "<file:///github/workspace/7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83>"
+                  ]
                 },
                 "geojson:LinkShape": {
                   "nodes": []
@@ -108,7 +108,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <file:///github/workspace/7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/7b03a8de-5d0c-11ee-8a7e-3ce9f7462b83>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             }
           ]
         }

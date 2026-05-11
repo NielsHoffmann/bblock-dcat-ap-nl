@@ -23,40 +23,24 @@
     {
       "id": "sample-xslt",
       "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
-      "type": "xslt",
+      "type": "xslt2",
       "ref": "https://nielshoffmann.github.io/bblock-dcat-ap-nl/_sources/transforms/xslt-example/transforms/sample.xslt",
       "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
       "inputs": {
         "mediaTypes": [
           {
-            "id": "xml",
-            "defaultExtension": "xml",
-            "label": "XML",
             "mimeType": "application/xml",
-            "aliases": [
-              "application/xml",
-              "text/xml"
-            ],
-            "extensions": [
-              "xml"
-            ]
+            "label": "XML",
+            "defaultExtension": "xml"
           }
         ]
       },
       "outputs": {
         "mediaTypes": [
           {
-            "id": "xml",
-            "defaultExtension": "xml",
-            "label": "XML",
             "mimeType": "application/xml",
-            "aliases": [
-              "application/xml",
-              "text/xml"
-            ],
-            "extensions": [
-              "xml"
-            ]
+            "label": "XML",
+            "defaultExtension": "xml"
           }
         ]
       }
