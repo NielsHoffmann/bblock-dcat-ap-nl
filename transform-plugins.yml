@@ -1,0 +1,4 @@
+plugins:
+  - pip: git+https://github.com/NielsHoffmann/bblocks-xslt2-transform-plugin.git@main
+    modules:
+      - bbplugin_xslt2
